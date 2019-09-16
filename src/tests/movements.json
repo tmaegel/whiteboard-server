@@ -1,0 +1,11 @@
+[
+    { "movement":"Box jumps", "equipmentId":"2" },
+    { "movement":"Burpee box jumps", "equipmentId":"2" },
+    { "movement":"Box steps", "equipmentId":"2" },
+    { "movement": "Box steps over", "equipmentId":"2" },
+    { "movement":"Burpee", "equipmentId":"1" },
+    { "movement":"Burpee box jumps", "equipmentId":"2" },
+    { "movement":"Burpee box jumps over", "equipmentId":"2" },
+    { "movement":"Wallball shots", "equipmentId":"3" },
+    { "movement":"Dumbell snatch", "equipmentId":"4" }
+]

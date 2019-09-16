@@ -1,0 +1,96 @@
+[
+{
+    "user_id": "1",
+    "name":"Angi",
+    "description":"For Time\n100 Pull-ups\n100 Push-ups\n100 Sit-ups\n100 Squats",
+    "datetime":0,
+    "scores": [
+        { "score":"00:24:40", "datetime":"1460239200", "note":"" },
+        { "score":"00:18:12", "datetime":"1490997600", "note":"" },
+        { "score":"00:16:30", "datetime":"1495836000", "note":"" }
+    ]
+},
+{
+    "user_id": "1",
+    "name":"Cindy",
+    "description":"AMRAP20\n5 Pull-ups\n10 Push-ups\n15 Squats",
+    "datetime":0,
+    "scores": [
+        { "score":"480", "datetime":"1447887600", "note":"" },
+        { "score":"461", "datetime":"1461276000", "note":"" },
+        { "score":"638", "datetime":"1465423200", "note":"" },
+        { "score":"750", "datetime":"1477778400", "note":"" },
+        { "score":"699", "datetime":"1481151600", "note":"" },
+        { "score":"760", "datetime":"1524952800", "note":"" },
+        { "score":"773", "datetime":"1541433600", "note":"" }
+    ]
+},
+{
+    "user_id": "1",
+    "name":"Eva",
+    "description":"5RFT\n800m run\n30 Kettle swings @32kg\n30 Pull-ups",
+    "datetime":0,
+    "scores": [
+        {
+        }
+    ]
+},           
+{
+    "user_id": "1",
+    "name":"Chelsea",
+    "description":"EMOM30\n5 Pull-ups\n10 Push-ups\n15 Squats",
+    "datetime":0,
+    "scores": [
+        {
+        }
+    ]
+},
+{
+    "user_id": "1",
+    "name":"Fran",
+    "description":"21 - 15 - 9\nThruster @43kg\nPull-ups",
+    "datetime":0,
+    "scores": [
+        { "score":"00:11:04", "datetime":"1441144800", "note":"" },
+        { "score":"00:07:10", "datetime":"1463781600", "note":"" },
+        { "score":"00:05:40", "datetime":"1463954400", "note":"" },
+        { "score":"00:03:50", "datetime":"1476655200", "note":"" },
+        {"score":"00:03:08", "datetime":"1501279200", "note":"" },
+        { "score":"00:02:56", "datetime":"1525816800", "note":"" }
+    ]
+},
+{
+    "user_id": "1",
+    "name":"Grace",
+    "description":"For time\n30 Clean & Jerk @61kg",
+    "datetime":0,
+    "scores": [
+        { "score":"00:04:27", "datetime":"1468879200", "note":"" },
+        { "score":"00:03:38", "datetime":"1476741600", "note":"" },
+        { "score":"00:02:51", "datetime":"1485990000", "note":"" },
+        { "score":"00:02:31", "datetime":"1523484000", "note":"" },
+        { "score":"00:04:57", "datetime":"1502920800", "note":"" },
+        { "score":"00:03:15", "datetime":"1518130800", "note":"" }
+    ]
+},
+{
+    "user_id": "1",
+    "name":"Isabel",
+    "description":"For time\n30 Snatch @61kg",
+    "datetime":0,
+    "scores": [
+        {
+        }
+    ]
+},
+{
+    "user_id": "1",
+    "name":"Alexander",
+    "description":"5RFT\n31 Backsquats @61kg\n12 Power clean @84kg",
+    "datetime":0,
+    "scores": [
+        {
+        }
+    ]
+}
+] 
