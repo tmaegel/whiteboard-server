@@ -262,7 +262,7 @@ router.post("/", (req, res, next) => {
                  */
                 let valid = (name == null || utils.empty(name) || !utils.simpleRegex(name) || 
                             description == null || utils.empty(description) || !utils.extendedRegex(description) ||  
-                            datetime == null || utils.empty(datetime) || (!utils.numRegex(datetime) && !utils.datetimeRegex(datetime)))
+                            datetime == null || utils.empty(datetime) || !utils.numRegex(datetime))
                 if(valid) {
                     console.log("ERROR: POST /workout/ :: name, description or datetime are invalid");
                     res.status(400).json({
@@ -346,7 +346,7 @@ router.post("/:workoutId", (req, res, next) => {
                 let valid = (id == null || !utils.numRegex(id) ||
                             name == null || utils.empty(name) || !utils.simpleRegex(name) || 
                             description == null || utils.empty(description) || !utils.extendedRegex(description) ||  
-                            datetime == null || utils.empty(datetime) || (!utils.numRegex(datetime) && !utils.datetimeRegex(datetime)))
+                            datetime == null || utils.empty(datetime) || !utils.numRegex(datetime))
                 if(valid) {
                     console.log("ERROR: POST /workout/:workoutId :: id, name, description or datetime are invalid");
                     res.status(400).json({

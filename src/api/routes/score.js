@@ -184,14 +184,13 @@ router.post("/", (req, res, next) => {
                  */
                 let valid = (workoutId == null || !utils.numRegex(workoutId) ||
                             note == null || !utils.simpleRegex(note) || 
-                            datetime == null || utils.empty(datetime) || (!utils.numRegex(datetime) && !utils.datetimeRegex(datetime)) ||
-                            score == null || (!utils.numRegex(score) && !utils.timestampRegex(score)))
+                            datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
+                            score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)))
                 if(valid) {
                     console.log("ERROR: POST /score/ :: workoutId, score, note or datetime are invalid");
                     res.status(400).json({
                         type: "ERROR",
-                        message: "workoutId, score, note or datetime are invalid",
-                        createdWorkout: req.body
+                        message: "workoutId, score, note or datetime are invalid"
                     });
                 } else {
                     // open database
@@ -268,11 +267,9 @@ router.post("/:scoreId", (req, res, next) => {
                  * @todo Remove all leading/ending space from description
                  *       Remove alle multiple new lines and spaces from description
                  */
-                console.log(utils.numRegex(score))
-                console.log(utils.timestampRegex(score))
                 let valid = (workoutId == null || !utils.numRegex(workoutId) ||
                             note == null || !utils.simpleRegex(note) || 
-                            datetime == null || utils.empty(datetime) || (!utils.numRegex(datetime) && !utils.datetimeRegex(datetime)) ||
+                            datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
                             score == null || (!utils.numRegex(score) && !utils.timestampRegex(score)))
                 if(valid) {
                     console.log("ERROR: POST /score/:scoreId :: scoreId, workoutId, score, note or datetime are invalid");
