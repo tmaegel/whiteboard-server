@@ -69,7 +69,9 @@ router.post("/login", (req, res, next) => {
     console.log(req.body);
 
     console.log("Login the user " + name);
-    if(name == null || !utils.wordRegex(name) || password == null || !utils.wordRegex(password)) { // @todo no wordRegex check for password
+    let valid = (name == null || utils.empty(name) || !utils.wordRegex(name) ||
+                 password == null || utils.empty(password) || !utils.wordRegex(password)) // @todo no wordRegex check for password 
+    if(valid) {
         console.log("ERROR: POST /authentication/login/ :: username or password are null or contains forbidden characters");
         res.status(400).json({
             type: "ERROR",
