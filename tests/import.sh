@@ -1,9 +1,9 @@
 #!/bin/bash
 
-HOST="http://localhost"
+HOST="https://localhost"
 PORT="3000"
 
-TOKEN=$(curl -X POST http://localhost:3000/authentication/login -d @user.json -H "Content-Type: application/json" | jq '.token' | sed 's/\"//g')
+TOKEN=$(curl -k -X POST $HOST:$PORT/authentication/login -d @user.json -H "Content-Type: application/json" | jq '.token' | sed 's/\"//g')
 echo "$TOKEN"
 
 #FILE="equipment.json"
@@ -11,7 +11,7 @@ echo "$TOKEN"
 #for i in $(seq 0 $LOOP); do
 #    dataset="$(cat "$FILE" | jq ".[$i]")"
 #
-#    RES=$(curl -s $HOST:$PORT/equipment -X POST -H "Content-Type: application/json" -d "$dataset")
+#    RES=$(curl -k -s $HOST:$PORT/equipment -X POST -H "Content-Type: application/json" -d "$dataset")
 #    echo "$RES"
 #    if [ "$(echo $RES | jq '.type' | sed 's/\"//g')"  == "ERROR" ]; then
 #        exit 1
@@ -36,7 +36,7 @@ for i in $(seq 0 $LOOP); do
     scoreNum=$(($(echo "$dataset" | grep -c '"score":')-1))
     # echo $dataset | jq
 
-    RES=$(curl -s $HOST:$PORT/workout -X POST -H "Content-Type: application/json" -H "Authorization:$TOKEN" -d "$dataset")
+    RES=$(curl -k -s $HOST:$PORT/workout -X POST -H "Content-Type: application/json" -H "Authorization:$TOKEN" -d "$dataset")
     echo "$RES"
     if [ "$(echo $RES | jq '.type' | sed 's/\"//g')"  == "ERROR" ]; then
         exit 1
@@ -46,7 +46,7 @@ for i in $(seq 0 $LOOP); do
         score=$(echo "$dataset" | jq ".scores[$x]")
         score=$(echo "$score" | sed "s/\"score\"/\"workoutId\":\"$ID\", &/g")
         echo $score
-        RES=$(curl -s $HOST:$PORT/score -X POST -H "Content-Type: application/json" -H "Authorization:$TOKEN" -d "$score")
+        RES=$(curl -k -s $HOST:$PORT/score -X POST -H "Content-Type: application/json" -H "Authorization:$TOKEN" -d "$score")
         echo "$RES"
         if [ "$(echo $RES | jq '.type' | sed 's/\"//g')"  == "ERROR" ]; then
             exit 1

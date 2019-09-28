@@ -22,10 +22,10 @@ function GET_request() {
     fi
 
     if [ $DEBUG -eq 1 ]; then
-        echo "curl -s -w %{http_code} -X GET http://$SERVER:$PORT/$1 -H \"$DEFAULT_H\" -H \"$TOKEN_H\""
+        echo "curl -k -s -w %{http_code} -X GET https://$SERVER:$PORT/$1 -H \"$DEFAULT_H\" -H \"$TOKEN_H\""
     fi
 
-    RES=$(curl -s -w %{http_code} -X GET http://$SERVER:$PORT/$1 -H "$DEFAULT_H" -H "$TOKEN_H")
+    RES=$(curl -k -s -w %{http_code} -X GET https://$SERVER:$PORT/$1 -H "$DEFAULT_H" -H "$TOKEN_H")
     RET=$?
 
     echo "$(echo $RES | jq)"
@@ -40,10 +40,10 @@ function POST_request() {
     fi
 
     if [ $DEBUG -eq 1 ]; then
-        echo "curl -s -w %{http_code} -X POST http://$SERVER:$PORT/$1 -H \"$DEFAULT_H\" -H \"$TOKEN_H\" -d @$2"
+        echo "curl -k -s -w %{http_code} -X POST https://$SERVER:$PORT/$1 -H \"$DEFAULT_H\" -H \"$TOKEN_H\" -d @$2"
     fi
 
-    RES=$(curl -s -w %{http_code} -X POST http://$SERVER:$PORT/$1 -H "$DEFAULT_H" -H "$TOKEN_H" -d @$2)
+    RES=$(curl -k -s -w %{http_code} -X POST https://$SERVER:$PORT/$1 -H "$DEFAULT_H" -H "$TOKEN_H" -d @$2)
     RET=$?
 
     echo "$(echo $RES | jq)"
@@ -51,7 +51,7 @@ function POST_request() {
 }
 
 function get_token() {
-    TOKEN=$(curl -s -X POST http://$SERVER:$PORT/authentication/login -H "$DEFAULT_H" -d @user.json | jq '.token' | sed 's/\"//g')
+    TOKEN=$(curl -k -s -X POST https://$SERVER:$PORT/authentication/login -H "$DEFAULT_H" -d @user.json | jq '.token' | sed 's/\"//g')
     TOKEN_H="Authorization:$TOKEN"
     echo "$TOKEN"
 }

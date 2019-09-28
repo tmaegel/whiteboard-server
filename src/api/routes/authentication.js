@@ -11,7 +11,7 @@ var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
 
 // config
-var config = require("../../config");
+var config = require("../../config.json");
 
 // utils
 var utils = require("../../utils");

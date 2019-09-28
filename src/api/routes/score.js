@@ -10,7 +10,7 @@ router.use(bodyParser.json());
 var jwt = require('jsonwebtoken');
 
 // config
-var config = require("../../config");
+var config = require("../../config.json");
 
 // utils
 var utils = require("../../utils");
