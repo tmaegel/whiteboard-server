@@ -17,9 +17,7 @@ var utils = require("../../utils");
 
 // Exporting objects
 var Database = require("../../sqlite");
-
-// Variables
-var database = "./db/db_whiteboard.db";
+var Server = require('../../server');
 
 /** 
  * GET requests
@@ -46,7 +44,7 @@ router.get("/", (req, res, next) => {
                 });
             } else {
                 // open database
-                var db = new sqlite3.Database(database, (err) => {
+                var db = new sqlite3.Database(Server.database, (err) => {
                     if (err) {
                         console.log("ERROR: GET /movement/ :: Connecting database.");
                         return console.error(err.message);

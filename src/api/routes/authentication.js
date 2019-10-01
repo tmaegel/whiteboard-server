@@ -18,10 +18,8 @@ var utils = require("../../utils");
 
 // Exporting objects
 var Database = require("../../sqlite");
+var Server = require('../../server');
 var User = require('../../obj/User');
-
-// Variables
-var database = "./db/db_whiteboard.db";
 
 /**
  * GET requests
@@ -79,7 +77,7 @@ router.post("/login", (req, res, next) => {
         });
     } else { 
         // open database
-        var db = new sqlite3.Database(database, (err) => {
+        var db = new sqlite3.Database(Server.database, (err) => {
             if (err) {
                 console.log("ERROR: POST /authentication/login/ :: Connecting database.");
                 return console.error(err.message);

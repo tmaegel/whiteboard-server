@@ -17,23 +17,7 @@ var utils = require("../../utils");
 
 // Exporting objects
 var Database = require("../../sqlite");
-
-// Variables
-var database = "./db/db_whiteboard.db";
-
-/**
- * Initialize
- */
-
-const init = true;
-if (init) {
-    // Open database
-    Database.open();
-    // Init database
-    Database.init();
-    // Close Database
-    Database.close();
-}
+var Server = require('../../server');
 
 /**
  * REST
@@ -66,7 +50,7 @@ router.get("/", (req, res, next) => {
                 });
             } else {
                 // open database
-                var db = new sqlite3.Database(database, (err) => {
+                var db = new sqlite3.Database(Server.database, (err) => {
                     if (err) {
                         console.log("ERROR: GET /workout/ :: Connecting database.");
                         return console.error(err.message);
@@ -127,7 +111,7 @@ router.get("/:workoutId", (req, res, next) => {
                     });
                 } else { 
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: GET /workout/:workoutId :: Connecting database.");
                             return console.error(err.message);
@@ -196,7 +180,7 @@ router.get("/score/:workoutId", (req, res, next) => {
                     });
                 } else { 
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: GET /workout/score/:workoutId :: Connecting database.");
                             return console.error(err.message);
@@ -271,7 +255,7 @@ router.post("/", (req, res, next) => {
                     });
                 } else {
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: POST /workout/ :: Connecting database.");
                             return console.error(err.message);
@@ -355,7 +339,7 @@ router.post("/:workoutId", (req, res, next) => {
                     });
                 } else {
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: POST /workout/:workoutId :: Connecting database.");
                             return console.error(err.message);

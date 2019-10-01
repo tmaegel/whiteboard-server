@@ -17,9 +17,7 @@ var utils = require("../../utils");
 
 // Exporting objects
 var Database = require("../../sqlite");
-
-// Variables
-var database = "./db/db_whiteboard.db";
+var Server = require('../../server');
 
 /**
  * GET requests
@@ -46,7 +44,7 @@ router.get("/", (req, res, next) => {
                 });
             } else {
                 // open database
-                var db = new sqlite3.Database(database, (err) => {
+                var db = new sqlite3.Database(Server.database, (err) => {
                     if (err) {
                         console.log("ERROR: GET /score/ :: Connecting database.");
                         return console.error(err.message);
@@ -108,7 +106,7 @@ router.get("/:scoreId", (req, res, next) => {
                     }); 
                 } else {
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: GET /score/:scoreId :: Connecting database.");
                             return console.error(err.message);
@@ -194,7 +192,7 @@ router.post("/", (req, res, next) => {
                     });
                 } else {
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: POST /score/ :: Connecting database.");
                             return console.error(err.message);
@@ -279,7 +277,7 @@ router.post("/:scoreId", (req, res, next) => {
                     });
                 } else {
                     // open database
-                    var db = new sqlite3.Database(database, (err) => {
+                    var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
                             console.log("ERROR: POST /score/:scoreId :: Connecting database.");
                             return console.error(err.message);

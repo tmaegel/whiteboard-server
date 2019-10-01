@@ -1,16 +1,16 @@
 // Database
 
 const sqlite3 = require("sqlite3").verbose();
-
-let db;
+var Server = require('./server');
 
 function open() {
     // open database
-    db = new sqlite3.Database("./db/db_whiteboard.db", (err) => {
+    db = new sqlite3.Database(Server.database, (err) => {
         if (err) {
             console.log("ERROR: Connecting database.");
             return console.error(err.message);
         }
+        console.log("Opened database " + Server.database);
     });
 }
 
@@ -189,6 +189,7 @@ function close() {
             console.log("ERROR: Closing database");
             return console.error(err.message);
         }
+        console.log("Closed database " + Server.database);
     });
 }
 
@@ -235,7 +236,6 @@ function select_all() {
     });
 }
 
-exports.db = db;
 exports.open = open;
 exports.init = init;
 exports.close = close;
