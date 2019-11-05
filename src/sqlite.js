@@ -34,22 +34,14 @@ function init() {
         // id, score, datetime (the number of seconds since 1970-01-01 00:00:00 UTC)
         db.run("CREATE TABLE IF NOT EXISTS table_workout_score (id INTEGER PRIMARY KEY AUTOINCREMENT, workout_id INTEGER, score TEXT, datetime INTEGER, note TEXT)");
 
-        // insert("Angi", "For Time\n100 Pull-ups\n100 Push-ups\n100 Sit-ups\n100 Squats");
-        // insert("Cindy", "AMRAP20\n5 Pull-ups\n10 Push-ups\n15 Squats");
-        // insert("Eva", "5RFT\n800m run\n30 Kettle swings @32kg\n30 Pull-ups");
-        // insert("Chelsea", "EMOM30\n5 Pull-ups\n10 Push-ups\n15 Squats");
-        // insert("Fran", "21 - 15 - 9\nThruster @43kg\nPull-ups");
-        // insert("Grace", "For time\n30 Clean & Jerk @61kg");
-        // insert("Isabel", "Isabel");
-        // insert("Alexander", "5RFT\n31 Backsquats @61kg\n12 Power clean @84kg");
-
         /**
          * Users
          */
 
-         var users = [
-             ['user', 'secret']
-         ];
+        // username, password
+        var users = [
+             ['user', '2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b']
+        ];
 
          for (var row in users) {
              set = users[row];

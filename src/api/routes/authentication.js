@@ -8,7 +8,6 @@ router.use(bodyParser.json());
 
 // jwt
 var jwt = require('jsonwebtoken');
-var bcrypt = require('bcryptjs');
 
 // config
 var config = require("../../config.json");
@@ -82,7 +81,6 @@ router.post("/login", (req, res, next) => {
             }
         });
 
-        // @todo var passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
         db.get("SELECT id, name, password FROM table_users WHERE name = ? LIMIT 1", [name], (err, row) => {
             if (err) {
                 throw err;
@@ -90,10 +88,8 @@ router.post("/login", (req, res, next) => {
 
             if(row != null && Object.keys(row).length === 3) {
                 if(row.name == name && row.password == password) {
-                    // The second argument is the number of rounds to use when generating a sall
-                    var user = new User(row.id, name, bcrypt.hashSync(req.body.password, 10));
-                    
                     // create a token
+                    var user = new User(row.id, name);
                     var token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, config.secret, {
                         expiresIn: 86400 // expires in 24 hours
                     });
