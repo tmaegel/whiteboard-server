@@ -55,7 +55,6 @@ router.get("/", (req, res, next) => {
                     if (err) {
                         throw err;
                     }
-                    console.log(rows);
                     res.status(200).end(JSON.stringify(rows));
 
                     // close database

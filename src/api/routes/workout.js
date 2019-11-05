@@ -41,8 +41,6 @@ router.get("/", (req, res, next) => {
     } else {
         // Verfiy token
         jwt.verify(token, config.secret, function(err, decoded) {
-            console.log(JSON.stringify(decoded));
-            console.log(decoded.sub);
             if (err) {
                 res.status(401).json({
                     type: "ERROR",
