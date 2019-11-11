@@ -32,7 +32,7 @@ function init() {
         // id, score, datetime (the number of seconds since 1970-01-01 00:00:00 UTC)
         db.run("CREATE TABLE IF NOT EXISTS table_workout (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, name TEXT, description TEXT, datetime INTEGER)");
         // id, score, datetime (the number of seconds since 1970-01-01 00:00:00 UTC)
-        db.run("CREATE TABLE IF NOT EXISTS table_workout_score (id INTEGER PRIMARY KEY AUTOINCREMENT, workout_id INTEGER, score TEXT, datetime INTEGER, note TEXT)");
+        db.run("CREATE TABLE IF NOT EXISTS table_workout_score (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, workout_id INTEGER, score TEXT, datetime INTEGER, note TEXT)");
 
         /**
          * Users

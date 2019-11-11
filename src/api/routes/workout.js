@@ -187,7 +187,8 @@ router.get("/score/:workoutId", (req, res, next) => {
                         }
                     });
 
-                    db.all("SELECT id, workout_id, score, datetime, note FROM table_workout_score WHERE workout_id = ? ORDER BY id", [id], (err, rows) => {
+                    // Select only workout scores with the userId of the registered user
+                    db.all("SELECT id, workout_id, score, datetime, note FROM table_workout_score WHERE workout_id = ? and user_id = ? ORDER BY id", [id, decoded.sub], (err, rows) => {
                         if (err) {
                             throw err;
                         }
@@ -346,7 +347,7 @@ router.post("/:workoutId", (req, res, next) => {
                         }
                     });
 
-                    db.run("UPDATE table_workout SET name=?, description=?, datetime=? WHERE id=?", [name, description, datetime, id], function(err) {
+                    db.run("UPDATE table_workout SET name = ?, description = ?, datetime = ? WHERE id = ? AND user_id = ?", [name, description, datetime, id, decoded.sub], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }

@@ -51,7 +51,7 @@ router.get("/", (req, res, next) => {
                     }
                 });
 
-                db.all("SELECT id, workout_id, score, datetime, note FROM table_workout_score ORDER BY id", [], (err, rows) => {
+                db.all("SELECT id, workout_id, score, datetime, note FROM table_workout_score WHERE user_id = ? ORDER BY id", [decoded.sub], (err, rows) => {
                     if (err) {
                         throw err;
                     }
@@ -112,7 +112,7 @@ router.get("/:scoreId", (req, res, next) => {
                         }
                     });
 
-                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id = ?", [id], (err, row) => {
+                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id = ? AND user_id = ?", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
@@ -199,7 +199,7 @@ router.post("/", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("INSERT INTO table_workout_score(workout_id, score, datetime, note) VALUES (?, ?, ?, ?)", [workoutId, score, datetime, note], function(err) {
+                    db.run("INSERT INTO table_workout_score(user_id, workout_id, score, datetime, note) VALUES (?, ?, ?, ?, ?)", [decoded.sub, workoutId, score, datetime, note], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }
@@ -284,7 +284,7 @@ router.post("/:scoreId", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("UPDATE table_workout_score SET score=?, datetime=?, note=? WHERE id=?", [score, datetime, note, id], function(err) {
+                    db.run("UPDATE table_workout_score SET score = ?, datetime = ?, note = ? WHERE id = ? and user_id = ?", [score, datetime, note, id, decoded.sub], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }
