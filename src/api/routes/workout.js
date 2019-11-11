@@ -55,7 +55,8 @@ router.get("/", (req, res, next) => {
                     }
                 });
 
-                db.all("SELECT id, name, description, datetime FROM table_workout WHERE user_id = ? ORDER BY id", [decoded.sub], (err, rows) => {
+                // Select all workouts with user_id 1 or the regular user_id
+                db.all("SELECT id, name, description, datetime FROM table_workout WHERE user_id = 1 OR user_id = ? ORDER BY id", [decoded.sub], (err, rows) => {
                     if (err) {
                         throw err;
                     }
@@ -116,7 +117,8 @@ router.get("/:workoutId", (req, res, next) => {
                         }
                     });
 
-                    db.get("SELECT id, name, description FROM table_workout WHERE id = ? AND user_id = ?", [id, decoded.sub], (err, row) => {
+                    // Select workout with user_id 1 or the regular user_id
+                    db.get("SELECT id, name, description FROM table_workout WHERE id = ? AND user_id = 1 OR user_id = ?", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }

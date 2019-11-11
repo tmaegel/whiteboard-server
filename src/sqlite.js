@@ -38,9 +38,12 @@ function init() {
          * Users
          */
 
-        // username, password
+        // Remove this!
+        // These data are for development only
+        // admin must be added first (userId 1), then the other user
         var users = [
-             ['user', '2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b']
+            ['admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'],
+            ['user', '2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b']
         ];
 
          for (var row in users) {

@@ -112,7 +112,7 @@ router.get("/:scoreId", (req, res, next) => {
                         }
                     });
 
-                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id  = ?", [id], (err, row) => {
+                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id = ?", [id], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
