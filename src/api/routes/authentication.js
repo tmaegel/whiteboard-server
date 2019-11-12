@@ -8,10 +8,11 @@ router.use(bodyParser.json());
 
 // jwt
 var jwt = require('jsonwebtoken');
+// bcrypt
+var bcrypt = require('bcryptjs');
 
 // config
 var config = require("../../config.json");
-
 // utils
 var utils = require("../../utils");
 
@@ -63,6 +64,8 @@ router.post("/login", (req, res, next) => {
     var name = req.body.name;
     var password = req.body.password;
 
+    var saltRounds = 10
+
     console.log("Login the user " + name);
     let valid = (name == null || utils.empty(name) || !utils.wordRegex(name) ||
                  password == null || utils.empty(password) || !utils.wordRegex(password)) // @todo no wordRegex check for password 
@@ -87,25 +90,31 @@ router.post("/login", (req, res, next) => {
             }
 
             if(row != null && Object.keys(row).length === 3) {
-                if(row.name == name && row.password == password) {
-                    // create a token
-                    var user = new User(row.id, name);
-                    var token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, config.secret, {
-                        expiresIn: 86400 // expires in 24 hours
-                    });
+                // compare given password with password in database
+                bcrypt.compare(password, row.password, function(err, isMatch) {
+                    if (err) {
+                        throw err
+                    } else if (!isMatch) {
+                        console.log("ERROR: POST /authentication/login/ :: password is invalid");
+                        res.status(403).json({
+                            type: "ERROR",
+                            message: "password is invalid"
+                        });
+                    } else {
+                        // create a token
+                        var user = new User(row.id, name);
+                        var token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, config.secret, {
+                            expiresIn: 86400 // expires in 24 hours
+                        });
 
-                    res.status(200).json({
-                        type: "SUCCESS", 
-                        message : "User login successfully",
-                        token : token
-                    });
-                } else {
-                    console.log("ERROR: POST /authentication/login/ :: password is invalid");
-                    res.status(403).json({
-                        type: "ERROR",
-                        message: "password is invalid"
-                    });
-                }
+                        res.status(200).json({
+                            type: "SUCCESS",
+                            message : "User login successfully",
+                            token : token
+                        });
+
+                    }
+                })
             } else { 
                 console.log("ERROR: POST /authentication/login/ :: username is invalid");
                 res.status(403).json({
