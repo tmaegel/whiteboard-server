@@ -6,8 +6,7 @@ const sqlite3 = require("sqlite3").verbose();
 var Database = require("./sqlite");
 
 // Initialize database
-const init_db = false;
-
+let initDatabase;
 let port, database, certFile, KeyFile;
 
 // Check this first
@@ -29,7 +28,11 @@ function print_help() {
     console.log("\t--key\t\t<key_file>\t\tTells the script to use the specified server key file (SSL).");
     console.log("\nThis script expects a configuration file called 'config.json'.");
     console.log("The configuration file (JSON) containing the secret (e.g. {\"secret\":\"yoursecret\"}) to creating the JWT.");
-    console.log("\nnode server.js --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
+    console.log("\nExamples:\n");
+    console.log("Initialize the whiteboard SQlite database and run the REST API.");
+    console.log("\tnode server.js --init --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
+    console.log("Run the whiteboard REST API.");
+    console.log("\tnode server.js --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
     process.exit(1);
 }
 
@@ -38,18 +41,12 @@ if(process.argv.indexOf('--help') > -1) {
     print_help();
 }
 
-// Also checks for --port and if we have a value
-const portIndex = process.argv.indexOf('--port');
-if(portIndex > -1) {
-    // Grabs the value after --port
-    port = process.argv[portIndex + 1];
-    if(!port) {
-        console.log("ERROR: Missing argument '--port'");
-        process.exit(1);
-    }
+// Checks to see if the --init argument is present
+const initIndex = process.argv.indexOf('--init');
+if(initIndex > -1) {
+    initDatabase = true;
 } else {
-    console.log("ERROR: Missing option '--port'");
-    process.exit(1);
+    initDatabase = false;
 }
 
 // Also checks for --database and if we have a value
@@ -67,13 +64,44 @@ if(databaseIndex > -1) {
 }
 
 // Check existance of database file when init_db = false only
-if(init_db) {
+if(!initDatabase) {
     try {
         stats = fs.lstatSync(database);
     } catch(e) {
         console.log("ERROR: Failed to access to database '" + database + "'.");
         process.exit(1);
     }
+}
+
+/**
+ * Initialize database
+ */
+exports.database = database;
+if (initDatabase) {
+    // Open database
+    Database.open();
+    // Init database
+    Database.init();
+    // Close Database
+    Database.close();
+}
+
+/**
+ * Execute the following code only if initDatabase = false
+ */
+
+// Also checks for --port and if we have a value
+const portIndex = process.argv.indexOf('--port');
+if(portIndex > -1) {
+    // Grabs the value after --port
+    port = process.argv[portIndex + 1];
+    if(!port) {
+        console.log("ERROR: Missing argument '--port'");
+        process.exit(1);
+    }
+} else {
+    console.log("ERROR: Missing option '--port'");
+    process.exit(1);
 }
 
 // Also checks for --cert and if we have a value
@@ -110,19 +138,6 @@ try {
 } catch(e) {
     console.log("ERROR: Failed to access to files '" + certFile + "' or '" + keyFile + "'.");
     process.exit(1);
-}
-
-/**
- * Initialize database
- */
-exports.database = database;
-if (init_db) {
-    // Open database
-    Database.open();
-    // Init database
-    Database.init();
-    // Close Database
-    Database.close();
 }
 
 /**
