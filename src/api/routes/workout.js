@@ -118,7 +118,7 @@ router.get("/:workoutId", (req, res, next) => {
                     });
 
                     // Select workout with user_id 1 or the regular user_id
-                    db.get("SELECT id, user_id, name, description FROM table_workout WHERE id = ? AND user_id = 1 OR user_id = ?", [id, decoded.sub], (err, row) => {
+                    db.get("SELECT id, user_id, name, description FROM table_workout WHERE id = ? AND (user_id = 1 OR user_id = ?)", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
