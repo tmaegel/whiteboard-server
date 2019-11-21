@@ -51,7 +51,7 @@ router.get("/", (req, res, next) => {
                     }
                 });
 
-                db.all("SELECT id, workoutId, score, datetime, note FROM table_workout_score WHERE userId = ? ORDER BY id", [decoded.sub], (err, rows) => {
+                db.all("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE userId = ? ORDER BY id", [decoded.sub], (err, rows) => {
                     if (err) {
                         throw err;
                     }
@@ -112,7 +112,7 @@ router.get("/:scoreId", (req, res, next) => {
                         }
                     });
 
-                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id = ? AND userId = ?", [id, decoded.sub], (err, row) => {
+                    db.get("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE id = ? AND userId = ?", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
@@ -150,6 +150,7 @@ router.get("/:scoreId", (req, res, next) => {
 router.post("/", (req, res, next) => {
     var workoutId = req.body.workoutId;
     var score = utils.stripString(req.body.score);
+    var rx = req.body.rx;
     var note = utils.stripString(req.body.note);
     var datetime = req.body.datetime;
     
@@ -199,7 +200,7 @@ router.post("/", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("INSERT INTO table_workout_score(userId, workoutId, score, datetime, note) VALUES (?, ?, ?, ?, ?)", [decoded.sub, workoutId, score, datetime, note], function(err) {
+                    db.run("INSERT INTO table_workout_score(userId, workoutId, score, rx, datetime, note) VALUES (?, ?, ?, ?, ?, ?)", [decoded.sub, workoutId, score, rx, datetime, note], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }
@@ -235,6 +236,7 @@ router.post("/:scoreId", (req, res, next) => {
     var id = req.params.scoreId;
     var workoutId = req.body.workoutId;
     var score = utils.stripString(req.body.score);
+    var rx = req.body.rx;
     var note = utils.stripString(req.body.note);
     var datetime = req.body.datetime;
     
@@ -284,7 +286,7 @@ router.post("/:scoreId", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("UPDATE table_workout_score SET score = ?, datetime = ?, note = ? WHERE id = ? and userId = ?", [score, datetime, note, id, decoded.sub], function(err) {
+                    db.run("UPDATE table_workout_score SET score = ?, rx = ?, datetime = ?, note = ? WHERE id = ? and userId = ?", [score, rx,  datetime, note, id, decoded.sub], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }

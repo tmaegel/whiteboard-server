@@ -188,7 +188,7 @@ router.get("/score/:workoutId", (req, res, next) => {
                     });
 
                     // Select only workout scores with the userId of the registered user
-                    db.all("SELECT id, workoutId, score, datetime, note FROM table_workout_score WHERE workoutId = ? and userId = ? ORDER BY id", [id, decoded.sub], (err, rows) => {
+                    db.all("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE workoutId = ? and userId = ? ORDER BY id", [id, decoded.sub], (err, rows) => {
                         if (err) {
                             throw err;
                         }
