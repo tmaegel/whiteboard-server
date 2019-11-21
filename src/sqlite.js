@@ -28,12 +28,12 @@ function init() {
         db.run("CREATE TABLE IF NOT EXISTS table_users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, password TEXT)"); // @todo: Nur für erste Tests im Klartext
         // id, equipment
         db.run("CREATE TABLE IF NOT EXISTS table_equipment (id INTEGER PRIMARY KEY AUTOINCREMENT, equipment TEXT)");
-        // id, movement, equipment_ids
-        db.run("CREATE TABLE IF NOT EXISTS table_movements (id INTEGER PRIMARY KEY AUTOINCREMENT, movement TEXT, equipment_ids TEXT)");
+        // id, movement, equipmentIds
+        db.run("CREATE TABLE IF NOT EXISTS table_movements (id INTEGER PRIMARY KEY AUTOINCREMENT, movement TEXT, equipmentIds TEXT)");
         // id, score, datetime (the number of seconds since 1970-01-01 00:00:00 UTC)
-        db.run("CREATE TABLE IF NOT EXISTS table_workout (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, name TEXT, description TEXT, datetime INTEGER)");
+        db.run("CREATE TABLE IF NOT EXISTS table_workout (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, name TEXT, description TEXT, datetime INTEGER)");
         // id, score, datetime (the number of seconds since 1970-01-01 00:00:00 UTC)
-        db.run("CREATE TABLE IF NOT EXISTS table_workout_score (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, workout_id INTEGER, score TEXT, datetime INTEGER, note TEXT)");
+        db.run("CREATE TABLE IF NOT EXISTS table_workout_score (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, workoutId INTEGER, score TEXT, datetime INTEGER, note TEXT)");
 
         /**
          * Users
@@ -98,7 +98,7 @@ function init() {
 
         for (var row in movements) {
             set = movements[row];
-            let sql = "INSERT INTO table_movements (movement, equipment_ids) VALUES (?, ?)";
+            let sql = "INSERT INTO table_movements (movement, equipmentIds) VALUES (?, ?)";
             db.run(sql, set, function(err) {
                 if (err) {
                     return console.error(err.message);

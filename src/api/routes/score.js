@@ -51,7 +51,7 @@ router.get("/", (req, res, next) => {
                     }
                 });
 
-                db.all("SELECT id, workout_id, score, datetime, note FROM table_workout_score WHERE user_id = ? ORDER BY id", [decoded.sub], (err, rows) => {
+                db.all("SELECT id, workoutId, score, datetime, note FROM table_workout_score WHERE userId = ? ORDER BY id", [decoded.sub], (err, rows) => {
                     if (err) {
                         throw err;
                     }
@@ -112,7 +112,7 @@ router.get("/:scoreId", (req, res, next) => {
                         }
                     });
 
-                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id = ? AND user_id = ?", [id, decoded.sub], (err, row) => {
+                    db.get("SELECT id, score, datetime, note FROM table_workout_score WHERE id = ? AND userId = ?", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
@@ -182,7 +182,7 @@ router.post("/", (req, res, next) => {
                 let valid = (workoutId == null || !utils.numRegex(workoutId) ||
                             note == null || !utils.simpleRegex(note) || 
                             datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
-                            score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)))
+                            score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
                 if(valid) {
                     console.log("ERROR: POST /score/ :: workoutId, score, note or datetime are invalid");
                     res.status(400).json({
@@ -199,7 +199,7 @@ router.post("/", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("INSERT INTO table_workout_score(user_id, workout_id, score, datetime, note) VALUES (?, ?, ?, ?, ?)", [decoded.sub, workoutId, score, datetime, note], function(err) {
+                    db.run("INSERT INTO table_workout_score(userId, workoutId, score, datetime, note) VALUES (?, ?, ?, ?, ?)", [decoded.sub, workoutId, score, datetime, note], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }
@@ -267,7 +267,7 @@ router.post("/:scoreId", (req, res, next) => {
                 let valid = (workoutId == null || !utils.numRegex(workoutId) ||
                             note == null || !utils.simpleRegex(note) || 
                             datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
-                            score == null || (!utils.numRegex(score) && !utils.timestampRegex(score)))
+                            score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
                 if(valid) {
                     console.log("ERROR: POST /score/:scoreId :: scoreId, workoutId, score, note or datetime are invalid");
                     res.status(400).json({
@@ -284,7 +284,7 @@ router.post("/:scoreId", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("UPDATE table_workout_score SET score = ?, datetime = ?, note = ? WHERE id = ? and user_id = ?", [score, datetime, note, id, decoded.sub], function(err) {
+                    db.run("UPDATE table_workout_score SET score = ?, datetime = ?, note = ? WHERE id = ? and userId = ?", [score, datetime, note, id, decoded.sub], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }

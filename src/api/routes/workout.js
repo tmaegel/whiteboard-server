@@ -55,8 +55,8 @@ router.get("/", (req, res, next) => {
                     }
                 });
 
-                // Select all workouts with user_id 1 or the regular user_id
-                db.all("SELECT id, user_id, name, description, datetime FROM table_workout WHERE user_id = 1 OR user_id = ? ORDER BY id", [decoded.sub], (err, rows) => {
+                // Select all workouts with userId 1 or the regular userId
+                db.all("SELECT id, userId, name, description, datetime FROM table_workout WHERE userId = 1 OR userId = ? ORDER BY id", [decoded.sub], (err, rows) => {
                     if (err) {
                         throw err;
                     }
@@ -117,8 +117,8 @@ router.get("/:workoutId", (req, res, next) => {
                         }
                     });
 
-                    // Select workout with user_id 1 or the regular user_id
-                    db.get("SELECT id, user_id, name, description FROM table_workout WHERE id = ? AND (user_id = 1 OR user_id = ?)", [id, decoded.sub], (err, row) => {
+                    // Select workout with userId 1 or the regular userId
+                    db.get("SELECT id, userId, name, description FROM table_workout WHERE id = ? AND (userId = 1 OR userId = ?)", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
@@ -188,7 +188,7 @@ router.get("/score/:workoutId", (req, res, next) => {
                     });
 
                     // Select only workout scores with the userId of the registered user
-                    db.all("SELECT id, workout_id, score, datetime, note FROM table_workout_score WHERE workout_id = ? and user_id = ? ORDER BY id", [id, decoded.sub], (err, rows) => {
+                    db.all("SELECT id, workoutId, score, datetime, note FROM table_workout_score WHERE workoutId = ? and userId = ? ORDER BY id", [id, decoded.sub], (err, rows) => {
                         if (err) {
                             throw err;
                         }
@@ -264,7 +264,7 @@ router.post("/", (req, res, next) => {
                     });
 
                     // insert row
-                    db.run("INSERT INTO table_workout(user_id, name, description, datetime) VALUES (?, ?, ?, ?)", [decoded.sub, name, description, datetime], function(err) {
+                    db.run("INSERT INTO table_workout(userId, name, description, datetime) VALUES (?, ?, ?, ?)", [decoded.sub, name, description, datetime], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }
@@ -347,7 +347,7 @@ router.post("/:workoutId", (req, res, next) => {
                         }
                     });
 
-                    db.run("UPDATE table_workout SET name = ?, description = ?, datetime = ? WHERE id = ? AND user_id = ?", [name, description, datetime, id, decoded.sub], function(err) {
+                    db.run("UPDATE table_workout SET name = ?, description = ?, datetime = ? WHERE id = ? AND userId = ?", [name, description, datetime, id, decoded.sub], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }

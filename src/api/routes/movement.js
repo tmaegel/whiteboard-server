@@ -51,7 +51,7 @@ router.get("/", (req, res, next) => {
                     }
                 });
 
-                db.all("SELECT id, movement, equipment_ids FROM table_movements ORDER BY id", [], (err, rows) => {
+                db.all("SELECT id, movement, equipmentIds FROM table_movements ORDER BY id", [], (err, rows) => {
                     if (err) {
                         throw err;
                     }
