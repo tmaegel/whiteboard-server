@@ -31,7 +31,7 @@ var Server = require('../../server');
  */
 router.get("/", (req, res, next) => {
     console.log("Getting all workouts");
-   
+
     var token = req.headers.authorization;
     if (!token) {
         res.status(401).json({
@@ -108,7 +108,7 @@ router.get("/:workoutId", (req, res, next) => {
                         type: "ERROR",
                         message: "workoutId is invalid"
                     });
-                } else { 
+                } else {
                     // open database
                     var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
@@ -178,7 +178,7 @@ router.get("/score/:workoutId", (req, res, next) => {
                         type: "ERROR",
                         message: "workoutId is invalid"
                     });
-                } else { 
+                } else {
                     // open database
                     var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
@@ -219,7 +219,7 @@ router.post("/", (req, res, next) => {
     var name = utils.stripString(req.body.name);
     var description = utils.stripString(req.body.description);
     var datetime = req.body.datetime;
-    
+
     console.log("Saving workout");
 
     var token = req.headers.authorization;
@@ -245,8 +245,8 @@ router.post("/", (req, res, next) => {
                  * @todo Remove all leading/ending space from description
                  *       Remove alle multiple new lines and spaces from description
                  */
-                let valid = (name == null || utils.empty(name) || !utils.simpleRegex(name) || 
-                            description == null || utils.empty(description) || !utils.extendedRegex(description) ||  
+                let valid = (name == null || utils.empty(name) || !utils.simpleRegex(name) ||
+                            description == null || utils.empty(description) || !utils.extendedRegex(description) ||
                             datetime == null || utils.empty(datetime) || !utils.numRegex(datetime))
                 if(valid) {
                     console.log("ERROR: POST /workout/ :: name, description or datetime are invalid");
@@ -268,11 +268,28 @@ router.post("/", (req, res, next) => {
                         if (err) {
                             return console.log(err.message);
                         }
-                        console.log("Inserted new workout");
-                        res.status(201).json({
-                            type: "SUCCESS",
-                            message: "Workout was created",
-                            result: req.body
+                        db.get("SELECT last_insert_rowid() from table_workout LIMIT 1", [], (err, row) => {
+                            if (err) {
+                                return console.error(err.message);
+                            }
+                            if(row != null) {
+                                let id = row["last_insert_rowid()"];
+                                console.log("Inserted new workout with id " + id);
+                                db.get("SELECT id, userId, name, description FROM table_workout WHERE id = ? AND (userId = 1 OR userId = ?)", [id, decoded.sub], (err, row) => {
+                                    if (err) {
+                                        return console.error(err.message);
+                                    }
+                                    if(row != null) {
+                                        res.status(200).end(JSON.stringify(row));
+                                    } else {
+                                        console.log("No workout found");
+                                        res.status(204).json({
+                                            type: "INFO",
+                                            message: "No workout found"
+                                        });
+                                    }
+                                });
+                            }
                         });
                     });
 
@@ -301,7 +318,7 @@ router.post("/:workoutId", (req, res, next) => {
     var name = utils.stripString(req.body.name);
     var description = utils.stripString(req.body.description);
     var datetime = req.body.datetime;
-    
+
     console.log("Updating workout");
 
     var token = req.headers.authorization;
@@ -329,8 +346,8 @@ router.post("/:workoutId", (req, res, next) => {
                  *       Remove alle multiple new lines and spaces from description
                  */
                 let valid = (id == null || !utils.numRegex(id) ||
-                            name == null || utils.empty(name) || !utils.simpleRegex(name) || 
-                            description == null || utils.empty(description) || !utils.extendedRegex(description) ||  
+                            name == null || utils.empty(name) || !utils.simpleRegex(name) ||
+                            description == null || utils.empty(description) || !utils.extendedRegex(description) ||
                             datetime == null || utils.empty(datetime) || !utils.numRegex(datetime))
                 if(valid) {
                     console.log("ERROR: POST /workout/:workoutId :: id, name, description or datetime are invalid");
@@ -378,7 +395,7 @@ router.post("/:workoutId", (req, res, next) => {
  * @return 200 OK
  * @return 400 Bad Request
  * @return 401 Unauthorized
- */ 
+ */
 router.delete("/:workoutId", (req, res, next) => {
     console.log("Deleting workout");
     res.status(200).json({

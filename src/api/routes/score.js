@@ -81,7 +81,7 @@ router.get("/", (req, res, next) => {
 router.get("/:scoreId", (req, res, next) => {
     const id = req.params.scoreId;
     console.log("Getting workout score with id " + id);
-    
+
     var token = req.headers.authorization;
     if (!token) {
         res.status(401).json({
@@ -102,7 +102,7 @@ router.get("/:scoreId", (req, res, next) => {
                     res.status(400).json({
                         type: "ERROR",
                         message: "scoreId is invalid"
-                    }); 
+                    });
                 } else {
                     // open database
                     var db = new sqlite3.Database(Server.database, (err) => {
@@ -153,7 +153,7 @@ router.post("/", (req, res, next) => {
     var rx = req.body.rx;
     var note = utils.stripString(req.body.note);
     var datetime = req.body.datetime;
-    
+
     console.log("Saving workout score");
 
     var token = req.headers.authorization;
@@ -181,7 +181,7 @@ router.post("/", (req, res, next) => {
                  *       Remove alle multiple new lines and spaces from description
                  */
                 let valid = (workoutId == null || !utils.numRegex(workoutId) ||
-                            note == null || !utils.simpleRegex(note) || 
+                            note == null || !utils.simpleRegex(note) ||
                             datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
                             score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
                 if(valid) {
@@ -204,11 +204,29 @@ router.post("/", (req, res, next) => {
                         if (err) {
                             return console.log(err.message);
                         }
-                        console.log("Inserted new workout score");
-                        res.status(201).json({
-                            type: "SUCCESS",
-                            message: "Workout score was created",
-                            result: req.body
+
+                        db.get("SELECT last_insert_rowid() from table_workout_score LIMIT 1", [], (err, row) => {
+                            if (err) {
+                                return console.error(err.message);
+                            }
+                            if(row != null) {
+                                let id = row["last_insert_rowid()"];
+                                console.log("Inserted new workout score with id " + id);
+                                db.get("SELECT id, userId, workoutId, score, rx, datetime, note FROM table_workout_score WHERE id = ? AND (userId = 1 OR userId = ?)", [id, decoded.sub], (err, row) => {
+                                    if (err) {
+                                        return console.error(err.message);
+                                    }
+                                    if(row != null) {
+                                        res.status(200).end(JSON.stringify(row));
+                                    } else {
+                                        console.log("No workout score found");
+                                        res.status(204).json({
+                                            type: "INFO",
+                                            message: "No workout score found"
+                                        });
+                                    }
+                                });
+                            }
                         });
                     });
 
@@ -239,7 +257,7 @@ router.post("/:scoreId", (req, res, next) => {
     var rx = req.body.rx;
     var note = utils.stripString(req.body.note);
     var datetime = req.body.datetime;
-    
+
     console.log("Updating workout score");
 
     var token = req.headers.authorization;
@@ -267,7 +285,7 @@ router.post("/:scoreId", (req, res, next) => {
                  *       Remove alle multiple new lines and spaces from description
                  */
                 let valid = (workoutId == null || !utils.numRegex(workoutId) ||
-                            note == null || !utils.simpleRegex(note) || 
+                            note == null || !utils.simpleRegex(note) ||
                             datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
                             score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
                 if(valid) {
