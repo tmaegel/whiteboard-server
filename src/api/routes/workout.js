@@ -280,7 +280,7 @@ router.post("/", (req, res, next) => {
                                         return console.error(err.message);
                                     }
                                     if(row != null) {
-                                        res.status(200).end(JSON.stringify(row));
+                                        res.status(201).end(JSON.stringify(row));
                                     } else {
                                         console.log("No workout found");
                                         res.status(204).json({
