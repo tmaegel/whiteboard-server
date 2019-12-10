@@ -14,6 +14,14 @@ RES=$(get_res "$RES")
 echo "$RES"
 if [ "$RET" == "201" ]; then echo "> OK" ; else echo "> ERROR: $RET" ; exit 1 ; fi
 
+# score_note_valid.json
+echo -e "\n# CREATE score with valid note"
+RES=$(POST_request "score" "score/score_note_valid.json")
+RET=$(get_ret "$RES")
+RES=$(get_res "$RES")
+echo "$RES"
+if [ "$RET" == "201" ]; then echo "> OK" ; else echo "> ERROR: $RET" ; exit 1 ; fi
+
 # score_note_invalid.json
 echo -e "\n# CREATE score with invalid note"
 RES=$(POST_request "score" "score/score_note_invalid.json")
