@@ -2,43 +2,57 @@ const https = require('https');
 const fs = require('fs');
 const sqlite3 = require("sqlite3").verbose();
 
+const app = require("./app");
+
 // Exporting objects
 var Database = require("./sqlite");
 
-// Initialize database
-let initDatabase;
-let port, database, certFile, KeyFile;
-
-// Check this first
-try {
-    stats = fs.lstatSync("./config.json");
-} catch(e) {
-    console.log("ERROR: Failed to access to file 'config.json'.");
-    process.exit(1);
-}
-
-const app = require("./app");
+let initDatabase,
+    config,
+    port,
+    database,
+    certFile,
+    keyFile;
 
 function print_help() {
     console.log("\nRequired arguments");
     console.log("\t--help\t\t\t\t\t\tShow this help.");
     console.log("\t--port\t\t<port>\t\t\tPort to listen on the host.");
     console.log("\t--database\t<db_file>\t\tPort to listen on the host.");
-    console.log("\t--cert\t\t<cert_file>\t\tTells the script to use the speci Check fied server certificate file (SSL).");
+    console.log("\t--cert\t\t<cert_file>\t\tTells the script to use the specified server certificate file (SSL).");
     console.log("\t--key\t\t<key_file>\t\tTells the script to use the specified server key file (SSL).");
-    console.log("\nThis script expects a configuration file called 'config.json'.");
-    console.log("The configuration file (JSON) containing the secret (e.g. {\"secret\":\"yoursecret\"}) to creating the JWT.");
+    console.log("\t--config\t<config>\t\tConfig file. The configuration file (JSON) containing the secret (e.g. {\"secret\":\"yoursecret\"}) to creating the JWT.");
     console.log("\nExamples:\n");
     console.log("Initialize the whiteboard SQlite database and run the REST API.");
-    console.log("\tnode server.js --init --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
+    console.log("\tnode server.js --init --config <config> --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
     console.log("Run the whiteboard REST API.");
-    console.log("\tnode server.js --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
+    console.log("\tnode server.js --config <config> --port <port> --database <db_file> --cert <cert_file> --key <key_file>\n")
     process.exit(1);
 }
 
 // Checks to see if the --help argument is present
 if(process.argv.indexOf('--help') > -1) {
     print_help();
+}
+
+// Also checks for --config and if we have a value
+const configIndex = process.argv.indexOf('--config');
+if(configIndex > -1) {
+    // Grabs the value after --databae
+    config = process.argv[configIndex + 1];
+    if(!config) {
+        console.log("ERROR: Missing argument '--config'");
+        process.exit(1);
+    }
+} else {
+    console.log("ERROR: Missing option '--config'");
+    process.exit(1);
+}
+try {
+    stats = fs.lstatSync(config);
+} catch(e) {
+    console.log("ERROR: Failed to access to config file.");
+    process.exit(1);
 }
 
 // Checks to see if the --init argument is present
@@ -62,8 +76,7 @@ if(databaseIndex > -1) {
     console.log("ERROR: Missing option '--database'");
     process.exit(1);
 }
-
-// Check existance of database file when init_db = false only
+// Check existance of database file when initDatabase = false only
 if(!initDatabase) {
     try {
         stats = fs.lstatSync(database);
