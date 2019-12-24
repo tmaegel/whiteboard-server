@@ -5,35 +5,44 @@
  */
 
 /**
+ * Checks if value is empty or contains spaces only
  * With the /m modifier, ^ and $ match the beginning and end of any line within the string.
  * Without the /m modifier, ^ and $ just match the beginning and end of the string
  */
+export function empty(value) {
+    if(value === undefined) {
+        return false;
+    }
 
-/**
- * Checks if value empty or contains spaces only
- */
-function empty(value) {
-    let regExp = /^ *$/g
+    let regExp = /^[\n\t ]*$/g;
 
-    return regExp.test(value)
+    return regExp.test(value);
 }
 
 /**
  * Simple regex check
  * [a-zA-Z_0-9ÄÜÖäüöß .,:&'-()/]
  */
-function simpleRegex(value) {
-    let regExp = /^[\wÄÜÖäüöß .,:&'\-\(\)\/]*$/gm;
+export function simpleRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
 
-    return regExp.test(value)
+    let regExp = /^[\wÄÜÖäüöß .,:&'"\-()/]*$/gm;
+
+    return regExp.test(value);
 }
 
 /**
  * Extended regex check
  * [a-zA-Z_0-9ÄÜÖäüöß .,:;"#!?&@_-()%/*+]
  */
-function extendedRegex(value) {
-    let regExp = /^[\w\sÄÜÖäüöß.,:;"'!?&@\_\-\(\)\%\/\*+]*$/g;
+export function extendedRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
+
+    let regExp = /^[\w\sÄÜÖäüöß.,:;"'!?&@_\-()%/*+]*$/g;
 
     return regExp.test(value);
 }
@@ -42,28 +51,26 @@ function extendedRegex(value) {
  * Number regex check
  * e.g. 1234
  */
-function numRegex(value) {
+export function numRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
+
     let regExp = /^\d+$/gm;
 
     return regExp.test(value);
 }
 
 /**
- * Word regex check
- * [a-zA-Z_0-9]
- */
-function wordRegex(value) {
-    let regExp = /^[\w]*$/gm;
-
-    return regExp.test(value)
-}
-
-/**
- * Datetime regex check
+ * Datetime regex check (dd.mm.YYY HH:MM)
  * e.g. 17.5.2019 19:21
  */
-function datetimeRegex(value) {
-    let regExp = /^\d{1,2}.\d{1,2}.\d{4}\ \d{1,2}([:]\d{1,2}){1,2}$/gm;
+export function datetimeRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
+
+    let regExp = /^\d{1,2}.\d{1,2}.\d{4} \d{1,2}([:]\d{1,2}){1,2}$/gm;
 
     return regExp.test(value);
 }
@@ -72,7 +79,11 @@ function datetimeRegex(value) {
  * Timestamp regex check
  * e.g 19:21:23
  */
-function timestampRegex(value) {
+export function timestampRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
+
     let regExp = /^\d{1,2}(:\d{1,2}){1,2}$/gm;
 
     return regExp.test(value);
@@ -82,7 +93,11 @@ function timestampRegex(value) {
  * Remove leading and tailing spaces/new lines/tabs
  * Strip multiple spaces, new lines, replace tabs, ...
  */
-function stripString(value) {
+export function stripString(value) {
+    if(value === undefined) {
+        return false;
+    }
+
     let string = value;
     let regExpLeadingTailingSpaces = /^\s+|\s+$/g;
     string = string.replace(regExpLeadingTailingSpaces, "");
