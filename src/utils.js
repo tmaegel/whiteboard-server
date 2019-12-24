@@ -9,7 +9,7 @@
  * With the /m modifier, ^ and $ match the beginning and end of any line within the string.
  * Without the /m modifier, ^ and $ just match the beginning and end of the string
  */
-export function empty(value) {
+function empty(value) {
     if(value === undefined) {
         return false;
     }
@@ -23,7 +23,7 @@ export function empty(value) {
  * Simple regex check
  * [a-zA-Z_0-9ÄÜÖäüöß .,:&'-()/]
  */
-export function simpleRegex(value) {
+function simpleRegex(value) {
     if(value === undefined) {
         return false;
     }
@@ -37,7 +37,7 @@ export function simpleRegex(value) {
  * Extended regex check
  * [a-zA-Z_0-9ÄÜÖäüöß .,:;"#!?&@_-()%/*+]
  */
-export function extendedRegex(value) {
+function extendedRegex(value) {
     if(value === undefined) {
         return false;
     }
@@ -51,7 +51,7 @@ export function extendedRegex(value) {
  * Number regex check
  * e.g. 1234
  */
-export function numRegex(value) {
+function numRegex(value) {
     if(value === undefined) {
         return false;
     }
@@ -62,10 +62,24 @@ export function numRegex(value) {
 }
 
 /**
+ * Word regex check
+ * [a-zA-Z_0-9]
+ */
+function wordRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
+
+    let regExp = /^[\w]*$/gm;
+
+    return regExp.test(value)
+}
+
+/**
  * Datetime regex check (dd.mm.YYY HH:MM)
  * e.g. 17.5.2019 19:21
  */
-export function datetimeRegex(value) {
+function datetimeRegex(value) {
     if(value === undefined) {
         return false;
     }
@@ -79,7 +93,7 @@ export function datetimeRegex(value) {
  * Timestamp regex check
  * e.g 19:21:23
  */
-export function timestampRegex(value) {
+function timestampRegex(value) {
     if(value === undefined) {
         return false;
     }
@@ -93,7 +107,7 @@ export function timestampRegex(value) {
  * Remove leading and tailing spaces/new lines/tabs
  * Strip multiple spaces, new lines, replace tabs, ...
  */
-export function stripString(value) {
+function stripString(value) {
     if(value === undefined) {
         return false;
     }
