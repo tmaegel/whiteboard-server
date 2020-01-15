@@ -29,29 +29,28 @@ var User = require('../../obj/User');
  */
 router.get("/validate", (req, res, next) => {
     var token = req.headers.authorization;
-
-    console.log("Validate logged in user");
     if (!token) {
+        console.log("ERROR: GET /authentication/validate :: No token provided");
         res.status(401).json({
             type: "ERROR",
             message: "No token provided"
         });
+    } else {
+        jwt.verify(token, config.secret, function(err, decoded) {
+            if (err) {
+                console.log("ERROR: GET /authentication/validate :: Failed to authenticate token");
+                res.status(401).json({
+                    type: "ERROR",
+                    message: "Failed to authenticate token"
+                });
+            }
+            console.log("OK: GET /authentication/validate");
+            res.status(200).send(decoded);
+        });
     }
-
-    // @todo read secret from database
-    jwt.verify(token, config.secret, function(err, decoded) {
-        if (err) {
-            res.status(401).json({
-                type: "ERROR",
-                message: "Failed to authenticate token"
-            });
-        }
-        res.status(200).send(decoded);
-    });
 });
 
-
-/** 
+/**
  * POST requests
  * Login the user
  * @return 200 OK
@@ -64,38 +63,33 @@ router.post("/login", (req, res, next) => {
     var name = req.body.name;
     var password = req.body.password;
 
-    var saltRounds = 10
-
-    console.log("Login the user " + name);
-    let valid = (name == null || utils.empty(name) || !utils.wordRegex(name) ||
-                 password == null || utils.empty(password) || !utils.wordRegex(password)) // @todo no wordRegex check for password 
+    let valid = (name == null || utils.empty(name) ||
+                 password == null || utils.empty(password))
     if(valid) {
-        console.log("ERROR: POST /authentication/login/ :: username or password are null or contains forbidden characters");
+        console.log("ERROR: POST /authentication/login :: username or password are null or contains forbidden characters");
         res.status(400).json({
             type: "ERROR",
             message: "username or password are null or contains forbidden characters"
         });
-    } else { 
+    } else {
         // open database
         var db = new sqlite3.Database(Server.database, (err) => {
             if (err) {
-                console.log("ERROR: POST /authentication/login/ :: Connecting database.");
+                console.log("ERROR: POST /authentication/login :: Connecting database.");
                 return console.error(err.message);
             }
         });
-
         db.get("SELECT id, name, password FROM table_users WHERE name = ? LIMIT 1", [name], (err, row) => {
             if (err) {
                 throw err;
             }
-
             if(row != null && Object.keys(row).length === 3) {
                 // compare given password with password in database
                 bcrypt.compare(password, row.password, function(err, isMatch) {
                     if (err) {
                         throw err
                     } else if (!isMatch) {
-                        console.log("ERROR: POST /authentication/login/ :: password is invalid");
+                        console.log("ERROR: POST /authentication/login :: password is invalid");
                         res.status(403).json({
                             type: "ERROR",
                             message: "password is invalid"
@@ -106,7 +100,7 @@ router.post("/login", (req, res, next) => {
                         var token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, config.secret, {
                             expiresIn: 86400 // expires in 24 hours
                         });
-
+                        console.log("OK: GET /authentication/login");
                         res.status(200).json({
                             type: "SUCCESS",
                             message : "User login successfully",
@@ -115,18 +109,17 @@ router.post("/login", (req, res, next) => {
 
                     }
                 })
-            } else { 
-                console.log("ERROR: POST /authentication/login/ :: username is invalid");
+            } else {
+                console.log("ERROR: POST /authentication/login :: username is invalid");
                 res.status(403).json({
                     type: "ERROR",
                     message: "username is invalid"
                 });
             }
- 
             // close database
             db.close((err) => {
                 if (err) {
-                    console.log("ERROR: POST /authentication/login/ :: Closing database");
+                    console.log("ERROR: POST /authentication/login :: Closing database");
                     return console.error(err.message);
                 }
             });

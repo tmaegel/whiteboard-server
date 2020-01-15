@@ -19,17 +19,16 @@ var utils = require("../../utils");
 var Database = require("../../sqlite");
 var Server = require('../../server');
 
-/** 
+/**
  * GET requests
  * Get all workouts scores
  * @return 200 OK
  * @return 401 Unauthorized
  */
 router.get("/", (req, res, next) => {
-    console.log("Getting all movements");
-    
     var token = req.headers.authorization;
     if (!token) {
+        console.log("ERROR: GET /movement :: No token provided");
         res.status(401).json({
             type: "ERROR",
             message: "No token provided"
@@ -38,6 +37,7 @@ router.get("/", (req, res, next) => {
         // Verfiy token
         jwt.verify(token, config.secret, function(err, decoded) {
             if (err) {
+                console.log("ERROR: GET /movement :: Failed to authenticate token");
                 res.status(401).json({
                     type: "ERROR",
                     message: "Failed to authenticate token"
@@ -46,21 +46,20 @@ router.get("/", (req, res, next) => {
                 // open database
                 var db = new sqlite3.Database(Server.database, (err) => {
                     if (err) {
-                        console.log("ERROR: GET /movement/ :: Connecting database.");
+                        console.log("ERROR: GET /movement :: Connecting database.");
                         return console.error(err.message);
                     }
                 });
-
                 db.all("SELECT id, movement, equipmentIds FROM table_movements ORDER BY id", [], (err, rows) => {
                     if (err) {
                         throw err;
                     }
+                    console.log("OK: GET /movement");
                     res.status(200).end(JSON.stringify(rows));
-
                     // close database
                     db.close((err) => {
                         if (err) {
-                            console.log("ERROR: GET /movement/ :: Closing database");
+                            console.log("ERROR: GET /movement :: Closing database");
                             return console.error(err.message);
                         }
                     });
