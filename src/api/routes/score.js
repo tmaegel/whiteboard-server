@@ -26,10 +26,9 @@ var Server = require('../../server');
  * @return 401 Unauthorized
  */
 router.get("/", (req, res, next) => {
-    console.log("Getting all workout scores");
-
     var token = req.headers.authorization;
     if (!token) {
+        console.log("ERROR: GET /score :: No token provided");
         res.status(401).json({
             type: "ERROR",
             message: "No token provided"
@@ -38,6 +37,7 @@ router.get("/", (req, res, next) => {
         // Verfiy token
         jwt.verify(token, config.secret, function(err, decoded) {
             if (err) {
+                console.log("ERROR: GET /score :: Failed to authenticate token");
                 res.status(401).json({
                     type: "ERROR",
                     message: "Failed to authenticate token"
@@ -46,21 +46,20 @@ router.get("/", (req, res, next) => {
                 // open database
                 var db = new sqlite3.Database(Server.database, (err) => {
                     if (err) {
-                        console.log("ERROR: GET /score/ :: Connecting database.");
+                        console.log("ERROR: GET /score :: Connecting database.");
                         return console.error(err.message);
                     }
                 });
-
-                db.all("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE userId = ? ORDER BY id", [decoded.sub], (err, rows) => {
+                db.all("SELECT id, userId, workoutId, score, rx, datetime, note FROM table_workout_score WHERE userId = ? ORDER BY id", [decoded.sub], (err, rows) => {
                     if (err) {
                         throw err;
                     }
+                    console.log("OK: GET /score");
                     res.status(200).end(JSON.stringify(rows));
-
                     // close database
                     db.close((err) => {
                         if (err) {
-                            console.log("ERROR: GET /score/ :: Closing database");
+                            console.log("ERROR: GET /score :: Closing database");
                             return console.error(err.message);
                         }
                     });
@@ -80,10 +79,9 @@ router.get("/", (req, res, next) => {
  */
 router.get("/:scoreId", (req, res, next) => {
     const id = req.params.scoreId;
-    console.log("Getting workout score with id " + id);
-
     var token = req.headers.authorization;
     if (!token) {
+        console.log("ERROR: GET /score/:scoreId :: No token provided");
         res.status(401).json({
             type: "ERROR",
             message: "No token provided"
@@ -92,18 +90,20 @@ router.get("/:scoreId", (req, res, next) => {
         // Verfiy token
         jwt.verify(token, config.secret, function(err, decoded) {
             if (err) {
+                console.log("ERROR: GET /score/:scoreId :: Failed to authenticate token");
                 res.status(401).json({
                     type: "ERROR",
                     message: "Failed to authenticate token"
                 });
             } else {
-                if(id == null || !utils.numRegex(id)) {
+                if(id === null || id === undefined || !utils.numRegex(id)) {
                     console.log("ERROR: /score/:scoreId :: scoreId is invalid");
                     res.status(400).json({
                         type: "ERROR",
                         message: "scoreId is invalid"
                     });
                 } else {
+                    console.log("INFO: GET /score/:scoreId :: scoreId is " + id);
                     // open database
                     var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
@@ -111,21 +111,17 @@ router.get("/:scoreId", (req, res, next) => {
                             return console.error(err.message);
                         }
                     });
-
-                    db.get("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE id = ? AND userId = ?", [id, decoded.sub], (err, row) => {
+                    db.get("SELECT id, userId, workoutId, score, rx, datetime, note FROM table_workout_score WHERE id = ? AND userId = ?", [id, decoded.sub], (err, row) => {
                         if (err) {
                             return console.error(err.message);
                         }
                         if(row != null) {
+                            console.log("OK: GET /score/:scoreId");
                             res.status(200).end(JSON.stringify(row));
                         } else {
-                            console.log("No data set found with the id ${id}");
-                            res.status(204).json({
-                                type: "INFO",
-                                message: "No workout score found"
-                            });
+                            console.log("OK: GET /score/:scoreId :: No score found with the id " + id);
+                            res.sendStatus(204);
                         }
-
                         // close database
                         db.close((err) => {
                             if (err) {
@@ -153,11 +149,9 @@ router.post("/", (req, res, next) => {
     var rx = req.body.rx;
     var note = utils.stripString(req.body.note);
     var datetime = req.body.datetime;
-
-    console.log("Saving workout score");
-
     var token = req.headers.authorization;
     if (!token) {
+        console.log("ERROR: POST /score :: No token provided");
         res.status(401).json({
             type: "ERROR",
             message: "No token provided"
@@ -166,6 +160,7 @@ router.post("/", (req, res, next) => {
         // Verfiy token
         jwt.verify(token, config.secret, function(err, decoded) {
             if (err) {
+                console.log("ERROR: POST /score :: Failed to authenticate token");
                 res.status(401).json({
                     type: "ERROR",
                     message: "Failed to authenticate token"
@@ -180,12 +175,13 @@ router.post("/", (req, res, next) => {
                  * @todo Remove all leading/ending space from description
                  *       Remove alle multiple new lines and spaces from description
                  */
-                let valid = (workoutId == null || !utils.numRegex(workoutId) ||
-                            note == null || !utils.simpleRegex(note) ||
-                            datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
-                            score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
+                let valid = (workoutId === null || workoutId === undefined || !utils.numRegex(workoutId) ||
+                            note === null || note === undefined || !utils.simpleRegex(note) ||
+                            rx === null || rx === undefined || (rx != 1 && rx != 0) || !utils.numRegex(rx) ||
+                            datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
+                            score === null || score === undefined || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
                 if(valid) {
-                    console.log("ERROR: POST /score/ :: workoutId, score, note or datetime are invalid");
+                    console.log("ERROR: POST /score :: workoutId, score, note or datetime are invalid");
                     res.status(400).json({
                         type: "ERROR",
                         message: "workoutId, score, note or datetime are invalid"
@@ -194,42 +190,40 @@ router.post("/", (req, res, next) => {
                     // open database
                     var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
-                            console.log("ERROR: POST /score/ :: Connecting database.");
+                            console.log("ERROR: POST /score :: Connecting database.");
                             return console.error(err.message);
                         }
                     });
-
                     // insert row
                     db.run("INSERT INTO table_workout_score(userId, workoutId, score, rx, datetime, note) VALUES (?, ?, ?, ?, ?, ?)", [decoded.sub, workoutId, score, rx, datetime, note], function(err) {
                         if (err) {
                             return console.log(err.message);
                         }
-
                         db.get("SELECT last_insert_rowid() from table_workout_score LIMIT 1", [], (err, row) => {
                             if (err) {
                                 return console.error(err.message);
                             }
                             if(row != null) {
                                 let id = row["last_insert_rowid()"];
-                                console.log("Inserted new workout score with id " + id);
+                                console.log("INFO: POST /score :: Inserting score with id " + id);
                                 db.get("SELECT id, userId, workoutId, score, rx, datetime, note FROM table_workout_score WHERE id = ? AND (userId = 1 OR userId = ?)", [id, decoded.sub], (err, row) => {
                                     if (err) {
                                         return console.error(err.message);
                                     }
                                     if(row != null) {
+                                        console.log("OK: POST /score :: Inserted score with id " + id);
                                         res.status(201).end(JSON.stringify(row));
                                     } else {
-                                        console.log("No workout score found");
-                                        res.status(204).json({
-                                            type: "INFO",
-                                            message: "No workout score found"
+                                        console.log("ERROR: POST /score :: No score found with the id " + id);
+                                        res.status(500).json({
+                                            type: "ERROR",
+                                            message: "No score found with the id " + id
                                         });
                                     }
                                 });
                             }
                         });
                     });
-
                     // close database
                     db.close((err) => {
                         if (err) {
@@ -257,11 +251,9 @@ router.post("/:scoreId", (req, res, next) => {
     var rx = req.body.rx;
     var note = utils.stripString(req.body.note);
     var datetime = req.body.datetime;
-
-    console.log("Updating workout score");
-
     var token = req.headers.authorization;
     if (!token) {
+        console.log("ERROR: POST /score/:scoreId :: No token provided");
         res.status(401).json({
             type: "ERROR",
             message: "No token provided"
@@ -270,6 +262,7 @@ router.post("/:scoreId", (req, res, next) => {
         // Verfiy token
         jwt.verify(token, config.secret, function(err, decoded) {
             if (err) {
+                console.log("ERROR: POST /score/:scoreId :: Failed to authenticate token");
                 res.status(401).json({
                     type: "ERROR",
                     message: "Failed to authenticate token"
@@ -284,10 +277,12 @@ router.post("/:scoreId", (req, res, next) => {
                  * @todo Remove all leading/ending space from description
                  *       Remove alle multiple new lines and spaces from description
                  */
-                let valid = (workoutId == null || !utils.numRegex(workoutId) ||
-                            note == null || !utils.simpleRegex(note) ||
-                            datetime == null || utils.empty(datetime) || !utils.numRegex(datetime) ||
-                            score == null || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
+                let valid = (id === null || id === undefined || !utils.numRegex(id) ||
+                            workoutId === null || workoutId === undefined || !utils.numRegex(workoutId) ||
+                            note === null || note === undefined || !utils.simpleRegex(note) ||
+                            rx === null || rx === undefined || (rx != 1 && rx != 0) || !utils.numRegex(rx) ||
+                            datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
+                            score === null || score === undefined || utils.empty(score) || (!utils.numRegex(score) && !utils.timestampRegex(score)));
                 if(valid) {
                     console.log("ERROR: POST /score/:scoreId :: scoreId, workoutId, score, note or datetime are invalid");
                     res.status(400).json({
@@ -295,6 +290,7 @@ router.post("/:scoreId", (req, res, next) => {
                         message: "scoreId, workoutId, score, note or datetime are invalid"
                     });
                 } else {
+                    console.log("INFO: POST /score/:scoreId :: Updating score with id " + id);
                     // open database
                     var db = new sqlite3.Database(Server.database, (err) => {
                         if (err) {
@@ -302,20 +298,27 @@ router.post("/:scoreId", (req, res, next) => {
                             return console.error(err.message);
                         }
                     });
-
                     // insert row
-                    db.run("UPDATE table_workout_score SET score = ?, rx = ?, datetime = ?, note = ? WHERE id = ? and userId = ?", [score, rx,  datetime, note, id, decoded.sub], function(err) {
+                    db.run("UPDATE table_workout_score SET workoutId = ?, score = ?, rx = ?, datetime = ?, note = ? WHERE id = ? and userId = ?", [workoutId, score, rx, datetime, note, id, decoded.sub], function(err, row) {
                         if (err) {
                             return console.log(err.message);
                         }
-                        console.log("Updated workout score with id " + id);
-                        res.status(200).json({
-                            type: "SUCCESS",
-                            message: "Workout score was updated",
-                            result: req.body
-                        });
+                        if(this.changes >  0) {
+                            console.log("OK: POST /score/:scoreId :: Updated score with id " + id);
+                            res.status(200).json({
+                                id: parseInt(id),
+                                userId: decoded.sub,
+                                workoutId: parseInt(workoutId),
+                                score: score,
+                                rx: rx,
+                                note: note,
+                                datetime: parseInt(datetime)
+                            });
+                        } else {
+                            console.log("OK: POST /score/:scoreId :: No score found with the id " + id);
+                            res.sendStatus(204);
+                        }
                     });
-
                     // close database
                     db.close((err) => {
                         if (err) {

@@ -84,7 +84,7 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return the status (204 No Content) if no workout was found with id', function(done) {
+        it('it should return the status (204 No Content) when no workout was found with id', function(done) {
             chai.request(server)
             .get('/workout/9999')
             .set('Authorization', token)
@@ -202,7 +202,55 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return an error (400 Bad Request) when the name is null', function(done) {
+        it('it should return an error (400 Bad Request) when the name is undefined/null', function(done) {
+            let invalidWorkout = {
+                description: "Description A",
+                datetime: "1234567890"
+            };
+            chai.request(server)
+            .post('/workout')
+            .set('Authorization', token)
+            .send(invalidWorkout)
+            .end(function(err, res) {
+                expect(res).to.have.status(400);
+                res.body.should.have.property('type').eql('ERROR');
+                res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when the description is undefined/null', function(done) {
+            let invalidWorkout = {
+                name: "Name A",
+                datetime: "1234567890"
+            };
+            chai.request(server)
+            .post('/workout')
+            .set('Authorization', token)
+            .send(invalidWorkout)
+            .end(function(err, res) {
+                expect(res).to.have.status(400);
+                res.body.should.have.property('type').eql('ERROR');
+                res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when the datetime is undefined/null', function(done) {
+            let invalidWorkout = {
+                name: "Name A",
+                description: "Description A"
+            };
+            chai.request(server)
+            .post('/workout')
+            .set('Authorization', token)
+            .send(invalidWorkout)
+            .end(function(err, res) {
+                expect(res).to.have.status(400);
+                res.body.should.have.property('type').eql('ERROR');
+                res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when the name is empty', function(done) {
             let invalidWorkout = {
                 name: "",
                 description: "Description A",
@@ -219,7 +267,7 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return an error (400 Bad Request) when the description is null', function(done) {
+        it('it should return an error (400 Bad Request) when the description is empty', function(done) {
             let invalidWorkout = {
                 name: "Name A",
                 description: "",
@@ -236,7 +284,7 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return an error (400 Bad Request) when the datetime is null', function(done) {
+        it('it should return an error (400 Bad Request) when the datetime is empty', function(done) {
             let invalidWorkout = {
                 name: "Name A",
                 description: "Description A",
@@ -367,7 +415,55 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return an error (400 Bad Request) when the name is null', function(done) {
+        it('it should return an error (400 Bad Request) when the name is undefined/null', function(done) {
+            let invalidWorkout = {
+                description: "Description A",
+                datetime: "1234567890"
+            };
+            chai.request(server)
+            .post('/workout/1')
+            .set('Authorization', token)
+            .send(invalidWorkout)
+            .end(function(err, res) {
+                expect(res).to.have.status(400);
+                res.body.should.have.property('type').eql('ERROR');
+                res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when the description is undefined/null', function(done) {
+            let invalidWorkout = {
+                name: "Name A",
+                datetime: "1234567890"
+            };
+            chai.request(server)
+            .post('/workout/1')
+            .set('Authorization', token)
+            .send(invalidWorkout)
+            .end(function(err, res) {
+                expect(res).to.have.status(400);
+                res.body.should.have.property('type').eql('ERROR');
+                res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when the datetime is undefined/null', function(done) {
+            let invalidWorkout = {
+                name: "Name A",
+                description: "Description A"
+            };
+            chai.request(server)
+            .post('/workout/1')
+            .set('Authorization', token)
+            .send(invalidWorkout)
+            .end(function(err, res) {
+                expect(res).to.have.status(400);
+                res.body.should.have.property('type').eql('ERROR');
+                res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when the name is empty', function(done) {
             let invalidWorkout = {
                 name: "",
                 description: "Description A",
@@ -384,7 +480,7 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return an error (400 Bad Request) when the description is null', function(done) {
+        it('it should return an error (400 Bad Request) when the description is empty', function(done) {
             let invalidWorkout = {
                 name: "Name A",
                 description: "",
@@ -401,7 +497,7 @@ describe('workout.js', () => {
                 done();
             });
         });
-        it('it should return an error (400 Bad Request) when the datetime is null', function(done) {
+        it('it should return an error (400 Bad Request) when the datetime is empty', function(done) {
             let invalidWorkout = {
                 name: "Name A",
                 description: "Description A",
@@ -432,6 +528,21 @@ describe('workout.js', () => {
                 expect(res).to.have.status(400);
                 res.body.should.have.property('type').eql('ERROR');
                 res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                done();
+            });
+        });
+        it('it should return an error (400 Bad Request) when no workout was found with id', function(done) {
+            let valid = {
+                name: "Name A",
+                description: "Description A",
+                datetime: "1234567890"
+            };
+            chai.request(server)
+            .post('/workout/999999')
+            .set('Authorization', token)
+            .send(valid)
+            .end(function(err, res) {
+                expect(res).to.have.status(204);
                 done();
             });
         });

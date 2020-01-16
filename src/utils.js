@@ -11,7 +11,7 @@
  */
 function empty(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^[\n\t ]*$/g;
@@ -25,7 +25,7 @@ function empty(value) {
  */
 function simpleRegex(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^[\wÄÜÖäüöß .,:&'"\-()/]*$/gm;
@@ -39,7 +39,7 @@ function simpleRegex(value) {
  */
 function extendedRegex(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^[\w\sÄÜÖäüöß.,:;"'!?&@_\-()%/*+]*$/g;
@@ -53,7 +53,7 @@ function extendedRegex(value) {
  */
 function numRegex(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^\d+$/gm;
@@ -67,7 +67,7 @@ function numRegex(value) {
  */
 function wordRegex(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^[\w]*$/gm;
@@ -81,7 +81,7 @@ function wordRegex(value) {
  */
 function datetimeRegex(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^\d{1,2}.\d{1,2}.\d{4} \d{1,2}([:]\d{1,2}){1,2}$/gm;
@@ -95,7 +95,7 @@ function datetimeRegex(value) {
  */
 function timestampRegex(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let regExp = /^\d{1,2}(:\d{1,2}){1,2}$/gm;
@@ -109,7 +109,7 @@ function timestampRegex(value) {
  */
 function stripString(value) {
     if(value === undefined) {
-        return false;
+        return null;
     }
 
     let string = value;
