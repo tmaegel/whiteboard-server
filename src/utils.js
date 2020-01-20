@@ -10,8 +10,8 @@
  * Without the /m modifier, ^ and $ just match the beginning and end of the string
  */
 function empty(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^[\n\t ]*$/g;
@@ -24,8 +24,8 @@ function empty(value) {
  * [a-zA-Z_0-9ÄÜÖäüöß .,:&'-()/]
  */
 function simpleRegex(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^[\wÄÜÖäüöß .,:&'"\-()/]*$/gm;
@@ -38,8 +38,8 @@ function simpleRegex(value) {
  * [a-zA-Z_0-9ÄÜÖäüöß .,:;"#!?&@_-()%/*+]
  */
 function extendedRegex(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^[\w\sÄÜÖäüöß.,:;"'!?&@_\-()%/*+]*$/g;
@@ -52,8 +52,8 @@ function extendedRegex(value) {
  * e.g. 1234
  */
 function numRegex(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^\d+$/gm;
@@ -66,8 +66,8 @@ function numRegex(value) {
  * [a-zA-Z_0-9]
  */
 function wordRegex(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^[\w]*$/gm;
@@ -80,8 +80,8 @@ function wordRegex(value) {
  * e.g. 17.5.2019 19:21
  */
 function datetimeRegex(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^\d{1,2}.\d{1,2}.\d{4} \d{1,2}([:]\d{1,2}){1,2}$/gm;
@@ -94,8 +94,8 @@ function datetimeRegex(value) {
  * e.g 19:21:23
  */
 function timestampRegex(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let regExp = /^\d{1,2}(:\d{1,2}){1,2}$/gm;
@@ -108,8 +108,8 @@ function timestampRegex(value) {
  * Strip multiple spaces, new lines, replace tabs, ...
  */
 function stripString(value) {
-    if(value === undefined) {
-        return null;
+    if(value === undefined || value === null) {
+        return undefined;
     }
 
     let string = value;

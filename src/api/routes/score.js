@@ -243,6 +243,7 @@ router.post("/", (req, res, next) => {
  * @return 200 OK
  * @return 400 Bad Request
  * @return 401 Unauthorized
+ * @return 404 Not Found
  */
 router.post("/:scoreId", (req, res, next) => {
     var id = req.params.scoreId;
@@ -315,8 +316,11 @@ router.post("/:scoreId", (req, res, next) => {
                                 datetime: parseInt(datetime)
                             });
                         } else {
-                            console.log("OK: POST /score/:scoreId :: No score found with the id " + id);
-                            res.sendStatus(204);
+                            console.log("ERROR: POST /score/:scoreId :: No score found with the id " + id);
+                            res.status(404).json({
+                                type: "ERROR",
+                                message: "No score found with the id"
+                            });
                         }
                     });
                     // close database

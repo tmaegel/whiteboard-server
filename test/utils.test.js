@@ -22,7 +22,7 @@ describe('regex.js', function() {
             assert.equal(utils.empty("az123"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.empty(), null);
+            assert.equal(utils.empty(), undefined);
         });
     });
     describe('#simpleRegex()', function() {
@@ -42,7 +42,7 @@ describe('regex.js', function() {
             assert.equal(utils.simpleRegex("@%"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.simpleRegex(), null);
+            assert.equal(utils.simpleRegex(), undefined);
         });
     });
     describe('#extendedRegex()', function() {
@@ -62,7 +62,7 @@ describe('regex.js', function() {
             assert.equal(utils.extendedRegex("$§"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.extendedRegex(), null);
+            assert.equal(utils.extendedRegex(), undefined);
         });
     });
     describe('#numRegex()', function() {
@@ -76,7 +76,7 @@ describe('regex.js', function() {
             assert.equal(utils.numRegex("abc"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.numRegex(), null);
+            assert.equal(utils.numRegex(), undefined);
         });
     });
     describe('#wordRegex()', function() {
@@ -90,7 +90,7 @@ describe('regex.js', function() {
             assert.equal(utils.wordRegex("%/-"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.wordRegex(), null);
+            assert.equal(utils.wordRegex(), undefined);
         });
     });
     describe('#datetimeRegex()', function() {
@@ -107,7 +107,7 @@ describe('regex.js', function() {
             assert.equal(utils.datetimeRegex("9.5.19 19:21:34"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.datetimeRegex(), null);
+            assert.equal(utils.datetimeRegex(), undefined);
         });
     });
     describe('#timestampRegex()', function() {
@@ -124,7 +124,7 @@ describe('regex.js', function() {
             assert.equal(utils.timestampRegex("19:21:"), false);
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.timestampRegex(), null);
+            assert.equal(utils.timestampRegex(), undefined);
         });
     });
     describe('#stripString()', function() {
@@ -144,7 +144,7 @@ describe('regex.js', function() {
             assert.equal(utils.stripString("string\t"), "string");
         });
         it('should return false when value is undefined', function() {
-            assert.equal(utils.stripString(), null);
+            assert.equal(utils.stripString(), undefined);
         });
     });
 });

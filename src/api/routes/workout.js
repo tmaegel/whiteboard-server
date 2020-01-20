@@ -101,7 +101,7 @@ router.get("/:workoutId", (req, res, next) => {
                     message: "Failed to authenticate token"
                 });
             } else {
-                if(id === undefined || !utils.numRegex(id)) {
+                if(id === undefined || id === null || !utils.numRegex(id)) {
                     console.log("ERROR: GET /workout/:workoutId :: workoutId is invalid");
                     res.status(400).json({
                         type: "ERROR",
@@ -168,7 +168,7 @@ router.get("/score/:workoutId", (req, res, next) => {
                     message: "Failed to authenticate token"
                 });
             } else {
-                if(id === undefined || !utils.numRegex(id)) {
+                if(id === undefined || id === null || !utils.numRegex(id)) {
                     console.log("ERROR: GET /workout/score/:workoutId :: workoutId is invalid");
                     res.status(400).json({
                         type: "ERROR",
@@ -307,6 +307,7 @@ router.post("/", (req, res, next) => {
  * @return 200 OK
  * @return 400 Bad Request
  * @return 401 Unauthorized
+ * @return 404 Not Found
  */
 router.post("/:workoutId", (req, res, next) => {
     var id = req.params.workoutId;
@@ -375,8 +376,11 @@ router.post("/:workoutId", (req, res, next) => {
                                 datetime: parseInt(datetime)
                             });
                         } else {
-                            console.log("OK: POST /workout/:workoutId :: No workout found with the id " + id);
-                            res.sendStatus(204);
+                            console.log("ERROR: POST /workout/:workoutId :: No workout found with the id " + id);
+                            res.status(404).json({
+                                type: "ERROR",
+                                message: "No workout found with the id"
+                            });
                         }
                     });
                     // close database
