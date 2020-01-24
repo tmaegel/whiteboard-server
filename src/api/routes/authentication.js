@@ -1,25 +1,14 @@
 const express = require("express");
-const sqlite3 = require("sqlite3").verbose();
 const fs = require('fs');
 const bodyParser = require("body-parser");
 const router = express.Router();
 
 router.use(bodyParser.json());
 
-// jwt
-var jwt = require('jsonwebtoken');
-// bcrypt
-var bcrypt = require('bcryptjs');
-
-// config
-var config = require("../../config.json");
-// utils
-var utils = require("../../utils");
-
-// Exporting objects
-var Database = require("../../sqlite");
-var Server = require('../../server');
-var User = require('../../obj/User');
+// Importing objects
+const utils = require("../../helpers/utils.helper.js");
+const database = require("../../models/sqlite.model.js");
+const user = require("../../models/user.model.js");
 
 /**
  * GET requests
@@ -28,26 +17,21 @@ var User = require('../../obj/User');
  * @return 401 Unauthorized
  */
 router.get("/validate", (req, res, next) => {
-    var token = req.headers.authorization;
-    if (!token) {
-        console.log("ERROR: GET /authentication/validate :: No token provided");
-        res.status(401).json({
-            type: "ERROR",
-            message: "No token provided"
-        });
-    } else {
-        jwt.verify(token, config.secret, function(err, decoded) {
-            if (err) {
-                console.log("ERROR: GET /authentication/validate :: Failed to authenticate token");
-                res.status(401).json({
-                    type: "ERROR",
-                    message: "Failed to authenticate token"
-                });
-            }
+    const token = req.headers.authorization;
+    user.validate(token).then(
+        decoded => {
             console.log("OK: GET /authentication/validate");
             res.status(200).send(decoded);
-        });
-    }
+        },
+        error => {
+            // No token provided
+            // Failed to authenticate token
+            console.log("ERROR: GET /authentication/validate ::", error.message);
+            res.status(401).json({type: "ERROR", message: error.message});
+        },
+    ).catch((error) => {
+        console.log("ERROR: GET /authentication/validate :: An unexpected error has occurred ::", error.message);
+    });
 });
 
 /**
@@ -57,13 +41,13 @@ router.get("/validate", (req, res, next) => {
  * @return 400 Bad Request
  * @return 401 Unauthorized
  * @return 403 Forbidden
+ * @return 500 Internal Server Error
  */
 router.post("/login", (req, res, next) => {
-    var user;
-    var name = req.body.name;
-    var password = req.body.password;
+    const username = req.body.name;
+    const password = req.body.password;
 
-    let valid = (name === undefined || name === null || utils.empty(name) ||
+    let valid = (username === undefined || username === null || utils.empty(username) ||
                 password === undefined || password === null || utils.empty(password))
     if(valid) {
         console.log("ERROR: POST /authentication/login :: username or password are invalid");
@@ -72,56 +56,44 @@ router.post("/login", (req, res, next) => {
             message: "username or password are invalid"
         });
     } else {
-        // open database
-        var db = new sqlite3.Database(Server.database, (err) => {
-            if (err) {
-                console.log("ERROR: POST /authentication/login :: Connecting database.");
-                return console.error(err.message);
-            }
-        });
-        db.get("SELECT id, name, password FROM table_users WHERE name = ? LIMIT 1", [name], (err, row) => {
-            if (err) {
-                throw err;
-            }
-            if(row != null && Object.keys(row).length === 3) {
-                // compare given password with password in database
-                bcrypt.compare(password, row.password, function(err, isMatch) {
-                    if (err) {
-                        throw err
-                    } else if (!isMatch) {
-                        console.log("ERROR: POST /authentication/login :: password is invalid");
-                        res.status(403).json({
-                            type: "ERROR",
-                            message: "password is invalid"
-                        });
-                    } else {
-                        // create a token
-                        var user = new User(row.id, name);
-                        var token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, config.secret, {
-                            expiresIn: 86400 // expires in 24 hours
-                        });
-                        console.log("OK: GET /authentication/login");
-                        res.status(200).json({
-                            type: "SUCCESS",
-                            message : "User login successfully",
-                            token : token
-                        });
-                    }
-                })
-            } else {
-                console.log("ERROR: POST /authentication/login :: username is invalid");
-                res.status(403).json({
-                    type: "ERROR",
-                    message: "username is invalid"
-                });
-            }
-            // close database
-            db.close((err) => {
-                if (err) {
-                    console.log("ERROR: POST /authentication/login :: Closing database");
-                    return console.error(err.message);
+        user.login(username).then(
+            result => {
+                console.log("OK: POST /authentication/login");
+                if(result !== null && result !== undefined && Object.keys(result).length === 3) {
+                    user.sign(result, result.password, password).then(
+                        result => {
+                            console.log("OK: GET /authentication/login");
+                            res.status(200).json({
+                                type: "SUCCESS",
+                                message : "User login successfully",
+                                token : result
+                            });
+                        },
+                        error => {
+                            // password is invalid
+                            console.log("ERROR: POST /authentication/login ::", error.message);
+                            res.status(403).json({type: "ERROR", message: error.message});
+                        },
+                    ).catch((error) => {
+                        console.log("ERROR: POST /authentication/login :: An unexpected error has occurred ::", error.message);
+                    });
+                } else {
+                    console.log("ERROR: POST /authentication/login :: username is invalid");
+                    res.status(403).json({
+                        type: "ERROR",
+                        message: "username is invalid"
+                    });
                 }
-            });
+            },
+            error => {
+                console.log("ERROR: POST /authentication/login ::", error.message);
+                res.status(500).json({
+                    type: "ERROR",
+                    message: "Internal Server Error"
+                });
+            },
+        ).catch((error) => {
+            console.log("ERROR: POST /authentication/login :: An unexpected error has occurred ::", error.message);
         });
     }
 });

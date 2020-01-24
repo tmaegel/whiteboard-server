@@ -1,6 +1,6 @@
 'use strict';
 
-var utils = require("../src/utils");
+var utils = require("../src/helpers/utils.helper.js");
 
 var assert = require('assert');
 

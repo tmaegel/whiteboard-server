@@ -1,72 +1,49 @@
 const express = require("express");
-const sqlite3 = require("sqlite3").verbose();
 const fs = require('fs');
 const bodyParser = require("body-parser");
 const router = express.Router();
 
 router.use(bodyParser.json());
 
-// jwt
-var jwt = require('jsonwebtoken');
-
-// config
-var config = require("../../config.json");
-
-// utils
-var utils = require("../../utils");
-
-// Exporting objects
-var Database = require("../../sqlite");
-var Server = require('../../server');
+// Importing objects
+const database = require("../../models/sqlite.model.js");
+const user = require("../../models/user.model.js");
+const equipment = require("../../models/equipment.model.js");
 
 /**
  * GET requests
  * Get all equipment
  * @return 200 OK
  * @return 401 Unauthorized
+ * @return 500 Internal Server Error
  */
 router.get("/", (req, res, next) => {
-    var token = req.headers.authorization;
-    if (!token) {
-        console.log("ERROR: GET /equipment :: No token provided");
-        res.status(401).json({
-            type: "ERROR",
-            message: "No token provided"
-        });
-    } else {
-        // Verfiy token
-        jwt.verify(token, config.secret, function(err, decoded) {
-            if (err) {
-                console.log("ERROR: GET /equipment :: Failed to authenticate token");
-                res.status(401).json({
-                    type: "ERROR",
-                    message: "Failed to authenticate token"
-                });
-            } else {
-                // open database
-                var db = new sqlite3.Database(Server.database, (err) => {
-                    if (err) {
-                        console.log("ERROR: GET /equipment :: Connecting database.");
-                        return console.error(err.message);
-                    }
-                });
-                db.all("SELECT id, equipment FROM table_equipment ORDER BY id", [], (err, rows) => {
-                    if (err) {
-                        throw err;
-                    }
+    const token = req.headers.authorization;
+    user.validate(token).then(
+        decoded => {
+            equipment.getAll().then(
+                results => {
                     console.log("OK: GET /equipment");
-                    res.status(200).end(JSON.stringify(rows));
-                    // close database
-                    db.close((err) => {
-                        if (err) {
-                            console.log("ERROR: GET /equipment :: Closing database");
-                            return console.error(err.message);
-                        }
+                    res.status(200).end(JSON.stringify(results));
+                },
+                error => {
+                    console.log("ERROR: GET /equipment ::", error.message);
+                    res.status(500).json({
+                        type: "ERROR",
+                        message: "Internal Server Error"
                     });
-                });
-            }
-        });
-    }
+                },
+            );
+        },
+        error => {
+            // No token provided
+            // Failed to authenticate token
+            console.log("ERROR: GET /equipment ::", error.message);
+            res.status(401).json({type: "ERROR", message: error.message});
+        },
+    ).catch((error) => {
+        console.log("ERROR: GET /equipment :: An unexpected error has occurred ::", error.message);
+    });
 });
 
 module.exports = router;

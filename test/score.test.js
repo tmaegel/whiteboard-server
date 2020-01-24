@@ -260,7 +260,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -278,7 +278,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -296,7 +296,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -314,7 +314,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -332,7 +332,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -351,7 +351,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -370,7 +370,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -389,7 +389,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -408,7 +408,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -427,7 +427,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -446,7 +446,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -465,7 +465,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -484,7 +484,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -503,7 +503,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -522,7 +522,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -673,7 +673,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -691,7 +691,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -709,7 +709,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -727,7 +727,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -745,7 +745,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -764,7 +764,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -783,7 +783,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -802,7 +802,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -821,7 +821,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -840,7 +840,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -878,7 +878,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -897,7 +897,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -916,7 +916,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -935,7 +935,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -954,7 +954,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });
@@ -973,7 +973,7 @@ describe('score.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note or datetime are invalid');
+                    res.body.should.have.property('message').eql('scoreId, workoutId, score, note, rx or datetime are invalid');
                     done();
                 });
             });

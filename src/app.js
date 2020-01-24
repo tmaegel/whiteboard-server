@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 
+// Importing objects
 const authenticationRoutes = require("./api/routes/authentication");
 const equipmentRoutes = require("./api/routes/equipment");
 const movementRoutes = require("./api/routes/movement");

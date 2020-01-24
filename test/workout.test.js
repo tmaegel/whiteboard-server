@@ -46,10 +46,12 @@ describe('workout.js', () => {
                     expect(parsedRes[0]).to.have.property('userId');
                     expect(parsedRes[0]).to.have.property('name');
                     expect(parsedRes[0]).to.have.property('description');
+                    expect(parsedRes[0]).to.have.property('datetime');
                     expect(parsedRes[1]).to.have.property('id');
                     expect(parsedRes[1]).to.have.property('userId');
                     expect(parsedRes[1]).to.have.property('name');
                     expect(parsedRes[1]).to.have.property('description');
+                    expect(parsedRes[1]).to.have.property('datetime');
                     done();
                 });
             });
@@ -606,7 +608,6 @@ describe('workout.js', () => {
                 .set('Authorization', token)
                 .send(valid)
                 .end(function(err, res) {
-                    console.log(res.text);
                     expect(res).to.have.status(404);
                     res.body.should.have.property('type').eql('ERROR');
                     res.body.should.have.property('message').eql('No workout found with the id');

@@ -1,21 +1,37 @@
 // Database
-
 const sqlite3 = require("sqlite3").verbose();
-var Server = require('./server');
+
+// Importing objects
+const cmdline = require("../cmdline");
+
+let db;
+
+/**
+ * Open database
+ */
+open();
+
+/**
+ * Initialize database
+ */
+if (cmdline.initDatabase) {
+    init();
+}
 
 function open() {
     // open database
-    db = new sqlite3.Database(Server.database, (err) => {
+    console.log("INFO: sqlite :: open() :: Connecting database '" + cmdline.dbFile + "'");
+    db = new sqlite3.Database(cmdline.dbFile, (err) => {
         if (err) {
-            console.log("sqlite :: open() :: ERROR: Connecting database.");
+            console.log("ERROR: sqlite :: open() :: Connecting database.");
             return console.error(err.message);
         }
-        console.log("sqlite :: open() :: Opened database " + Server.database);
+        console.log("INFO: sqlite :: open() :: Opened database " + cmdline.dbFile);
     });
 }
 
 function init() {
-    console.log("sqlite :: init() :: Initialize database " + Server.database);
+    console.log("INFO: sqlite :: init() :: Initialize database " + cmdline.dbFile);
     db.serialize(function() {
         // **** REMOVING IT LATER
         db.run("DROP TABLE IF EXISTS table_users");
@@ -43,8 +59,10 @@ function init() {
         // These data are for development only
         // admin must be added first (userId 1), then the other user
         var users = [
-            ['admin', '$2a$10$0zn4Pb8khNP/qPGDoQXr2uOQYaFXBk53lVu7xl4WRvExptGzbaKyK'],
-            ['user', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe']
+            ['admin', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe'],
+            ['user', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe'],
+            ['user1', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe'],
+            ['user2', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe']
         ];
 
         for (var row in users) {
@@ -107,63 +125,23 @@ function init() {
             });
         }
     })
-    console.log("sqlite :: init() :: Initializiation finished.");
+    console.log("INFO: sqlite :: init() :: Initializiation finished.");
 }
 
 function close() {
     // close the database connection
     db.close((err) => {
         if (err) {
-            console.log("sqlite :: close() :: ERROR: Closing database.");
+            console.log("ERROR: sqlite :: close() :: Closing database.");
             return console.error(err.message);
         }
-        console.log("sqlite :: close() :: Closed database " + Server.database);
+        console.log("INFO: sqlite :: close() :: Closed database " + cmdline.dbFile);
     });
 }
 
-
-function insert(name, description) {
-    if(name == null || description == null) {
-        return console.log("ERROR: Null values are not allowed");
-    }
-
-    // insert one row into the table_workout
-    db.run("INSERT INTO table_workout(name, description) VALUES (?, ?)", [name, description], function(err) {
-        if (err) {
-            return console.log(err.message);
-        }
-        // get the last insert id
-        console.log("A row has been inserted with rowid ${this.lastID}");
-    });
-}
-
-function select() {
-    console.log("Query one data set");
-    var sql = "SELECT id, name, description FROM table_workout WHERE id  = ?";
-    var workoutId = 2;
-    db.get(sql, [workoutId], (err, row) => {
-      if (err) {
-        return console.error(err.message);
-      }
-      return row
-        ? console.log(row.id, row.name, row.description)
-        : console.log("No data set found with the id ${workoutId}");
-    });
-
-}
-
-function select_all() {
-    console.log("Query all data");
-    var data =  [];
-    var sql = "SELECT id, name, description FROM table_workout ORDER BY id";
-    db.all(sql, [], (err, rows) => {
-        if (err) {
-            throw err;
-        }
-        console.log(rows);
-    });
-}
-
-exports.open = open;
-exports.init = init;
-exports.close = close;
+module.exports = {
+    db,
+    init,
+    open,
+    close,
+};
