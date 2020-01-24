@@ -1,0 +1,4905 @@
+{
+    "users":
+    [
+        {
+            "name": "admin",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe"
+        },
+        {
+            "name": "user",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe"
+        },
+        {
+            "name": "user1",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe"
+        },
+        {
+            "name": "user2",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe"
+        }
+    ],
+    "equipment":
+    [
+        {
+            "name": "None"
+        },
+        {
+            "name": "Box"
+        },
+        {
+            "name": "Wallball"
+        },
+        {
+            "name": "Rope"
+        },
+        {
+            "name": "Kettlebell"
+        }
+    ],
+    "movements":
+    [
+        {
+            "name": "Box jumps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Burpee box jumps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Box steps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Box steps over",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Burpee",
+            "equipmentIds": "1"
+        },
+        {
+            "name": "Burpee box jumps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Burpee box jumps over",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Wallball shots",
+            "equipmentIds": "3"
+        },
+        {
+            "name": "Dumbell snatch",
+            "equipmentIds": "4"
+        }
+    ],
+    "workouts":
+    [
+    {
+    "user_id":"0",
+    "name":"21 Guns",
+    "description":"AMRAP21\n400 meter run\n21 Push-Ups\n21 Box Jumps @24/20 in\n15 Burpees\n9 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"343",
+    "description":"For Time\n100 Deadlifts @61/43 kg\n100 Power Cleans @43/30 kg\n100 Ground-to-Overhead @30/20 kg\n43 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"9/11 Tribute",
+    "description":"For Time\n2001 meter Run\n11 Box Jumps @30/24 in\n11 Thrusters @56,5/38,5 kg\n11 Chest-to-Bar Pull-Ups\n11 Power Cleans @80/52 kg\n11 Handstand Push-Ups\n11 Kettlebell Swings @32/24 kg\n11 Toes-To-Bar\n11 Deadlifts @77/52 kg\n11 Push Jerks @50/34 kg\n2001 meter Row\n\nRow and Run can be switched ",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"3D Remembrance Day",
+    "description":"AMRAP18\n11 Hang Power Snatches @35/25 kg\n11 Burpees\n11 Thrusters @35/25 kg\n11 Pull-Ups\n\nAt 11:00: \n1 Minute Rest in Silence",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Abbate",
+    "description":"For Time\n1 mile Run\n21 Clean-and-Jerks @70/47,5 kg\n800 meter Run\n21 Clean-and-Jerks @70/47,5 kg\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Adam",
+    "description":"5 Rounds for Time\n7 Chest-to-Bar Pull-Ups\n14 Kettlebell Swings @32/24 kg\n21 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Adam Rand",
+    "description":"EMOM15\nFrom 0:00-5:00 EMOM:\n5 Thrusters @52/38,5 kg\n\nFrom 5:00-10:00 EMOM:\n3 Thrusters @61/43 kg\n\nFrom 10:00-15:00 EMOM:\n1 Thruster @75/52 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Adambrown",
+    "description":"2 Rounds For Time\n24 Deadlifts @134/93 kg\n24 Box Jumps @24/20 in\n24 Wall Ball Shots @9/6 kg\n24 Bench Press @88,5/57 kg\n24 Box Jumps @24/20 in\n24 Wall Ball Shots @9/6 kg\n24 Cleans @65/45 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Adrian",
+    "description":"7 Rounds For Time\n3 Forward Rolls\n5 Wall Climbs\n7 Toes-to-Bar\n9 Box Jumps @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Akker",
+    "description":"10 Rounds for Time\n22 Push-Ups\n22 meter Walking Lunges\n22 Air Squats\n22 meter Bear Crawl\n200 meter Run\n\nTime Cap: 50 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Alan Cameron",
+    "description":"21-15-9 Reps for Time\nOverhead Squats @45/30 kg\nHandstand Push-Ups\nGHD Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Alan Feinberg",
+    "description":"EMOM9\n5 Back Squats @102/70 kg\n5 Burpee Box Jumps @20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Alexander",
+    "description":"5 Rounds for Time\n31 Back Squats @61/43 kg\n12 Power Cleans @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Allan Tarasiewicz",
+    "description":"5 Rounds for Time\n5 Power Cleans @61/43 kg\n5 Power Snatches @61/43 kg\n5 Squat Cleans @61/43 kg\n5 Squat Snatches @61/43 kg\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Amanda",
+    "description":"9-7-5 Reps for Time\nMuscle-Ups\nSquat Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Amanda .45",
+    "description":"13-11-9-7-5 Reps for Time\nMuscle-Ups\nSquat Snatches @61/43 kg\n\nTime Cap: 13 minutes for males, 15 minutes for females",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Amer",
+    "description":"4 Rounds for Time\n3 Deadlifts @1.5 x Bodyweigt\n6 Burpees\n9 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Andre Fletcher",
+    "description":"5 Rounds for Time\n21 Deadlifts @30/20 kg\n15 Cleans @38,5/30 kg\n9 Push Presses @47,5/38,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Andrew Brunn",
+    "description":"5 Rounds for Time\n3 Overhead Squats @61/43 kg\n6 Handstand Push-Ups\n9 Bench Presses @61/43 kg\n12 Ring Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Andrew Desperito",
+    "description":"For Time\n2000 meter Row\n50 Thrusters @61/43 kg\n2000 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Andrew Jordan",
+    "description":"AMRAP10\n3 Power Cleans @61/43 kg\n3 Power Snatches @61/43 kg\n3 Overhead Squats @61/43 kg\n50 meter Bear Crawl",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Andy",
+    "description":"For Time\n25 Thrusters @52/38,5 kg\n50 Box Jumps @24/20 in\n75 Deadlifts @52/38,5 kg\n1.5 mile Run\n75 Deadlifts @52/38,5 kg\n50 Box Jumps @24/20 in\n25 Thrusters @52/38,5 kg\n\nwear a wight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Andy Fredericks",
+    "description":"For Time\n25 Overhead Squats @43/30 kg\n50 Duble-Unders\n25 Handstand Push-Ups\n50 Double-Unders\n25 Push Presses @43/30 kg\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Angel Juarbe Jr.",
+    "description":"EMOM10\n3 Deadlifts @65% of max rep\nmax Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Angie",
+    "description":"For Time\n100 Pull-Ups\n100 Push-Ups\n100 Sit-Ups\n100 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Annie",
+    "description":"50-40-30-20-10 Reps for Time\nDouble-Unders\nSit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Anthony Jovic",
+    "description":"For Time\n20 Back Squats @102/70 kg\n20 Box Jumps @24/20 in\n20 Push Presses @70/47,5 kg\n20 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Anthony Raspa",
+    "description":"For Time\n7,425 meter Row\n9 Handstand Push-Ups\n17 Hang Power Cleans @61/43 kg\n19 Pull-Ups\n90 Sit-Ups\n145 Jumping Jacks",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Anthony Rodriguez",
+    "description":"21-15-9 Reps for Time\nDeadlifts @102/70 kg\nWall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Aplin",
+    "description":"20 Rounds for Time\n6 Strict Pull-Ups\n20 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Armistice",
+    "description":"AMRAP11\n11 Power Cleans @61/43 kg\n11 Burpees Over the Bar\n19 Deadlifts @61/43 kg\n18 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Arnie",
+    "description":"For Time\n21 Turkish Get-Ups, Right Arm\n50 Kettlebell Swings\n21 Overhead Squats, Left Arm\n50 Kettlebell Swings\n21 Overhead Squats, Right Arm\n50 Kettlebell Swings\n21 Turkish Get-Ups, Left Arm\n\nUse a single Kettlebell @32/24",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Artie",
+    "description":"AMRAP20\n5 Pull-Ups\n10 Push-Ups\n15 Squats\n5 Pull-Ups\n10 Thrusters @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ashley Birt",
+    "description":"11 Rounds For Time\n29 meter Shuttle Run\n10 Burpees \n10 Sit-Ups\n10 Thrusters @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Assuncao",
+    "description":"For Time\n100 Burpees\n75 Pull-Ups\n50 Pistols\n25 Power Cleans @66/54 kg\n12 Rope Climbs\n400 meter Run with Plate Carry @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"B-1",
+    "description":"3 Rounds for Time\n400 meter Run\n21 Kettlebell Swings @24/16 kg\n15 Knees-to-Elbows\n9 Ring Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Badger",
+    "description":"3 Rounds for Time\n30 Squat Cleans @43/30 kg\n30 Pull-Ups\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Barbara",
+    "description":"5 Rounds for Time\n20 Pull-Ups\n30 Push-Ups\n40 Sit-Ups\n50 Air Squats\n3 minutes Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Barraza",
+    "description":"AMRAP18\n200 meter Run\n9 Deadlift @125/84\n6 Burpee Bar Musle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Batra",
+    "description":"For Time\nBuy-In: 100 Double-Unders\n\nThen, 5 Rounds of:\n20 Pull-Ups\n15 Kettlebell Snatches @20/12 kg\n10 Kettlebell Step-Up Presses @24/20 in, 20/12 kg\n15 Kettlebell Snatches @20/12 kg\n20 Ring Dips\n\nCash Out: 100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Baz",
+    "description":"AMRAP30\n30 Double-Unders\n8 Squat Cleans @70/50 kg\n11 Hand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Beck Soldo",
+    "description":"2 Rounds For Time\n6 Squat Clean Thrusters @61/43 kg\n8 Man-Makers @20/13,5\n14 Toes-to-Bar Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bell",
+    "description":"3 Rounds for Time\n21 Deadlifts @84/61 kg\n15 Pull-Ups\n9 Front Squats @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Benjamin Suarez",
+    "description":"15-12-9-6-3 Reps for Time\nDeadlifts @84/61 kg\nHandstand Push-Ups\nVertical Jumps",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bert",
+    "description":"For Time\n50 Burpees\n400 meter Run\n100 Push-Ups\n400 meter Run\n150 Walking Lunges\n400 meter Run\n200 Air Squats\n400 meter Run\n150 Walking Lunges\n400 meter Run\n100 Push-Ups\n400 meter Run\n50 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Big Sexy",
+    "description":"5 Rounds for Time\n6 Deadlifts @143/93 kg\n6 Burpees\n5 Cleans @102/70 kg\n5 Chest-to-Bar Pull-Ups\n4 Thrusters @70/52 kg\n4 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Birchall",
+    "description":"For Time\n100 Back Squats @Bodyweight\nPerform 5 Burpees at the top of each minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Blake",
+    "description":"4 Rounds for Time\n30 meter Overhead Walking Lunges @20/15 kg Plate\n30 Box Jumps @24/20 in\n20 Wall Ball Shots @9/6 kg\n10 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Blanchard (Aaron)",
+    "description":"4 Rounds for Time\n800 meter Run\n32 Jumping Air Squats\n32 Lunges\n32 weighted Sit-Ups @20/10 kg Plate",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Blanchard (Sapper)",
+    "description":"AMRAP15\n3 Ground-to-Overheads @70/50 kg\n\nThen, 3 Rounds of:\n5 Pull-Ups\n10 Push-Ups\n15 Air Squats\n30 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bolger",
+    "description":"5 Rounds for Time\n400 meter Run\n25 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bondy",
+    "description":"AMRAP20\n6 Pull-Ups\n11 Burpees\n24 Sit-Ups\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Boneca",
+    "description":"4 Rounds for Time\n2 Legless Rope Climbs\n13 Box Jumps @30/24 in\n1985 meter Air Bike\n7 Squat Cleans @84/52 kg\n9 Strict Pull-Ups\n2006 meter Run with a Medicine Ball @9/7 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bowen",
+    "description":"3 Rounds for Time\n800 meter Run\n7 Deadlifts @125/84 kg\n10 Burpees Pull-Ups\n14 Single Arm Kettlebell Thrusters @24/16 kg\n20 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brad Harper",
+    "description":"5 Rounds for Time\n18 Kettlebell Swings @32/24 kg\n13 Burpees\n23 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bradley",
+    "description":"10 Rounds for Time\n100 meter Springt\n10 Pull-Ups\n100 meter Sprint\n10 Burpees\n30 seconds Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bradshaw",
+    "description":"10 Rounds for Time\n3 Handstand Push-Ups\n6 Deadlifts @102/70 kg\n12 Pull-Ups\n24 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Braswell",
+    "description":"AMRAP40\n12 Burpees\n9 Hand Power Cleans @43/30 kg\n18 Wall Ball Shots @9/6 kg\n200 meter Sandbag Run @27/18 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brehm",
+    "description":"For Time\n10 Rope Climbs \n20 Back Squats @102\n30 Handstand Push-Ups\n40 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brenton",
+    "description":"5 Rounds for Time\n30 meter Bear Crawl\n30 meter Standing Broad-Jumps\nPerform 3 Burpees after every 5 Broad-Jumps\n\nwear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian",
+    "description":"3 Rounds for Time\n5 Rope Climbs\n25 Back Squats @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian Ahearn",
+    "description":"For Time\n30 Power Cleans @61/43 kg\n20 Shoulder-to-Overheads @70/47,5 kg\n10 Pendlay Rows @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian Bilcher",
+    "description":"For Time\n9 Cleans @84/61 kg\n21 Handstand Push-Ups\n7 Cleans @84/61 kg\n15 Handstand Push-Ups\n5 Cleans @84/61 kg\n9 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian Cannizzaro",
+    "description":"For Time\n50 Thruster @61/43 kg\nEMOM after one minute mark:\n1 Burpee Box Jump @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian Hickey",
+    "description":"21-15-9 Reps for Time\nPower Cleans @61/43 kg\nShoulder-to-Overhead @61/43 kg\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian McAleese",
+    "description":"For Time\n75 Thrusters @43/30 kg\n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Brian Sweeney",
+    "description":"5 Rounds for Time\n7 Bear Complexes @61/43 kg\n10 Lateral Over Bar Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Briski",
+    "description":"For Time\n800 meter Run\n100 Wall Ball Shots @9/6 kg\n100 Kettlebell Swings @24/16 kg\n100 Air Squats \n800 meter Run\n\nwear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bruce Gary",
+    "description":"40-30-20-10 Reps for Time\nDouble-Unders\nBox Step-Ups @24/20 in\nPush Presses @34/20",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bruck",
+    "description":"4 Rounds for Time\n400 meter Run\n24 Back Squats @84/61 kg\n24 Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bulger",
+    "description":"10 Rounds for Time\n150 meter Run\n7 Chest-to-Bar Pull-Ups\n7 Front Squats @61/43 kg\n7 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bull",
+    "description":"2 Rounds For Time\n200 Double-Unders\n50 Overhead Squats @61/43 kg\n50 Pull-Ups\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bullard",
+    "description":"For Time\nBuy-In: 532 meter Sandbag Run @18/13,5 kg\n\n5 Rounds of:\n21 Hand Release Push-Ups\n20 Alternating Dumbbell Snatches @22,5/15 kg\n15 Single-Arm Overhead Dumbbell Lunges @22,5/15 kg\n\nCash-Out: 532 meter Sandbag Run @18/13,5 kg\n\nwear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bullfrog 811GS (3 Gun)",
+    "description":"AMRAP26\n10 Box Jumps @24/20 in\n5 Deadlifts @102/70 kg\n16 Slam Balls @18/13,5 kg\n\nCash Out: 811 meter Farmer's Carry @2 x 24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Bullfrog 811GS (Inner Chamber)",
+    "description":"AMRAP29\nBuy-In: 811 meter Run\n\nThen:\n8 Pull-Ups\n11 Push Presses @61/38,5 kg\n8 Box Jumps @24/20 in\n11 Kettlebell Swings @24/16 kg\n8 Toes-to-Bars\n11 Power Cleans @61/38,5 kg\n8 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Burgess",
+    "description":"30-20-10 Reps for Time\nPull-Ups\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Butters",
+    "description":"For Time\n1 mile Run\n6 Tire Flips\n17 Pull-Ups\n1 mile Run\n7 Kettlebell Snatches @24/16 kg\n15 Deadlifts @102/70 kg\n10 Sandbag Ground to Over-the Shoulders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Calixto Anaya Jr.",
+    "description":"5 Rounds for Time\n5 Deadlifts @143/102 kg\n10 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Candy",
+    "description":"5 Rounds for Time\n20 Pull-Ups\n40 Push-Ups\n60 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Cameron",
+    "description":"For Time\n50 Walking Lunges\n25 Chest-to-Bar Pull-Ups\n50 Box Jumps @24/20 in\n25 Triple-Unders\n50 Back Extensions\n25 Ring Dips\n50 Knees-to-Elbows\n25 Wall Ball 2-for1's @9/6 kg\n50 Sit-Ups\n5 Rope Climbs",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Capoot",
+    "description":"For Time\n100 Push-Ups\n800 meter Run\n75 Push-Ups\n1,200 meter Run\n50 Push-Ups\n1,600 meter Run\n25 Push-Ups\n2,000 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Carl Asaro",
+    "description":"For Time\n50 Double-Unders\n25 Shoulder-to-Overhead @61/43 kg\n20 Front Squats @61/43 kg\n15 Cleans @61/43 kg\n10 Snatches @61/43 kg\n5 Thrusters @61/43 kg\n50 Double Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Carl Bedigian",
+    "description":"For Time\n500 meter Row\n30 Snatches @43/30 kg\n500 meter Row\n30 Clean-and-Jerks @43/30 kg\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Carl Bini",
+    "description":"5 Rounds for Time\n500 meter Row\n50 Double-Unders\n5 Squat Clean Thrusters @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Carlos Lillo",
+    "description":"40-30-20-10 Reps for Time\nKettlebell Swings @32/24 kg\nGoblet Squats @32/24 kg\nToes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Carl Molinaro",
+    "description":"21-15-9 Reps for Time\nThrusters @61/43 kg\nBurpee Box Jumps @24/20 in\nHandstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Carse",
+    "description":"21-18-15-12-9-6-3 Reps for Time\nSquat Clean @43/30 kg\nDouble-Unders\nDeadlift @84/61 kg\nBox Jump @24/20 in\n\nStart each round with a 50 meter Bear Crawl",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Celiz",
+    "description":"For Time\n1 mile Run\n75 Hand Release Push-Ups\n75 Air Squats\n1 mile Run\n75 Sit-Ups\n75 Box Jumps @24/20 in\n\nwear a weighted vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"CG-6535",
+    "description":"4 Rounds for Time\n400 meter Run\n65 Air Squats\n35 Burpee Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"CG-6535 (Mid County)",
+    "description":"4 Rounds for Time\n800 meter Run\n6 Handstand Push-Ups\n5 Squat Clean-and-Jerks @70/52 kg\n3 Muscle-Ups\n5 Burpee Box Jump-Overs @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Charles Garbarini",
+    "description":"EMOM9\nOdd minutes:\n9 Deadlifts @125/84 kg\nEven minutes:\n9 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Charles Kasper",
+    "description":"For Time\n15 Ground-to-Overheads @70/47,5 kg\n200 meter Walking Lunges\n15 Ground-to-Overheads @70/47,5 kg\n800 meter Run\n15 Ground-to-Overheads @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Charles Margiotta",
+    "description":"For Time\n1000 meter Row\n20 Power Cleans @61/43 kg\n1000 meter Row\n20 Power Snatches @61/43 kg\n100 meter Row\n20 Thrusters @61/43 kg\n1000 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Charles Mendez",
+    "description":"For Time\n5 Overhead Squats @Bodyweight\n10 Shoulder-to-Overheads @Bodyweight\n20 Deadlifts @Bodyweight",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Charlie",
+    "description":"For Time\n100 Burpee Pull-Ups\n100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Chelsea",
+    "description":"EMOM30\n5 Pull-Ups\n10 Push-Ups\n15 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Choe",
+    "description":"AMRAP35\nBuy-In:\n9 Man Makers @2 x 15/10 kg dumbbells\n11 Burpees\nWith remaining time, AMRAP of:\n300 meter Run\n27 Air squats\n9 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Chris Kyle",
+    "description":"3 Rounds for Time\n40 Kettlebell Swings @24/16 kg\n40 Box Jumps @24/20 in\n40 Thrusters @30/20 kg\n40 Elevated Push-ups @feet on 24/18 in box",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christian Regenhard",
+    "description":"For Time\n10 Strict Presses @52/38,5kg\n15 Overhead Squats @52/38,5kg\n20 Push Presses @52/38,5kg\n25 Front Squats @52/38,5kg\n30 Push Jerks @52/38,5kg\n35 Back Squats @52/38,5kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christine",
+    "description":"3 Rounds for Time\n500 meter Row\n12 Deadlifts @Bodyweight\n21 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christopher Blackwell",
+    "description":"3 Rounds for Time\n5 Push Jerks @84/61kg\n1 minute Handstand Hold",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christopher Mozzillo",
+    "description":"5 Rounds for Time\n5 Squat Clean-and-Jerks @70/47,5kg\n10 Box Jumps @24/20 in\n15 Pull-Ups\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christopher Pickford",
+    "description":"For Time\nDeadlift 9,072kg (Summe der einzelnen Wiederholungen)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christopher Santora",
+    "description":"5 Rounds for Time\n40 Double-Unders\n30 Box Jumps @24/20 in\n20 Kettlebell Swings @24/16 kg\n10 Thrusters @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Christopher Sullivan",
+    "description":"3 Rounds for Time\n1 Squat Snatch @52/38,5 kg\n2 Squat Cleans @52/38,5 kg\n3 Hang Cleans @52/38,5 kg\n4 Power Snatches @52/38,5 kg\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Chuck",
+    "description":"10 Rounds for Time\nPush-Ups (3-6-9-12-15-18-21-24-27-30 reps)\nPull-Ups (1-2-3-4-5-6-7-8-9-10 reps)\nDips (2-4-6-8-10-12-14-16-18-20 reps)\nChin-Ups (10-9-8-7-6-5-4-3-2-1 reps)\nPistols (5-5-5-5-5-5-5-5-5-5 reps)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Chuck (Whites)",
+    "description":"For Time\n153 calorie Row\n19 Wall Ball Shots @9/6 kg \n18 Kettlebell Swings @22,5/16 kg\n63 Burpees\n1 mile Run\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Chuck Heavy",
+    "description":"For Time\n1 mile Row\n100 Push-Ups\n1 mile Run\n100 Thrusters @20/15 kg\n1 mile Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Cindy",
+    "description":"AMRAP20\n5 Pull-Ups\n10 Push-Ups\n15 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Cindy XXX",
+    "description":"AMRAP20\n10 Pull-Ups\n20 Push-Ups\n30 Air Squats\n15 Pull-Ups\n30 Push-Ups\n45 Air Squats\n20 Pull-Ups\n40 Push-Ups\n60 Air Squats\n25 Pull-Ups\n50 Push-Ups\n75 Air Squats\n30 Pull-Ups\n60 Push-Ups\n90 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Clovis",
+    "description":"For Time\n10 mile Run\n150 Burpee Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Coe",
+    "description":"10 Rounds for Time\n10 Thrusters @43/30 kg\n10 Ring Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Coffey",
+    "description":"For Time\n800 meter Run\n50 Back Squats @61/43 kg\n50 Bench Press @61/43 kg\n800 meter Run\n35 Back Squat @61/43 kg\n35 Bench Press @61/43 kg\n800 meter Run\n20 Back Squat @61/43 kg\n20 Bench Press @61/43 kg\n800 meter Run\n1 Muscle-Up",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Coffland",
+    "description":"For Time\n6 minute Hang Hold (cumulative)\n\nEach time you drop from the bar, perform:\n800 meter Run\n30 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Collin",
+    "description":"6 Rounds for Time\n400 meter Sandbag Carry @22,5/18 kg\n12 Push Presses @52/34 kg\n12 Box Jumps @24/20 in\n12 Sumo Deadlift High-Pulls @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Contact 22 Finale",
+    "description":"For Time\n200 meter Run\n22 Snatches @43/30 kg \n22 Pull-Ups\n22 Medicine Ball Cleans @9/6 kg \n22 Elbow Plank to Push-Ups\n22 Wall Ball Shots @9/6 kg\n22 Deadlifts @43/30 kg\n22 Air Squats\n22 Overhead Walking Lunges @20/10 kg plate\n22 Box Jumps @24/20 in\n22 Power Cleans @43/30 kg\n2x20 second Bar Hang\n22 calorie Row\n22 Handstand Push-Ups\n22 Back Squats @43/30 kg\n22 Chest-to-Bar Pull-Ups\n22 Bar Facing Burpees\n22 Thrusters @43/30 kg\n22 Jerks @43/30 kg\n2 Rope Climbs\n22 Overhead Squats @43/30 kg\n22 Kettlebell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Copey",
+    "description":"21-15-9 Reps for Time\nBodyweight Bench Presses\nBodyweight Deadlifts\nRing Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"CPL SI Miller",
+    "description":"Three AMRAP6\nBuy-in: 800 meter Run\n\nThen, AMRAP:\n12 Front Squats @45/30 kg\n12 Pull-Ups\nThen, 1 minute Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Crain",
+    "description":"2 Rounds For Time\n34 Push-Ups\n50 yard Sprint\n34 Deadlifts @61/43 kg\n50 yard Sprint\n34 Box Jumps @24/20 in\n50 yard Sprint\n34 Clean-and-Jerks @43/30 kg\n50 yard Sprint\n34 Burpees\n50 yard Sprint\n34 Wall Ball Shots @9/6 kg \n50 yard Sprint\n34 Pull-Ups\n50 yard Sprint",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dae Han",
+    "description":"3 Rounds for Time\n800 meter Weighted Run @20/15 kg \n3 Rope Climbs\n12 Thrusters @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dale",
+    "description":"AMRAP20\n400 meter Run\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dallas 5",
+    "description":"AMRAP29\nAMRAP from 0:00-5:00:\nBurpees\n\nAMRAP from 6:00-11:00:\n7 Deadlifts @70/47,5 kg\n7 Box Jumps @24/20 in\n\n AMRAP from 12:00-17:00:\nTurkish Get-Ups @18/13,5 kg Dumbbell\n\nAMRAP from 18:00-23:00:\n7 Snatches @34/25 kg\n7 Push-Ups\n\nAMRAP from 24:00-29:00:\nRow (calories)\n\nRest 1 minute between each AMRAP station",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dallas 5 (Brownwood)",
+    "description":"For Time\n50 Burpees\n\nThen 5 Rounds of:\n10 Wall Ball @9/6 kg\n10 Shoulder-to-Overhead @43/30 kg \n10 Pull-Ups\n10 Box Jumps @24/20 in\n10 Sit-Ups\n\nThen, 800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dallas 5 (Fitcops)",
+    "description":"For Time\n1 mile Run\n100 Elbow Plank Push-Ups\n150 Sit-Ups\n100 Burpees\n150 Lunges",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dana Hannon",
+    "description":"For Time\n26 Power Cleans @43/30 kg\n100 Double-Unders\n(Break or Trip: 5 Burpees)\n100 Kettlebell Swings @16/12 kg\n(Break: 1 Wall Climb)\n26 Power Snatch @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Daniel",
+    "description":"For Time\n50 Pull-Ups\n400 meter Run\n21 Thrusters @43/30 kg\n800 meter Run\n21 Thrusters @43/30 kg\n400 meter Run\n50 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Daniel Brethel",
+    "description":"24-18-12-6 Reps for Time\nBurpee Box Jumps @24/20 in\nAbmat Sit-Ups with Medicine Ball @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Daniel Harlin",
+    "description":"4 Rounds for Time\n3 Squat Cleans @84/61 kg\n6 Front Squats @84/61 kg\n12 Deadlifts @84/61 kg\n24 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Daniel Libretti",
+    "description":"21-15-9 Reps for Time\nDeadlifts @143/102 kg\nBar Over Burpees\nBox Jumps @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Daniel O'Callaghan",
+    "description":"For Time\nBuy-In:\n100 Double-Unders\n\n20 Cleans @61/43 kg\n20 Shoulder-to-Overheads @61/43 kg\n20 Clean-and-Jerks @61/43 kg\n\nCash-Out:\n100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Daniel Suhr",
+    "description":"2 Rounds For Time\n21 Burpee Ring Dips\n16 Overhead Squats @52/34 kg from the ground)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Danny",
+    "description":"AMRAP20\n30 Box Jumps @24/20 in\n20 Push Presses @52/34 kg\n30 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Danny Dietz",
+    "description":"For Time\n1 mile Run\n26 Power Cleans @84/61 kg\n80 Push-Ups\n1 minute Rest\n600 meter Run\n28 Front Squats @84/61 kg\n50 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David (Watson)",
+    "description":"5 Rounds for Time\n5 Clean-and-Jerks @60/40 kg\n20 Pull-Ups\n30 Push-Ups\n40 Sit-Ups\n50 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Arce",
+    "description":"For Time\n12 Thrusters @61/43 kg\n12 Hand Release Push-Ups\n9 Thrusters @61/43 kg\n9 Hand Release Push-Ups\n6 Thrusters @61/43 kg\n6 Hand Release Push-Ups\n1 mile Run or 2 km Row\n6 Thrusters @61/43 kg\n6 Hand Release Push-Ups\n9 Thrusters @61/43 kg\n9 Hand Release Push-Ups\n12 Thrusters @61/43 kg\n12 Hand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Derubbio",
+    "description":"21-15-9 Reps for Time\nDeadlifts @111/75 kg\nBox Jumps @24/20 in\nPull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David F",
+    "description":"For Time\n1,000 meter Burden Run @25 kg sandbag\n100 Push-Ups\n100 Sit-Ups\n100 Air Squats\n100 Double-Unders\n100 ft Rope Climbs (accumulate over multiple ascents)\n1,000 meter Burden Run @25kg sandbag",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Fontana",
+    "description":"For Time\n100 Double-Unders\n50 Squat Clean Thrusters @30/20 kg\n25 Box Jumps @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Halderman",
+    "description":"5 Rounds for Time\n20 Wall Ball Shots @9/6 kg\n10 Power Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Laforge",
+    "description":"For Time\n30 Bear Complexes @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Markland",
+    "description":"5 Rounds for Time\n5 Clean-and-Jerks @60/40 kg\n20 Pull-Ups\n30 Push-Ups\n40 Sit-Ups\n50 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Weiss",
+    "description":"AMRAP10\n5 Front Squats @102/70 kg\n9 Deadlifts @102/70 kg\n5 Squat Cleans @102/70 kg\n9 Back Squats @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"David Wooley",
+    "description":"EMOM12\n3 Front Squats @84/61 kg\n3 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Davo",
+    "description":"For Time\n400 meter Run\n21 Thrusters @40/20 kg\n400 meter Run\n21 Pull-Ups\n400 meter Run\n15 Sumo Deadlift High-Pulls @40/20 kg\n400 meter Run\n15 Ring Dips\n400 meter Run\n9 Handstand Push-Ups\n400 meter Run\n9 Overhead Squats @40/20 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dean",
+    "description":"21-15-9 Reps for Time\nPull-Ups\nPistols\nKettlebell Swings @32/24 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Del",
+    "description":"For Time\n25 Burpees\n400 meter Run @9/6 kg medicine ball\n25 Weighted Pull-Ups @10/7,5 kg \n400 meter Run @9/6 kg medicine ball\n25 Handstand Push-Ups\n400 meter Run @9/6 kg medicine ball\n25 Chest-to-Bar Pull-Ups\n400 meter Run @9/6 kg medicine ball\n25 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dempsey",
+    "description":"3 Rounds for Time\n50 Wall Ball Shots @9/6 kg\n50 Med Ball Push-Ups @9/6 kg\n50 Ball Slams @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Denis Germain",
+    "description":"For Time\n20 Power Snatches @61/43 kg\n20 Double-Unders\n200 meter Run\n15 Power Snatches @61/43 kg\n40 Double-Unders\n200 meter Run\n10 Power Snatches @61/43 kg\n60 Double-Unders\n200 meter Run\n5 Power Snatches @61/43 kg\n80 Double-Unders\n200 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis Carey",
+    "description":"20 Reps for Time\n20 reps of the following complex\nStrict Press / Push Press / Push Jerk\n\nUse 80% of 1-Rep-Max Strict Press\n\nRest 30 seconds between reps",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis Cross",
+    "description":"5 Rounds for Time\n7 Clean-and-Jerks @61/43 kg\n5 Chest-to-Bar Pull-Ups\n7 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis Devlin",
+    "description":"3 Rounds for Time\n9 Shoulder-to-Overheads @70/47,5 kg\n19 Handstand Push-Ups\n29 Burpees\n39 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis McHugh",
+    "description":"AMRAP15\n3 Front Squats @61/43 kg\n3 Toes-to-Bars\n6 Front Squats @61/43 kg\n6 Toes-to-Bars\n9 Front Squats @61/43 kg\n9 Toes-to-Bars\netc...",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis Mojica",
+    "description":"3 Rounds for Time\n1 Bear Complex @84/61 kg\n7 Bar Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis Mulligan",
+    "description":"15-12-9 Reps for Time\nBench Presses @BW\nRing Dips\nDumbbell Thrusters @15/10 kg\nWall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis O'Berg",
+    "description":"EMOM14\nOdd Minutes:\n15 Kettlebell Swings @24/16 kg\n\nEven Minutes:\n10 Deadlifts @125/93 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dennis Scauso",
+    "description":"For Time\n25 Pull-Ups\n10 Deadlifts @102/70 kg \n50 Push-Ups\n10 Deadlifts @102/70 kg \n75 Sit-Ups\n10 Deadlifts @102/70 kg \n100 Air Squats\n10 Deadlifts @102/70 kg \n125 Flutter Kicks (4 counts)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Desforges",
+    "description":"5 Rounds for Time\n12 Deadlifts @102/70 kg\n20 Pull-Ups\n12 Clean-and-Jerks @61/43 kg\n20 Knees-to-Elbows",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Devil of Ramadi (858)",
+    "description":"AMRAP20\n10 Ground-to-Overheads @72,5/45 kg\n38 Wall Ball Shots @9/6 kg\n160 Double-Unders\n200 meter Weighted Run @20/10 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Devil of Ramadi (Throne)",
+    "description":"For Time\nBuy-In:\n100 ft Dumbbell Farmer's Carry @25/15 kg\n10 Alternating Dumbbell Squat Snatches @25/15 kg\n10 Deficit Dumbbell Push-Ups\n10 calorie Row\n10 second L-Sit Hold (On Dumbbells)\n10 Toes-to-Bars\n\nThen, 160 Double-Unders\n\nThen, 4 Rounds of:\n38 Wall Ball Shots @9/6 kg\n2 Rope Climbs\n5 Deadlifts @125/84 kg\n\nCash-Out:\n1915 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"DG",
+    "description":"AMRAP10\n8 toes-to-Bars\n8 Dumbbell Thrusters @15/10 kg\n12 Dumbbell Walking Lunges @15/10 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Diane",
+    "description":"21-15-9 Reps for Time\nDeadlifts @102/70 kg\nHandstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dicko",
+    "description":"3 Rounds for Time\n29 Push-Ups\n6 Hang Power Cleans @50/35 kg\n29 AbMat Sit-Ups\n6 Push Presses @50/35 kg\n29 Pull-Ups\n6 Overhead Squats @50/35 kg\n29 Kettlebell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Diego",
+    "description":"8 Rounds for Time\n7 Power Cleans @70/47,5 kg\n22 Double-Unders\n18 Burpees\n\nThen,\n2056 meter Weighted Run @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dobogai",
+    "description":"7 Rounds For Time\n8 Muscle-Ups\n22 Yard Farmer Carry @22,5/18kg Dumbbell",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dom",
+    "description":"For Time\n50 calorie Row\n\nThen, 10-9-8-7-6-5-4-3-2-1 Reps of:\nSquat Cleans @45/34 kg\nHandstand Push-Ups\n\nThen, 50 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Donald Burns",
+    "description":"For Time\n20 Back Squats @61/43 kg\n400 meter Run\n20 Deadlifts @61/43 kg\n400 meter Run\n20 Cleans @61/43 kg\n400 meter Run\n30 Thrusters @61/43 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Donald Regan",
+    "description":"5 Rounds for Time\n5 Push Jerks @84/61 kg\n10 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Donny",
+    "description":"21-15-9 Reps for Time\nDeadlifts @102/70 kg\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dork",
+    "description":"6 Rounds for Time\n60 Double-Unders\n30 Kettlebell Swings @24/16 kg\n15 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dork (Florian)",
+    "description":"AMRAP20\n33 calorie Row\n15 Deadlifts @102/70 kg\n4 Rope Climbs",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dork (Together)",
+    "description":"For Time\n33 Back Squats @102/70 kg\n15 Burpees\n33 Deadlifts @102/70 kg\n15 Burpees\n33 Kettlebell Swings @32/24 kg\n15 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Double DT",
+    "description":"10 Rounds for Time\n12 Deadlifts @70/47,5 kg\n9 Hang Power Cleans @70/47,5 kg\n6 Push Jerks @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Double Grace",
+    "description":"For Time\n60 Clean-and-Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Double Helen",
+    "description":"3 Rounds for Time\n800 meter Run\n42 Kettlebell Swings @24/16 kg\n24 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Douglas Miller",
+    "description":"5 Rounds for Time\n1 Power Clean @61/43 kg\n2 Thrusters @61/43 kg\n3 Power Snatches @61/43 kg\n4 Push Presses @61/43 kg\n5 Front Squats @61/43 kg\n6 Deadlifts @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Douglas Oelschlager",
+    "description":"For Time\n100 Push Presses @43/25 kg\nRest 5 minutes.\n75 Back Squats @61/43 kg\nRest 5 minutes.\n50 Deadlifts @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dowll-876",
+    "description":"For Time\nBuy-In: 333 meter Row\n\nThen, 5 Rounds of:\n2 Toes-to-Bars\n4 Air Squats\n19 Burpee Pull-Ups\n28 Abmat Sit-Ups\n11 Box Jump Overs @24/20 in\n19 Kettlebell Swings @32/24 kg\n90 meter Sprint\n\nWear a Weight Vest (@9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dragon",
+    "description":"For Time\n5k Run\n4 minutes to find a 4 rep max Deadlift\n5k Run\n4 minutes to find a 4 rep max Push Jerk",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"DT",
+    "description":"5 Rounds for Time\n12 Deadlifts @70/47,5 kg\n9 Hang Power Cleans @70/47,5 kg\n6 Push Jerks @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Dunn",
+    "description":"AMRAP19\n3 Muscle-Ups\nShuttle Sprint (5,10,15 yards)\n6 Burpee Box Jumps Over @20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Durrell Pearsall",
+    "description":"18-12-6 Reps for Time\nDeadlifts @143/102 kg\nBox Jumps @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"DVB",
+    "description":"For Time\n1 mile Run with medicine ball @9/6 kg\n\nThen 8 Rounds of:\n10 Wall Ball Shots @9/6 kg\n1 Rope Climb \n\nThen, 800 meter Run with medicine ball @9/6 kg\n\nThen 4 Rounds of:\n10 Wall Ball Shots @9/6 kg\n1 Rope Climb\n\nThen, 400 meter Run with medicine ball @9/6 kg\n\nThen 2 Rounds of:\n10 Wall Ball Shots@9/6 kg\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Easy Mary",
+    "description":"AMRAP20\n5 Handstand Push-Ups\n10 Pull-Ups\n25 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Edward D'Atri",
+    "description":"12-9-6 Reps for Time\nDeadlifts @125/84 kg\nBench Presses @84/47,5 kg\nChest-to-Bar Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Edward Day",
+    "description":"For Time\n150 Double-Unders\n100 Sit-Ups\n50 Thrusters @43/30 kg\n25 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Edward Geraghty",
+    "description":"For Time\n800 meter Run\n50 Hang Cleans @34/20 kg\n800 meter Run\n50 Power Snatches @34/20 kg\n800 meter Run\n50 Shoulder-to-Overheads @34/20 kg\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Edward Rall",
+    "description":"3 Rounds for Time\n5 Power Cleans @80% of 1 RM\n10 Ring Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Edward White",
+    "description":"EMOM23\n3 Deadlifts @104/72,5 kg\n5 Strict Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Elizabeth",
+    "description":"21-15-9 Reps for Time\nSquat Cleans @61/43kg\nRing Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Elmsy",
+    "description":"For Time\n400 meter Run*\n\nThen, 10 Rounds of:\n10 Push-Ups\n10 Kettlebell Swings @24/16 kg\n10 Box Jumps @24/20 in\n\nThen,\n400 meter Run*\n\n*Wear a Weight Vest on the Run @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Emily",
+    "description":"10 Rounds for Time\n30 Double-Unders\n15 Pull-Ups\n30 Air Squats\n100 meter Sprint\n2 minute Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Eric Allen",
+    "description":"5 Rounds for Time\n5 Front Squats @61/43 kg\n10 Burpees \n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Eric Olsen",
+    "description":"7 Rounds For Time\n5 Hang Cleans @70/47,5 kg\n5 Front Squats @70/47,5 kg\n5 Box Jumps @30/24 in\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Erin",
+    "description":"5 Rounds for Time\n15 Dumbbell Split Cleans @18/13,5 kg\n21 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Eugene Whelan",
+    "description":"2 Rounds For Time\n30 Cleans @61/43 kg\n30 Wall Ball Shots @9/6 kg\n30 Shoulder-to-Overheads @61/43 kg\n30 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Eva",
+    "description":"5 Rounds for Time\n800 meter Run\n30 Kettlebell Swings @32/24kg\n30 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Evans",
+    "description":"For Time\n100 Push-Ups\n100 Kettlebell Swings @24/16 kg\n100 Toes-to-Bars\n100 ft Rope Climbs (accumulate over multiple ascents)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Falkel",
+    "description":"AMRAP25\n8 Handstand Push-Ups\n8 Box Jumps @30/24 in\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Faustino Apostol Jr.",
+    "description":"2 Rounds For Time\n    5 Squat Cleans @70/52 kg\n    25 Double-Unders\n    5 Shoulder-to-Overheads @70/52 kg\n    25 Double-Unders\n    5 Thrusters @70/52 kg\n    25 Double-Unders\n\nEach thruster should be done from the ground.\n",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Feeks",
+    "description":"2-4-6-8-10-12-14-16 Reps for Time\n100 meter Shuttle Sprint\nDumbbell Clusters @2x30/20 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Felix the Cat",
+    "description":"6 Rounds for Time\n9 Burpees\n9 Box Jumps @24/20 in\n9 Pull-Ups\n9 Thrusters @40/20 kg\n9 Toes-to-Bar\nWith a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Foo",
+    "description":"AMRAP20\n7 Chest-to-Bar Pull-Ups\n77 Double-Unders\n2 Squat Clean Thrusters @77/56 kg\n28 Sit-Ups\n\nBuy-In:\n13 Bench Presses @77/56 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Forrest",
+    "description":"3 Rounds for Time\n20 L-Pull-Ups\n30 Toes-to-Bars\n40 Burpees\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Fractured Fran",
+    "description":"5 Rounds for Time\n9 Thrusters @43/30 kg\n9 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Fran",
+    "description":"21-15-9 Reps for Time\nThrusters @43/30 kg\nPull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Francis Esposito",
+    "description":"21-15-9 Reps for Time\nThrusters @61/43 kg\nBurpees\nPull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Frank Bonomo",
+    "description":"For Time\n30 Hang Squat Cleans @70/47,5 kg\n30 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Frank Callahan",
+    "description":"3 Rounds for Time\n10 Bench Presses @60% BW\n10 Tricep Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Frank Palombo",
+    "description":"For Time\n50 Back Squats @61/43 kg\n40 Burpees\n30 Overhead Squats @61/43 kg\n20 Burpees\n10 Front Squats @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Fred Scheffold",
+    "description":"For Time\n5 Squat Cleans @61/43 kg\n50 Double-Unders\n4 Squat Cleans @75/47,5 kg\n40 Double-Unders\n3 Squat Cleans @84/56 kg\n30 Double-Unders\n2 Squat Cleans @93/61 kg\n20 Double-Unders\n1 Squat Clean @102/70 kg\n10 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Frederick Ill Jr.",
+    "description":"For Time\n30 Snatches @70% BW\n3 Bar Facing Burpees at the top of each minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Freiwald",
+    "description":"For Time\n1 mile Run\n100 Chest-to-Bar Pull-Ups\n200 Burpees\n300 2-count Flutter Kicks\n1 mile Run\n\nEvery 6 minutes perform:\n9 Toes-to-Bars or 11 Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Frelen",
+    "description":"5 Rounds for Time\n800m Run\n15 Dumbbell Thrusters @20/15 kg\n15 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gallant",
+    "description":"For Time\n1 mile Medicine Ball Run @9/6 kg\n60 Burpee Pull-Ups\n800 meter Medicine Ball Run @9/6 kg\n30 Burpee Pull-Ups\n400 meter Medicine Ball Run @9/6 kg\n15 Burpee Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Garrett",
+    "description":"3 Rounds for Time\n75 Air Squats\n25 Ring Handstand Push-Ups\n25 L-Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gary Box",
+    "description":"For Time\n10 Back Squats @125/84 kg\n10 Burpee Box Jumps @24/20 in\n10 Front Squats @102/70 kg\n10 Burpee Box Jumps @24/20 in\n10 Cleans @84/61 kg\n10 Burpee Box Jumps @24/20 in\n10 Snatches @61/43 kg\n10 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gary Geidel",
+    "description":"AMRAP10\n5 Deadlifts @143/102 kg\n10 Buprees over Bar\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gator",
+    "description":"8 Rounds for Time\n5 Front Squats @84 kg\n26 Ring Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gaz",
+    "description":"For Time\n1000 meter Run\nGround-to-Overheads (accumulate 2,000 kg)\n1000 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gaza",
+    "description":"5 Rounds for Time\n35 Kettlebell Swings @24/16 kg\n30 Push-Ups\n25 Pull-Ups\n20 Box Jumps @30/24 in\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Geoffrey Guja",
+    "description":"9-15-21 Reps for Time\nDeadlifts @111/75 kg\nBurpee Box Jumps @24/20 kg\nInchworms",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"George Cain",
+    "description":"7 Rounds For Time\n5 Back Squats @125/84 kg\n5 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"George Depasquale",
+    "description":"2 Rounds For Time\n2000 meter Row\n20 Deadlifts @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Georgie",
+    "description":"AMRAP21\n7 Burpees\n11 Push-Ups\n22 Kettlebell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerald Atwood",
+    "description":"AMRAP10\n1 Clean\n2 Front Squats\n1 Shoulder-to-Overhead\n\nWorkout weight is 70% of your 1 Rep Max Front Squat",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerald Duffy",
+    "description":"2 Rounds For Time\n50 Sit-Ups\n40 Pull-Ups\n30 Back Squats @61/43 kg\n20 Handstand Push-Ups\n10 Front Squats @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerard Baptiste",
+    "description":"6 Rounds for Time\n9 Overhead Squats @43/30 kg\n9 Thrusters @43/30 kg\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerard Barbara",
+    "description":"21-15-9-6-3 Reps for Time\nClean-and-Jerks @61/43 kg\nKnees-to-Elbows",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerard Dewan",
+    "description":"For Time\n21-15-9 reps of:\nClean-and-Jerks @43/30 kg\nBurpees\n\nThen, 15-10-5 reps of:\nClean-and-Jerks @61/43 kg\nBurpees\n\nFinally, 9-6-3 reps of:\nClean-and-Jerks @84/61 kg \nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerard Nevins",
+    "description":"AMRAP15\n6 Deadlifts @115/75 kg\n9 Hand Release Push-Ups\n12 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gerard Schrang",
+    "description":"3 Rounds for Time\n5 Deadlifts @125/84 kg\n10 Burpees\n15 Box Jumps @24/20 in\n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Giff",
+    "description":"4 Rounds for Time\n800 meter Run\n24 Power Snatches @34/25 kg\n4 Bar Muscle-Ups\n4 Turkish Get-Ups @24/16 kg (alternating)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Glen",
+    "description":"For Time\n30 Clean-and-Jerks @61/43 kg\n1 mile Run\n10 Rope Climbs\n1 mile Run\n100 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Glenn Perry",
+    "description":"3 Rounds for Time\n5 Power Cleans @102/70 kg\n20 Push-Ups\n15 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Glenn Wilkinson",
+    "description":"4 Rounds for Time\n10 Tuck Jumps\n100 meter Sprint\n10 Power Cleans @61/43 kg\n100 meter Sprint",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Goodell",
+    "description":"5 Rounds for Time\n400 meter Run\n20 Wall Balls @9/6 kg\n14 Kettlebell Swings @24/16 kg\n38 reps of X\n\nRound 1: Push-Ups\nRound 2: Air Squats\nRound 3: Pull-Ups\nRound 4: Alternating Lunges\nRound 5: Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gordon Emin",
+    "description":"5 Rounds for Time\n15 Deadlifts @70/61 kg\n200 meter Run\n1 Rope Climb\n20 Dumbbell Snatches @22,5/18 kg (alternating)\n15 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Grace",
+    "description":"For Time\n30 Clean-and-Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Greg Alia",
+    "description":"4 Rounds for Time\n23 Russian Kettlebell Swings @24/16 kg\n23 Box Jumps @24/20 in\n23 Sit-Ups\n23 Dumbbell Snatches @15/10 kg\n23 Goblet Squats @24/16 kg\n23 Double-Unders\n23 Medicine Ball Cleans @9/6 kg\n\nThen:\n186 seconds (3:06) Plank Hold",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Greg Buck",
+    "description":"For Time\n201 Single Jump Ropes\n100 AbMat Sit-Ups\n50 Pull-Ups\n25 Thrusters @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gregg Atlas",
+    "description":"For Time\n4,535 kg Cumulative Back Squats\n20 Burpees each time you rack the bar",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gregory Saucedo",
+    "description":"For Time\n500 Double-Unders\n250 Sit-Ups\n100 Kettlebell Swings @16/12 kg\n50 Overhead Squats @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gregory Sikorsky",
+    "description":"5 Rounds for Time\n41 Air Squats\n41 Push-Ups\n41 Sit-Ups\n41 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gregory Stajk",
+    "description":"EMOM13\nFor every odd minute, perform:\n13 Hand Release Push-Ups\n\nFor every even minute, perform:\n13 Shoulder-to-Overheads @52/34 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Griff",
+    "description":"For Time\n800 meter Run\n400 meter Run (backwards)\n800 meter Run\n400 meter Run (backwards)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gunny",
+    "description":"For Time\n1 mile Weighted Run\n50 Push-Ups\n50 Sit-Ups\n1 mile Weighted Run\n50 Push-Ups\n50 Sit-Ups\n1 mile Weighted Run\n\nWear a weight vest, body armor, loaded pack or whatever is needed to load yourself with 50 lb. for the runs.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Gwen",
+    "description":"15-12-9 Reps for Load\nClean-and-Jerks (unbroken)\n\nRest as needed between sets",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hall",
+    "description":"5 Rounds for Time\n3 Cleans @102/70 kg\n200 meter Sprint\n20 Kettlebell Snatches @24/16 (10 each arm)\n2 minutes Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hamilton",
+    "description":"3 Rounds for Time\n1000 meter Row\n50 Push-Ups\n1000 meter Run\n50 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hammer",
+    "description":"5 Rounds for Time\n5 Power Cleans @61/43 kg\n10 Front Squats @61/43 kg\n5 Jerks @61/43 kg\n20 Pull-Ups\n90 seconds Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hansen",
+    "description":"5 Rounds for Time\n30 Kettlebell Swings @32/24 kg\n30 Burpees\n30 GHD Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hard Cindy",
+    "description":"AMRAP20\n5 Weighted Pull-Ups @15/10 kg\n10 Incline Push-Ups (feet on 30/24 box)\n15 Squats @15/10 kg plate",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Harper",
+    "description":"AMRAP23\n9 Chest-to-Bar Pull-Ups\n15 Power Cleans @61/43 kg\n21 Air Squats\n400 meter Run with a Plate @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Harvey Harrell",
+    "description":"For Time\n50 Thrusters @20/15 kg\n45 Air Squats\n40 Pull-Ups\n35 Box Jumps @24/20 in\n30 Toes-to-Bars\n25 Hand Release Push-Ups\n20 Sit-Ups\n15 Burpees\n10 Handstand Push-Ups\n5 Overhead Squats @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Havana",
+    "description":"AMRAP25\n150 Double-Unders\n50 Push-Ups\n15 Power Cleans @84/56 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Heavy DT",
+    "description":"5 Rounds for Time\n12 Deadlifts @93/66 kg\n9 Hang Power Cleans @93/66 kg\n6 Push Jerks @93/66 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Heavy Fran",
+    "description":"15-12-9 Reps for Time\nThrusters @61/43 kg\nWeighted Pull-Ups @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hector Tirado Jr",
+    "description":"For Time\n10-9-8-7-6-5-4-3-2-1 reps of:\nOverhead Squats @61/43 kg\n1-2-3-4-5-6-7-8-9-10 reps of:\nChest-to-Bar Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Helen",
+    "description":"3 Rounds for Time\n400 meter Run\n21 Kettlebell Swings @24/16 kg\n12 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Helton",
+    "description":"3 Rounds for Time\n800 meter Run\n30 Dumbbell Squat Cleans @22,5/15 kg\n30 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Henry Miller Jr.",
+    "description":"For Time\n50 Overhead Squats @43/30 kg\n5 Pull-Ups\n\nPerform 5 pull-ups every minute on the minute beginning at the 1:00 mark",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hey Buddy",
+    "description":"For Time\nBuy-In:\n250 meter Run\n\nThen, 5 Rounds of:\n10 Lunges\n10 Air Squats\n10 Sit-Ups\n8 Burpees\n\nCash-Out:\n250 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hildalgo",
+    "description":"For Time\n2 Mile Run\n2 Minutes Rest\n20 Squat Cleans @61/43 kg\n20 Box Jumps @24/20 in\n20 Overhead Walking Lunges @20/10 kg plate\n20 Box Jumps @24/20 in\n20 Squat Cleans @61/43 kg\n2 minutes Rest\n2 mile Run\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hildy",
+    "description":"For Time\n100 calorie Row\n75 Thrusters @20/15 kg barbell\n50 Pull-Ups\n75 Wall Ball Shots @9/6 kg\n100 calorie Row\nWith a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Holbrook",
+    "description":"10 Rounds for Time\n5 Thrusters @52/38,5 kg\n10 Pull-Ups\n100 meter Sprint\n1 minute Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Holleyman",
+    "description":"30 Rounds for Time\n5 Wall Ball Shots @9/6 kg\n3 Handstand Push-Ups\n1 Power Clean @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hollywood",
+    "description":"For Time\n2 km Run\n22 Wall Ball Shots @12/9 kg\n22 Muscle-Ups\n22 Wall Ball Shots @12/9 kg\n22 Power Cleans @84/61 kg \n22 Wall Ball Shots @12/9 kg\n2 km Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hooch",
+    "description":"5 Rounds for Time\n11 Deadlifts @125/93 kg\n14 Single Arm Dumbbell Thrusters @22,5/15 kg\n\nEvery 2 minutes:\n150 foot Sled Push\n\nTime Cap: 20 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hoopes",
+    "description":"AMRAP33\n5 Thrusters @61/43 kg\n7 Toes-to-Bar\n1 Legless Rope Climb \n200 meter Run\n\nBuy-In: 118 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hoppy",
+    "description":"AMRAP17\n21 Lateral Bar Burpees\n16 Box Jumps @24/20 in\n8 Front Rack Forward Lunges @60/40 kg\n3 Ground-to-Overheads @60/40 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hortman",
+    "description":"AMRAP45\n800 meter Run\n80 Air Squats\n8 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hotshots 19",
+    "description":"6 Rounds for Time\n30 Air Squats\n19 Power Cleans @61/43 kg\n7 Strict Pull-Ups\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Hursty",
+    "description":"15 Rounds for Time\n100 meter Run\n7 Front Squats @60/40 kg\n100 meter Run\n7 Burpee Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Iron Ranger",
+    "description":"For Time\n22 second Silence\n94 Goblet Squats @32/24 kg\n94 Push-Ups\n94 Sit-Ups\n94 Russian Kettlebell Swings @32/24 kg\n22 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Irvine",
+    "description":"For Time\n400 meter Run\n23 Push-Ups\n53 Goblet Squats @24/16 kg\n400 meter Run\n23 Push-Ups\n53 Kettlebell Swings @24/16 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Isabel",
+    "description":"For Time\n30 Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"J.J.",
+    "description":"For Time\n1 Squat Clean @84/61 kg\n10 Parallette Handstand Push-Ups\n2 Squat Cleans @84/61 kg\n9 Parallette Handstand Push-Ups\n3 Squat Cleans @84/61 kg\n8 Parallette Handstand Push-Ups\n4 Squat Cleans @84/61 kg\n7 Parallette Handstand Push-Ups\n5 Squat Cleans @84/61 kg\n6 Parallette Handstand Push-Ups\n6 Squat Cleans @84/61 kg\n5 Parallette Handstand Push-Ups\n7 Squat Cleans @84/61 kg\n4 Parallette Handstand Push-Ups\n8 Squat Cleans @84/61 kg\n3 Parallette Handstand Push-Ups\n9 Squat Cleans @84/61 kg\n2 Parallette Handstand Push-Ups\n10 Squat Cleans @84/61 kg\n1 Parallette Handstand Push-Up",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jack",
+    "description":"AMRAP20\n10 Push Presses @52/38,5 kg\n10 Kettlebell Swings @16/24 kg\n10 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jackie",
+    "description":"For Time\n1,000 meter Row\n50 Thrusters @20/15 kg bar\n30 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jag 28",
+    "description":"For Time\n800 meter Run\n28 Kettlebell Swings @32/24 kg\n28 Strict Pull-Ups\n28 Kettlebell Clean-and-Jerks 2 x 32/24 kg\n28 Strict Pull-Ups\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jaime L. Campbell",
+    "description":"AMRAP25\n7 Deadlifts 84/61 kg\n6 Kettlebell Swings @24/16 kg\n7 Barbell Hack Squats @84/61 kg\n6 Plate Sit-Ups @20/10 kg\n\n1 Burpee at the top of every minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Amato",
+    "description":"EMOM12\nOdd Minutes:\n6 Back Squats @125/93 kg\n\nEven Minutes:\n12 4-Count Mountain Climbers",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Coyle",
+    "description":"For Time\n1000 meter Row\n90 Heavy Rope Single-Unders\n80 Air Squats\n70 Push-Ups\n50 Lunges\n40 Hang Cleans @43/30 kg\n30 Thrusters @43/30 kg\n20 Overhead Squats @43/30 kg\n10 Snatches @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Giberson",
+    "description":"For Time\n10-9-8-7-6-5-4-3-2-1 Reps:\nFront Squats @84/61 kg\n1-2-3-4-5-6-7-8-9-10 Reps:\nBox Jumps @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Gray",
+    "description":"3 Rounds for Time\n20 Box Jumps @24/20 in\n20 Thrusters @43/30 kg\n20 Kettlebell Swings @32/24 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Pappageorge",
+    "description":"21-15-9 Reps for Time\n21-15-9 Reps for Time\nPush Presses @61/43 kg, from the ground\nToes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Prosser",
+    "description":" For Time\n100 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Riches",
+    "description":"AMRAP for as long as possible\nBench Presses @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"James Wrigth",
+    "description":"For Points in 20 Minutes\nOverhead Squat (10 points)\nThruster (5 points)\nSquat Clean (3 points)\nDeadlift (1 point)\n\nPerform all movements with a 60/40kg barbell.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jamie",
+    "description":"For Time\n1000 meter Row\n30 Pull-Ups\n30 Thrusters @40/30 kg\n1000 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jared",
+    "description":"4 Rounds for Time\n800 meter Run\n40 Pull-Ups\n70 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jason",
+    "description":"For Time\n100 Air Squats\n5 Muscle-Ups\n75 Air Squats\n10 Muscle-Ups\n50 Air Squats\n15 Muscle-Ups\n25 Air Squats\n20 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jay",
+    "description":"AMRAP20\n22 Air Squats\n12 Toes-to-Bar\n9 Burpees\n\nWear a weight vest@9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"JBO",
+    "description":"AMRAP28\n9 Overhead Squats @52/34 kg\n1 Legless Rope Climb (from seated position)\n12 Bench Presses @52/34 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jeffrey Giordano",
+    "description":"3 Rounds for Time\n25 Hang Power Snatches @30/20 kg\n50 Double-Unders\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jeffrey Olson",
+    "description":"21-15-9 Reps for Time\nBack Squat @102/70 kg\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jeffrey Palazzo",
+    "description":"EMOM for as long as possible\nDeath by Deadlifts @60% of 1 RM",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jeffrey Stark",
+    "description":"E2MOM for as long as possible\n1 Push Press\n1 Push Jerk\n1 Split Jerk\n20 Double-Unders\n\nComplex with weights starting at 50% of your 1 RM Push Press. Add 5kg every two minutes.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jeffrey Walz",
+    "description":"9 Rounds for Time\n5 Clean-and-Jerks @70/47,5 kg\n10 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jennifer",
+    "description":"AMRAP26\n10 Pull-Ups\n15 Kettlebell Swings @24/16 kg\n20 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jenny",
+    "description":"AMRAP20\n20 Overhead Squats @20/15 kg bar \n20 Back Squats @20/15 kg bar\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jerry",
+    "description":"For Time\n1 mile Run\n2.000 meter Row\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jimmy",
+    "description":"AMRAP30\n5 Deadlifts @120/90 kg\n7 Pull-Ups\n9 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Bergin",
+    "description":"5 Rounds for Time\n15 Kettlebell Swings @32/24 kg\n10 Chest-to-Bar Pull-Ups\n5 Squat Snatches @52/38,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Burnside",
+    "description":"3 Rounds for Time\n20 Back Squats @93/56 kg\n20 Box Step Ups @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Chipura",
+    "description":"2 Rounds For Time\n19 Deadlifts @102/52 kg\n10 Burpees over Bar",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Collins",
+    "description":"For Time\n25 Snatches @52/34 kg\n25 Wall Ball Shots @9/6 kg\n25 Shoulder-to-Overheads @52/34 kg\n25 Burpees\n25 Front Squats @52/34 kg\n25 Toes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Crisci",
+    "description":"For Time\n25 Box Jumps @24/20 in\n25 Pull-Ups\n25 Kettlebell Swings @24/16 kg\n25 Air Squats\n25 Sit-Ups\n25 Deadlifts @61/43 kg\n25 Wall Ball Shots @9/6 kg\n25 Burpees\n25 Power Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Fanning",
+    "description":"For Time\n100 Double-Unders\n80 Pull-Ups\n60 Box Jumps @24/20 in\n40 Front Squats @61/43 kg\n20 Squat Cleans @61/43 kg\n10 Thrusters @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Fischer",
+    "description":"AMRAP for as long as possible\nPerform every 2 minutes:\n1 Clean-and-Jerk @70/47,5 kg\n1 Burpee\n\nadd an additional clean and jerk and burpee every 2 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Florio",
+    "description":"For Time\n10 Bench Presses @75% BW\n10 Ring Dips\n20 Bench Presses @50% BW\n20 Diamond Push-Ups\n30 Bench Presses @35% BW\n30 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Ginley",
+    "description":"2 Rounds For Time\n10 Push Presses @61/43 kg\n10 Back Squats @61/43 kg\n10 Cleans @61/43 kg\n10 Overhead Squats @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Giordano",
+    "description":"For Time\n37 Squat Cleans @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Heffernan",
+    "description":"For Time\n11 Squat Cleans @61/43 kg\n100 Double-Unders\n11 Push Presses @61/43 kg\n75 Sit-Ups\n11 Deadlifts @61/43 kg\n50 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Marshall",
+    "description":"5 Rounds for Time\n3 Overhead Squats @70/47,5 kg\n6 Clean-and-Jerks @70/47,5 kg\n12 Bar Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John McAvoy",
+    "description":"3 Rounds for Time\n5 Muscle-Ups\n7 Bear Complexes @70/47,5 kg\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Moran",
+    "description":"24-20-16-12-8-4 Reps for Time\nFront Rack Lunges @61/43 kg\nHand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Napolitano",
+    "description":"2 Rounds For Time\n40 Pull-Ups\n10 Back Squats @102/70 kg\n40 Wall Ball Shots @9/6 kg\n10 Deadlifts @102/70 kg\n40 Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Paolillo",
+    "description":"12-9-6-3 Reps for Time\nCleans @70/47,5 kg\nPull-Ups\nDeadlifts @70/47,5 kg\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Santore",
+    "description":"50-40-30-20-10 for Time\nDouble-Unders\nShoulder-to-Overheads @43/30 kg\n\nShoulder-to-overhead will always start from the ground",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Schardt",
+    "description":"For Time\n50 Power Snatches @34/20 kg\n50 Burpees\n50 Overhead Squats @34/20 kg\n50 Sit-Ups\n50 Thrusters @34/20 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Tierney",
+    "description":"For Time\n20 Push Presses + Front Squats + Thrusters @20/10 kg\n15 Push Presses + Front Squats + Thrusters @34/20 kg\n10 Push Presses + Front Squats + Thrusters @43/30 kg\n5 Push Presses + Front Squats + Thrusters @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Tipping II",
+    "description":"4 Rounds for Time\n15 Deadlifts @102/70 kg\n15 Box Jumps @24/20 in\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Viagiano II",
+    "description":"5 Rounds for Time\n10 Back Squats @102/70 kg\n40 Sit-Ups\n40 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"John Williamson",
+    "description":"EMOM36\nFrom 0:00-6:00, EMOM of:\n10 Pull-Ups\n\nFrom 6:00-12:00, EMOM of:\n5 Squat Cleans @70/47,5 kg\n\nFrom 12:00-18:00, EMOM of:\n10 Toes-to-Bars\n\nFrom 18:00-24:00, EMOM of:\n5 Shoulder-to-Overheads @70/47,5 kg from the ground\n\nFrom 24:00-30:00, EMOM of:\n10 Hand Release Push-Ups\n\nFrom 30:00-36:00, EMOM of:\n5 Overhead Squats @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Johnson",
+    "description":"AMRAP20\n9 Deadlifts @111/75 kg\n8 Muscle-Ups\n9 Squat Cleans @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jonathan Holmann",
+    "description":"For Time\n15 Strict Presses @80% of 1 rep max\n15 Push Presses @80% of 1 rep max\n15 Push Jerks @80% of 1 rep max\n1 rep max Strict Press\n\nEach repetitions begins from the ground",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jonathan Ielpi",
+    "description":"2 Rounds For Time\n44 Push Presses @30/20 kg\n22 Wall Ball Shots @9/6 kg\n11 Pull-Ups\n11 Hand-Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jonesy",
+    "description":"6 Rounds for Time\n400 meter Run\n6-5-4-3-2-1 Rope Climbs",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jonno",
+    "description":"Three Parts for Time\n3 Rounds of:\n5 Hang Power Cleans @40/30 kg\n10 Push Presses @40/30 kg\n15 Back Squats @40/30 kg\n800 meter Run\n\n3 Rounds of:\n5 Overhead Squats @40/30 kg\n10 Sumo Deadlift High-Pulls @40/30 kg\n15 Front Squats @40/30 kg\n30 Ball Slams @13,5/9 kg\n\n3 Rounds of:\n5 Power Cleans @40/30 kg\n10 Squat Cleans @40/30 kg\n15 Deadlifts @40/30 kg\n30 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jordan",
+    "description":"For Time\n100 Kettlebell Swings @24/16 kg\n100 Sit-Ups\n100 Air Squats\n100 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jorge",
+    "description":"For Time\n30 GHD Sit-Ups\n15 Squat Cleans @70/47,5 kg\n24 GHD Sit-Ups\n12 Squat Cleans @70/47,5 kg\n18 GHD Sit-Ups\n9 Squat Cleans @70/47,5 kg\n12 GHD Sit-Ups\n6 Squat Cleans @70/47,5 kg\n6 GHD Sit-Ups\n3 Squat Cleans @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Jose Guadalupe",
+    "description":"For Time\n54 Pull-Ups\n54 Air Squats\n54 Sit-Ups\n54 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Agnello",
+    "description":"12-9-6-3 Reps for Time\n12-9-6-3 Reps For Time\nSquat Cleans @70/47,5 kg\nWeighted Pull-Ups @20/10 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Angelini Jr.",
+    "description":"For Time\n10 Shoulder-to-Overheads @84/61 kg\n20 Hand Release Push-Ups\n15 Handstand Push-Ups\n20 Shoulder-to-Overheads @61/43 kg\n15 Hand Release Push-Ups\n10 Handstand Push-Ups\n30 Shoulder-to-Overheads @34/25 kg\n10 Hand Release Push-Ups\n5 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Angelini Sr.",
+    "description":"For Time\n20 Power Snatches @61/43 kg\n15 Clean-and-Jerks @102/70 kg\n10 Back Squats @143/102 kg\n5 Deadlifts @184/125 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Farrelly",
+    "description":"For Load\nAccumulate 10,000 lbs with any combination of:\nCleans\nSnatches\nOverhead Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Grzelak",
+    "description":"For Time\n100 Kettlebell Swings @32/24 kg\n2 Burpees at the top of each minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Gullickson",
+    "description":"For Time\n101 Ground-to-Overheads @34/20 kg\n101 Doble-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Henry",
+    "description":"3 Rounds for Time\nBuy-In:\n25 Burpees\n\nThen, 3 Rounds of:\n10 Hang Snatches @52/38,5 kg\n20 Hand Release Push-Ups\n50 Double-Unders\n\nCash-Out:\n25 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Hunter",
+    "description":"EMOM for as long as possible\nDeath By Squats\n1 Squat (70% of 1 Rep Max)\n2 Squats (70% of 1 Rep Max)\n3 Squats (70% of 1 Rep Max)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Leavey",
+    "description":"For Time\n8 Overhead Squats @61/43 kg\n20 Double-Unders\n6 Overhead Squats @61/43 kg\n40 Double-Unders\n4 Overhead Squats @61/43 kg\n60 Double-Unders\n2 Overhead Squats @61/43 kg\n80 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Maffeo",
+    "description":"10 Rounds for Time\n1 Clean-and-Jerk @84/61 kg\n3 Overhead Squats @84/61 kg\n5 Push Jerks @84/61 kg\n\nPerform all the movements as one complex.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Maloney",
+    "description":"For Time\n200 meter Run\n40 Wall Ball Shots @9/6 kg\n30 Knees-to-Elbows\n20 Squat Cleans @61/43 kg\n400 meter Run\n30 Wall Ball Shots @9/6 kg\n20 Knees-to-Elbows\n10 Squat Cleans @61/43 kg\n800 meter Run\n20 Wall Ball Shots @9/6 kg\n10 Knees-to-Elbows\n5 Squat Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Marchbanks Jr.",
+    "description":"10-9-8-7-6-5-4-3-2-1 Reps for Time\nAlternating Dumbbell Snatches @34/20 kg\nHandstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Mascali",
+    "description":"12-9-6-3 Reps for Time\nBack Squats @65% of BW\nBurpee Box Jumps\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Ogren",
+    "description":"For Time\n15 Deadlifts @70/47,5 kg\n30 Toes-to-Bars\n30 Box Jumps @24/20 in\n10 Squat Cleans @70/47,5 kg\n20 Burpees\n20 Double-Unders\n5 Thrusters @70/47,5 kg\n10 Pull-Ups\n10 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Rivelli Jr.",
+    "description":"3 Rounds for Time\n12 Deadlifts @125/93 kg\n24 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseph Spor",
+    "description":"10 Rounds for Time\n1 Strict Press @61/43 kg\n2 Push Presses @61/43 kg\n3 Push Jerks @61/43 kg\n4 Handstand Push-Ups\n10 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joseva",
+    "description":"15-12-9 Reps for Time\nBench Presses (bodyweight)\nDeadlifts (bodyweight)\nPower Cleans (bodyweight)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Josh",
+    "description":"For Time\n21 Overhead Squats @43/30 kg\n42 Pull-Ups\n15 Overhead Squats @43/30 kg\n30 Pull-Ups\n9 Overhead Squats @43/30 kg\n18 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joshie",
+    "description":"3 Rounds for Time\n21 Dumbbell Squat Snatches, Right Arm @18/10 kg\n21 L Pull-Ups\n21 Dumbbell Squat Snatches, Left Arm @18/10 kg\n21 L Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Joshua H. Reeves",
+    "description":"5 Rounds for Time\n9 Toes-to-Bars\n22 Alternating Dumbbell Snatches @25kg/15 kg\n7 Squat Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Josie",
+    "description":"For Time\n1 mile Run\n\nThen, 3 Rounds of:\n30 Burpees\n4 Power Cleans @70/47,5 kg\n6 Front Squats @70/47,5 kg\n\nThen, 1 mile Run\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"JT",
+    "description":"21-15-9 Reps for Time\nHandstand Push-Ups\nRing Dips\nPush-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Justin",
+    "description":"30-20-10 Reps for Time\nBack Squats @bodyweight\nBench Presses @bodyweight\nStrict Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kahler",
+    "description":"For Time\n1978 meter Run\n7 Pull-Ups\n24 Box Jumps @24/20 in\n1 Deadlift @65% of 1 RM\n26 Wall Ball Shots @9/6 kg\n173 Air Squats\n2008 meter Medicine Ball Run @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Karen",
+    "description":"For Time\n150 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Karl Joseph",
+    "description":"21-15-9 Reps for Time\nPush Presses @61/43 kg\n30 Box Jumps @24/20 in\nOverhead Squats @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Keith Glascoe",
+    "description":"For Time\n21 Back Squats @61/43 kg\n400 meter Run\n21 Front Squats @61/43 kg\n400 meter Run\n21 Deadlifts @61/43 kg\n400 meter Run\n21 Shoulder-to-Overheads @61/43 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Keithroy Maynard",
+    "description":"5 Rounds for Time\n44 Box Step-Ups @24/20 in\n12 Push-Ups\n12 Air Squats\n\nWear a weighted vest if available.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kelly",
+    "description":"5 Rounds for Time\n400 meter Run\n30 Box Jumps @24/20 in\n30 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ken Zink",
+    "description":"7 Rounds For Time\n71 Double-Unders\n14 Deadlifts @61/43 kg\n6 Hang Power Cleans @61/43 kg\n9 Front Squats @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kenneth Kumpel",
+    "description":"3 Rounds for Time\n6 Bear Complexes@61/43 kg\n100 meter Bear Crawl",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kenneth Marino",
+    "description":"3 Rounds for Time\n5 Cleans @70/47,5 kg\n10 Burpees\n5 Clean-and-Jerks @70/47,5 kg\n10 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kenneth Phelan",
+    "description":"5 Rounds for Time\n5 Deadlifts @70/47,5 kg\n5 Power Cleans @70/47,5 kg\n5 Front Squats @70/47,5 kg\n15 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kenneth Watson",
+    "description":"4 Rounds for Time\n21 Pull-Ups\n4 Clean-and-Jerks @102/70 kg\n21 Burpees\n4 Back Squats @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin",
+    "description":"3 Rounds for Time\n32 Deadlifts @84/61 kg\n32 Hanging Hip Touches (alternating arms)\n800 meter Running Farmer Carry @7,5 kg dumbbells",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin A. Houston",
+    "description":"3 Rounds for Time\n200 meter Run\n50 meter Farmers Walk @2x15/10 kg sandbag\n10 Burpees\n10 meter Bear Crawl (forward and backwards)\n400 meter Run\n100 meter Farmers Walk @2x15/10 kg sandbag, each hand\n20 Burpees\n10 meter Bear Crawl (forward and backwards)\n600 meter Run\n150 meter Farmers Walk @2x15/10 kg sandbag, each hand\n30 Burpees\n30 meter Bear Crawl (forward and backwards)\nWear a weight vest @9/6 kg (except during the run)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Donnelly",
+    "description":"For Time\n20 Squat Cleans @61/43 kg\n2000 meter Row\n20 Clean-and-Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Dowdell",
+    "description":"For Time\n400 meter Run\n40 Double Unders\n400 meter Run\n40 Thrusters @20/15 kg\n400 meter Run\n40 Box Jumps @24/20 in\n400 meter Run\n40 Toes-to-Bars\n400 meter Run\n40 Overhead Squats @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin O'Rourke",
+    "description":"EMOM10\n2 Front Squats @102/70 kg\n5 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Pfeifer",
+    "description":"5 Rounds for Time\n50 Double-Unders\n15 Hang Power Cleans @43/30 kg\n10 Pull-Ups\n5 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Prior",
+    "description":"3 Rounds for Time\n20 Hang Power Cleans @52/34 kg\n20 Toes-to-Bars\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Pryor",
+    "description":"3 Rounds for Time\n1000 meter Row\n21 Push-Ups\n100 meter Sled Drag\n15 L Pull-Ups\n100 meter Sled Drag\n9 Kettlebell Swings @24kg\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Reilly",
+    "description":"EMOM12\nOdd Minutes:\n5 Push Presses @70/47,5 kg\n\nEven Minutes:\n5 Deadlifts @70/47,5 kg\n\nEach push press should start from the ground",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kevin Smith",
+    "description":"For Time\n30 Snatches @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Klepto",
+    "description":"4 Rounds for Time\n27 Box Jumps @24/20 in\n20 Burpees\n11 Squat Cleans @66/45 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kutschbach",
+    "description":"7 Rounds For Time\n11 Back Squats @84/61 kg\n10 Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Kyle",
+    "description":"4 Rounds for Time\n7 Deadlifts @136/88 kg\n40 Pull-Ups\n40 Ring Dips\n40 Box Jumps @24/20 in\n40 Wall Ball Shots @20/14 lb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lambo",
+    "description":"21-15-9 Reps for Time\nSquats Snatches @50/35 kg\nKettlebell Swings @32/24 kg\nToes-to-Bars\n\nBuy-Out:\n100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Langsdorf",
+    "description":"3 Rounds for Time\n800 meter Run\n25 Chest-to-Bar Pull-Ups\n35 American Kettlebell Swings @24/16 kg\n45 Bear Hug Jumping Squats (15/10 lb Medicine Ball)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Langsdorf 347",
+    "description":"3 Rounds for Time\n400 meter Run\n7 Unbroken* Bear Complexes @61/43 kg\n\n* Burpee penalty for each drop of the barbell (3 Burpees for the 1st",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Last Alarm",
+    "description":"3 Rounds for Time\n13 Deadlifts @102/70 kg\n13 Burpees\n13 Dumbbell Clusters @2x22,5/15 kg\n13 Pull-Ups\n13 Dumbbell Step-Ups @2x22,5/15 kg, 24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lawrence Stack",
+    "description":"For Time\n50 Thrusters @20/15 kg\n50 Sit-Ups\n50 Box Jumps @24/20 in\n50 Kettlebell Swings @24/16 kg\n50 Thrusters @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lawrence Veling",
+    "description":"21-15-9 Reps for Time\nStrict Handstand Push-Ups\nFront Squats @84/52 kg\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lawrence Virgilio",
+    "description":"For Time\n50 Kettlebell Swings @24/16 kg\n50 Sit-Ups\n50 Double-Unders\n25 Kettlebell Swings @24/16 kg\n25 Sit-Ups\n25 Double-Unders\n12 Kettlebell Swings @24/16 kg\n12 Sit-Ups\n12 Double-Unders\n6 Kettlebell Swings @24/16 kg\n6 Sit-Ups\n6 Double-Unders\n3 Kettlebell Swings @24/16 kg\n3 Sit-Ups\n3 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ledesma",
+    "description":"AMRAP20\n5 Parallette Handstand Push-Ups (6 Deficit)\n10 Toes Through Rings\n15 Medicine Ball Cleans @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lee",
+    "description":"5 Rounds for Time\n400 meter Run\n1 Deadlift @156,5/102 kg\n3 Squat Cleans @84/61 kg\n5 Push Jerks @84/61 kg\n3 Muscle-Ups\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lee Fehling",
+    "description":"3 Rounds for Time\n50 Wall Ball Shots @9/6 kg\n10 Clean-and-Jerks @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lee Rigby",
+    "description":"For Time\n22 calorie Row\n25 Squat Cleans @42.5/30 kg\n22 Double-Unders\n25 Bar Over Burpees\n22 Double-Unders\n25 Push Presses @42.5/30 kg\n22 Double-Unders\n25 Pull-Ups\n22 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Legion 8",
+    "description":"8 Rounds for Time\n8 Thrusters @34/25 kg\n8 Chest-to-Bar Pull-Ups\n8 Clapping Push-Ups\n8 Power Snatches @34/25 kg\n8 Knees-to-Elbows\n8 Sumo Deadlift High-Pulls @34/25 kg\n8 Handstand Push-Ups\n8 Toes-to-Bar\nThen 800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Leon Smith Jr.",
+    "description":"For Time\n20 Toes-to-Bars\n20 Shoulder-to-Overheads @61/43\n20 Handstand Push-Ups\n20 Overhead Squats @61/43\n20 Double-Unders\n18 Clean-and-Jerks @61/43",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Leonard Ragaglia",
+    "description":"For Time\n20 Push Presses (65% of 1 RM)\n20 Burpees\n15 Push Presses (70% of 1 RM)\n15 Burpees\n10 Push Presses (75% of 1 RM)\n10 Burpees\n5 Push Presses (80% of 1 RM)\n5 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lesley",
+    "description":"AMRAP35\n24 Jump Lunges\n24 Hollow Rocks\n24 Air Squats\n24 AbMat Sit-Ups\n24 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Liam",
+    "description":"For Time\n800 meter Run @20 kg plate\n100 Toes-to-Bars\n50 Front Squats @70/47,5 kg\n10 Rope Climbs\n800 meter Run @20 kg plate",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lincoln Quappe",
+    "description":"For Time\n10-9-8-7-6-5-4-3-2-1 reps of:\nThrusters @43/30 kg\n\n1-2-3-4-5-6-7-8-9-10 reps of:\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Linda",
+    "description":"10-9-8-7-6-5-4-3-2-1 Reps for Time\nDeadlift @1.5 bodyweight\nBench Press @bodyweight\nClean @3/4 bodyweight",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lindskog",
+    "description":"5 Rounds for Time\n500 meter Run\n20 Box Jumps\n20 Pull-Ups\n5 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Loredo",
+    "description":"6 Rounds for Time\n24 Air Squats\n24 Push-Ups\n24 Walking Lunges\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Louis Arena",
+    "description":"4 Rounds for Time\n10 Back Squats @125/93 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Louis Modafferi",
+    "description":"For Time\n800 meter Run\n50 Box Jumps @24/20 in\n100 Kettlebell Swings @24/16 kg\n150 Double-Unders\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"LT John",
+    "description":"3 Rounds for Time\nMax Unbroken Clean-and-Jerks (BW)\n400 meter Run\n15 GHD Sit-Ups\n\nScore is time plus total clean-and-jerks",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Luce",
+    "description":"3 Rounds for Time\n1,000 meter Run\n10 Muscle-Ups\n100 Air Squats\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Luke",
+    "description":"For Time\n400 meter Run\n15 Clean-and-Jerks @70/47,5 kg\n400 meter Run\n30 Toes-to-Bars\n400 meter Run\n45 Wall Ball Shots @9/6 kg\n400 meter Run\n45 Kettlebell Swings @24/16 kg\n400 meter Run\n30 Ring Dips\n400 meter Run\n15 Weighted Lunge Steps @70/47,5 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lumberjack 20",
+    "description":"For Time\n20 Deadlifts @125/84 kg\n400 meter Run\n20 Kettlebell Swings @32/24 kg\n400 meter Run\n20 Overhead Squats @52/34 kg\n400 meter Run\n20 Burpees\n400 meter Run\n20 Chest-to-Bar Pull-Ups\n400 meter Run\n20 Box Jumps @24/20 in\n400 meter Run\n20 Dumbbell Squat Cleans  @22/15 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lumpy",
+    "description":"3 Rounds for Time\n250 meter Row\n6 Power Cleans @61/43 kg\n6 Thrusters @61/43 kg\n9 Deadlifts @61/43 kg\n9 Sumo Deadlift High-Pulls @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lund",
+    "description":"For Time\n800 meter Run\n12 Pull-Ups\n24 Kettlebell Swings\n48 Toes-to-Bars\n96 Sit-Ups\n48 Push-Ups\n24 Deadlifts @102/84 kg\n12 Pull-Ups\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Lynne",
+    "description":"5 Rounds for Max Reps\nBench Press @bodyweight\nPull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Maggie",
+    "description":"5 Rounds for Time\n20 Handstand Push-Ups\n40 Pull-Ups\n60 Pistols (alternating legs)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Magpie",
+    "description":"3 Rounds for Time\n800 meter Run\n20 Knees-to-Elbows\n30 Kettlebell Swings @24/16 kg\n40 Sumo Deadlift High-Pulls @40/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Maltz",
+    "description":"For Time\n400 meter Run\n50 Pull-Ups\n100 meter Farmer's Carry @2x22,5/10 kg\n50 Dips\n100 Push-Ups\n50 Knees-to-Elbows\n100 Sit-Ups\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Manion",
+    "description":"7 Rounds For Time\n400 meter Run\n29 Back Squats @61/43 kg\n\nTake the back squats from a rack",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Manuel",
+    "description":"5 Rounds for Reps in 50 minutes\n3 minutes of Max Rope Climbs\n2 minutes of Max Air Squats\n2 minutes of Max Push-Ups\n3 minutes to Run 400 meters\n\nWear a weight vest @9/6 kg\n\nAfter the run, rest for the remainder of the 3 minutes before beginning the next round",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Manuel Mojica",
+    "description":"21-18-15-12-9-6-3 Reps for Time\nPull-Ups\nClean-and-Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Marco",
+    "description":"3 Rounds for Time\n21 Pull-Ups\n15 Handstand Push-Ups\n9 Thrusters @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Mark Whitford",
+    "description":"4 Rounds for Time\n15 Dumbbell Thrusters @2x18/10 kg\n50 meter Dumbbell Overhead Walking Lunges @2x18/10 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Marks",
+    "description":"3 Rounds for Time\n21 Pull-Ups\n15 Push Presses @60/40 kg\n9 Deadlifts 100/60 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Marston",
+    "description":"AMRAP20\n1 Deadlift @184/130 kg\n10 Toes-to-Bar\n15 Bar Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Martin Bell",
+    "description":"For Time\n2000 meter Row\n100 Deadlifts @bodyweight\n50 Thrusters @43/30 kg\n1000 meter Row\n100 Overhead-Touch Push-Ups\n50 Pull-Ups\n500 meter Row\n100 AbMat Sit-Ups\n100 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Martin Demeo",
+    "description":"For Time\n21 Squat Cleans @61/43 kg\n15 Box Jumps @24/20 in\n9 Burpees\n21 Box Jumps @24/20 in\n15 Burpees\n9 Squat Cleans @61/43 kg\n21 Burpees\n15 Squat Cleans @61/43 kg\n9 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Martin Egan Jr.",
+    "description":"For Time\n100 Double-Unders\n75 Sit-Ups\n50 Push-Ups\n25 Overhead Squats @61/43 kg\n50 Knees-to-Elbows\n75 Ring Dips\n100 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Martin McWilliams",
+    "description":"For Time\n400 meter Run\n50 Wall Ball Shots @9/6 kg\n5 Back Squats @125/84 kg\n50 Push-Ups\n5 Deadlifts @125/84 kg\n50 Air Squats\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Mary",
+    "description":"AMRAP20\n5 Handstand Push-Ups\n10 Pistols (alternating legs)\n15 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Mary XXX",
+    "description":"AMRAP20\n10 Handstand Push-Ups\n20 Pistols (alternating legs)\n30 Pull-Ups\n15 Handstand Push-Ups\n30 Pistols (alternating legs)\n45 Pull-Ups\n20 Handstand Push-Ups\n40 Pistols (alternating legs)\n60 Pull-Ups\n25 Handstand Push-Ups\n50 Pistols (alternating legs)\n75 Pull-Ups\n30 Handstand Push-Ups\n60 Pistols (alternating legs)\n90 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matt 16",
+    "description":"For Time\n16 Deadlifts @125/84 kg\n16 Hang Power Cleans @84/61 kg\n16 Push Presses @61/43 kg\n800 meter Run\n16 Deadlifts @125/84 kg\n16 Hang Power Cleans @84/61 kg\n16 Push Presses @61/43 kg\n800 meter Run\n16 Deadlifts @125/84 kg\n16 Hang Power Cleans @84/61 kg\n16 Push Presses @61/43 kg\n\nUse three barbells. Take all of them (including push presses) from the ground",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matt B.",
+    "description":"5 Rounds for Time\n5 Burpees\n10 Chest-to-Bar Pull-Ups\n20 Wall Ball Shots @9/6 kg\n30 Push-Ups\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matthew Barnes",
+    "description":"2 Rounds For Time\n25 Pull-Ups\n10 Squat Cleans @61/43 kg\n25 Knees-to-Elbows\n10 Thrusters @61/43 kg\n25 Hand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matthew Garvey",
+    "description":"For Time\n100 Double-Unders\n10 Back Squats @125/84 kg\n50 Double-Unders\n5 Back Squats @125/84 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matthew Locke",
+    "description":"AMRAP33\n50 meter Farmer's Carry @2x24/16 kg\n25 Dumbbell Squats @2x24/16 kg\n10 Burpee Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matthew Rogan",
+    "description":"For Time\n15 Back Squats @84/61 kg\n400 meter Run\n10 Back Squats @102/70 kg\n400 meter Run\n5 Back Squats @125/93 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matthew Ryan",
+    "description":"21-15-9 Reps for Time\nBack Squats @102/70 kg\nDouble-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matthew Thomas",
+    "description":"21-15-9 Reps for Time\nSquat Snatches @42.5/32.5 kg\nPush-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Matty Brown",
+    "description":"For Time\nCash-In:\n49 Pull-Ups\n\nThen, 3 Rounds of:\n4 Clusters @61/43 kg\n9 Single-Arm Kettlebell Clean and Presses @24/20 kg\n20 ft Back Rack Walking Lunges @61/43 kg\n18 Deadlifts @61/43 kg\n\nCash-Out:\n49 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Maupin",
+    "description":"4 Rounds for Time\n800 meter Run\n49 Push-Ups\n49 Sit-Ups\n49 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"McCluskey",
+    "description":"3 Rounds for Time\n9 Muscle-Ups\n15 Burpee Pull-Ups\n21 Pull-Ups\n800 meter Run\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"McDonald & Galagher",
+    "description":"2 Rounds For Time\n200 meter Run\n16 Kettlebell Swings @24/16 kg\n16 Pull-Ups\n16 Front Squats @50/31,5 kg\n200 meter Run\n14 Kettlebell Swings @24/16 kg\n14 Pull-Ups\n14 Front Squats @50/31,5 kg\n200 meter Run\n12 Kettlebell Swings @24/16 kg\n12 Pull-Ups\n12 Front Squats @50/31,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"McGhee",
+    "description":"AMRAP30\n5 Deadlifts @125/84 kg\n13 Push-Ups\n9 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"McLaren",
+    "description":"AMRAP20\n3 Thrusters @50% bodyweight\n5 Box Jumps @24/20 in\n7 Hand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Meadows",
+    "description":"For Time\n20 Muscle-Ups\n25 Lowers from Inverted Hang on the Rings\n30 Ring Handstand Push-Ups\n35 Ring Rows\n40 Ring Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Meiktila",
+    "description":"AMRAP20\n10 Pull-Ups\n40 Air Squats\n80 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael",
+    "description":"3 Rounds for Time\n800 meter Run\n50 Back Extensions\n50 Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Bocchino",
+    "description":"EMOM8\n3 Squat Clean Thrusters @70/47,5 kg\n3 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Boyle",
+    "description":"7 Rounds For Time\n5 Push Presses @70/47,5 kg\n10 Kettlebell Swings @32/24 kg\n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Brennan",
+    "description":"5-10-15-20 Reps for Time\nBurpee Pull-Ups\nWall Ball Shots @9/6 kg\nPower Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Camelo Jr.",
+    "description":"AMRAP20\n5 Clusters @61/43 kg\n31 Push-Ups\n20 Box Jumps @20/14 in\n18 Kettle Bell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Cammarata",
+    "description":"EMOM10\n2 Squat Cleans @84/61 kg\n2 Box Jumps @30/24 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Carlo",
+    "description":"20 Rounds for Time\n1 Front Squat @55% BW\n30 Box Jumps @24/20 in\n\nRest 30 seconds between sets.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Carroll",
+    "description":"12-9-6-3 Reps for Time\nOverhead Squats @61/43 kg\nBurpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Cawley",
+    "description":"For Time\n50 Thrusters @20/15 kg\n40 Power Snatches @43/30 kg\n30 Back Squats @61/43 kg\n16 Cleans @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Clarke",
+    "description":"For Time\n21 Overhead Squats @43/30 kg\n9 Burpee Box Jumps @24/20 in\n500 meter Row\n15 Overhead Squats @43/30 kg\n15 Burpee Box Jumps @24/20 in\n500 meter Row\n9 Overhead Squats @43/30 kg\n21 Burpee Box Jumps @24/20 in\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael D'Auria",
+    "description":"For Time\n10 Back Squats @102/70 kg\n500 meter Row\n10 Back Squats @102/70 kg\n400 meter Run\n10 Back Squats @102/70 kg\n500 meter Row\n10 Back Squats @102/70 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael del Valle Jr.",
+    "description":"5 Rounds for Time\n5 Squat Cleans @70/47,5 kg\n10 Box Jumps @24/20 in\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Edward Roberts",
+    "description":"For Time\n100 Squat Cleans @34/25 kg\n4 Burpees\n\nperform 4 burpees every minute on the minute until you finish the 100 squat cleans",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Elferis",
+    "description":"22-11-5 Reps for Time\nDumbbell Snatches @32/20 kg\nPull-Ups\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Esposito",
+    "description":"21-15-9 Reps for Time\nOverhead Squats @43/30 kg\nHand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael F. Lynch",
+    "description":"For Time\n100 meter Farmer's Carry @2x22,5/15 kg\n20 Back Squats @102/70 kg\n100 Double-Unders\n20 Deadlifts @102/70 kg\n100 meter Farmer's Carry @2x22,5/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Fiore",
+    "description":"5 Rounds for Time\n5 Clean-and-Jerks @70/47,5 kg\n10 Handstand Push-Ups\n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Fodor",
+    "description":"For Time\n100 Reps Total in any combination of:\nBack Squats @84/52 kg\nDeadlifts @84/52 kg\nShoulder-to-Overheads @84/52 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Haub",
+    "description":"EMOM10\n4 Front Squats @102/70 kg\n10 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Healy",
+    "description":"4 Rounds for Time\n10 Wall Ball Shots @9/6 kg\n10 Back Squats @102/61 kg\n10 Wall Ball Shots @9/6 kg\n10 Deadlifts @102/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Kiefer",
+    "description":"EMOM20\nOdd Minutes:\n5 Bench Presses (65% of 1RM)\n\nEven Minutes:\n8 Hand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Lynch",
+    "description":"For Time\n400 meter Run\nThen, 21-15-9 reps of:\nThrusters @30/15 kg\nPull-Ups\n\n400 meter Run\nThen, 21-15-9 reps of:\nCleans @30/15 kg\nRing Dips\n\n400 meter Run\nThen, 21-15-9 reps of:\nWall Ball Shots @9/6 kg\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Lyons",
+    "description":"5 Rounds for Time\n3 Clean-and-Jerks @102/84 kg\n6 Handstand Push-Ups\n9 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Montesi",
+    "description":"EMOM20\n1 Clean-and-Jerk (80% of 1 RM)\n1 Clean (1 RM)\n5 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Mullan",
+    "description":"For Time\n120 Double-Unders\n12 Clean-and-Jerks @70/47,5 kg\n120 Sit-Ups\n12 Power Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Otten",
+    "description":"21-15-9 Reps for Time\nBack Squats @61/43 kg\nWall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Quilty",
+    "description":"For Time\n5 Clean-and-Jerks @84/61 kg\n10 Clean-and-Jerks @61/43 kg\n15 Clean-and-Jerks @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Ragusa",
+    "description":"3 Rounds for Time\n10 Back Squats @102/70 kg\n10 Jumping Lunges",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Roberts",
+    "description":"For Time\n20 Shoulder-to-Overhead @84/61 kg from the ground\n40 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Russo",
+    "description":"5 Rounds for Time\n10 Burpee Deadlifts @102/70 kg\n10 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Warchola",
+    "description":"For Time\n100 Double-Unders\n75 Box Jumps @24/20 in\n50 Kettlebell Swings @32/24 kg\n25 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Michael Weinberg",
+    "description":"5 Rounds for Time\n500 meter Row\n20 Pull-Ups\n5 Push Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Millar",
+    "description":"3 Rounds for Time\n7 Muscle-Ups\n14 Thrusters @40/30 kg\n21 GHD Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Miron",
+    "description":"5 Rounds for Time\n800 meter Run\n23 Back Squats (3/4 Body Weight)\n13 Deadlifts (1 1/2 Body Weight)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Monti",
+    "description":"5 Rounds for Time\n50 Box Step-Ups @20/15 kg barbell, 20/16 box\n15 Cleans @61/43 kg\n50 Box Step-Ups @20/15 kg barbell, 20/16 box\n10 Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Moon",
+    "description":"7 Rounds For Time\n10 Hang Split Snatches, Right Arm @18/12,5 kg\n1 Rope Climb\n10 Hang Split Snatches, Left Arm @18/12,5 kg\n1 Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Moore",
+    "description":"AMRAP20\n1 Rope Climb\n400 meter Run\nMax Reps Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Moose",
+    "description":"For Time\n1,000 meter Row\n\nThen 10 Rounds of:\n7 Bar Facing Burpees\n3 Thrusters @43/30 kg\n\nThen,\n1,200 meter Med Ball Run @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Morrison",
+    "description":"50-40-30-20-10 Reps for Time\nWall Ball Shots @9/6 kg\nBox Jumps @24/20 in\nKettlebell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Moszer",
+    "description":"9 Rounds for Time\n300 meter Run\n6 Air Squats\n6 Pull-Ups\n6 Box Jumps @20/24 in\n6 Burpees\n6 Sit-Ups\n6 Lunges\n6 Russian Kettlebell Swings @24/16 kg\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Mr. Joshua",
+    "description":"5 Rounds for Time\n400 meter Run\n30 GHD Sit-Ups\n15 Deadlifts @113/75 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Murph",
+    "description":"For Time\n1 mile Run\n100 Pull-Ups\n200 Push-Ups\n300 Air Squats\n1 mile Run\nAll with a Weight Vest @9/6 kg\n\nPartition the Pull-Ups, Push-Ups, and Squats as needed. Start and finish with a mile run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nancy",
+    "description":"5 Rounds for Time\n400 meter Run\n15 Overhead Squats @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nasty Girls",
+    "description":"3 Rounds for Time\n50 Air Squats\n7 Muscle-Ups\n10 Hang Power Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nasty Girls V2",
+    "description":"3 Rounds for Time\n50 Pistols (alternating legs)\n7 Muscle-Ups\n10 Hang Power Cleans @80/56,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nate",
+    "description":"AMRAP20\n2 Muscle-Ups\n4 Handstand Push-Ups\n8 Kettlebell Swings @32/24 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ned",
+    "description":"7 Rounds For Time\n11 Back Squats (bodyweight)\n1,000 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Neil Leavy",
+    "description":"For Time\n10 Power Snatches @61/43 kg\n30 Toes-to-Bars\n10 Squat Cleans @61/43 kg\n30 Box Jumps @24/20 in\n10 Thrusters @61/43 kg\n30 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nicholas Chiofalo",
+    "description":"2 Rounds For Time\n800 meter Run\n20 Chest-to-Bar Pull-Ups\n10 Back Squats @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nicholas Rossomando",
+    "description":"3 Rounds for Time\n5 Push Presses @70% of 1 RM\n10 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nick",
+    "description":"12 Rounds for Time\n10 Dumbbell Hang Squat Cleans @20/15 kg\n6 Handstand Push-Ups on Dumbbells",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nickman",
+    "description":"10 Rounds for Time\n200 meter Farmers Carry @24/16 kg\n10 Weighted Pull-Ups @15/10 kg\n20 Dumbbell Power Snatches @25/15 kg, alternating",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nicolas",
+    "description":"For Time\nBuy-In: 2 mile Run\n\nThen, 4 rounds of:\n3 Rope Climbs\n18 Thrusters @43/30 kg\n12 Bar Facing Burpees\n\nCash-Out: 2 mile Run\n\nWear a Weight Vest throughout @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nicole",
+    "description":"AMRAP20\n400 meter Run\nmax Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nield",
+    "description":"For Time\n400 meter Run\n10 Deadlifts @110/70 kg\n1 Rope Climb\n400 meter Run\n10 Deadlifts @110/70 kg\n2 Rope Climbs\n400 meter Run\n10 Deadlifts @110/70 kg\n3 Rope Climbs\n400 meter Run\n10 Deadlifts @110/70 kg\n4 Rope Climbs\n400 meter Run\n10 Deadlifts @110/70 kg\n5 Rope Climbs",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Noah",
+    "description":"For Time\nBuy-in: 67 Push-Ups\n\nThen, 3 Rounds of:\n800 meter Run\n23 Pull-Ups\n23 Wall Ball Shots\n21 Deadlifts @75/47,5 kg\n\nCash-out: 67 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nookie",
+    "description":"AMRAP20\n7 Squat Cleans @40/30 kg\n7 Push Press @40/30 kg\n7 Back Squats @40/30 kg\n200 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nukes",
+    "description":"AMRAP30\nFrom 0:00-8:00\n1 mile Run\nMax Deadlifts @143/93 kg\n\nFrom 8:00-18:00\n1 mile Run\nMax Power Cleans @102/70 kg\n\nFrom 18:00-30:00\n1 mile Run\nMax Overhead Squats @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Nutts",
+    "description":"For Time\n10 Handstand Push-Ups\n15 Deadlifts @113/80 kg\n25 Box Jumps @30/24 in\n50 Pull-Ups\n100 Wall Ball Shots @9/6 kg\n200 Double-Unders\n400 meter Run (with 20/15 kg plate)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Omar",
+    "description":"For Time\n10 Thrusters @43/30 kg\n15 Bar-Facing Burpees\n20 Thrusters @43/30 kg\n25 Bar-Facing Burpees\n30 Thrusters @43/30 kg\n35 Bar-Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Orio Palmer",
+    "description":"7 Rounds For Time\n3 Clean-and-Jerks @84/52 kg\n6 Handstand Push-Ups\n9 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Otis",
+    "description":"AMRAP15\nBack Squat (1 1/2 bodyweight)\nShoulder Press (3/4 bodyweight)\nDeadlift (1 1/2 bodyweight)\n\nStart with 1 rep each. Increase each by 1 rep per round",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Oz",
+    "description":"For Time\n100 Squat Cleans @40/20 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ozzy",
+    "description":"7 Rounds For Time\n11 Deficit Handstand Push-Ups @6/4 in\n1,000 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Palmer (Keith)",
+    "description":"For Time\nBuy-In:\n800 meter Run\n\nThen, 5 Rounds of:\n10 Pull-Ups\n20 Burpees\n30 Air Squats\n\nBuy-Out:\n800 meter Run\n\nWear weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Palmer (Scott)",
+    "description":"5 Rounds for Time\n2 Deadlifts @160/105 kg\n3 Ring Muscle-Ups\n10 Pull-Ups\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Pat",
+    "description":"6 Rounds for Time\n25 Pull-Ups\n50 ft Front-Rack Lunges @34/25 kg\n25 Push-Ups\n50 ft Front-Rack Lunges @34/25 kg\n\nAll while wearing a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Patrick Brown",
+    "description":"For Time\n3 Rounds of:\n5 Back Squats @143/102 kg\n30 Box Jumps @24/20 in\n\nThen, 3 Rounds of:\n5 Deadlifts @143/102 kg\n30 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Patrick Byrne",
+    "description":"For Time\n10 Thrusters @61/43 kg\n10 Pull-Ups\n9 Thrusters @61/43 kg\n9 Pull-Ups\nContinue pattern until:\n1 Thruster @61/43 kg\n1 Pull-Up\n\nThen:\n1 Overhead Squats @43/30 kg\n1 Handstand Push-Up\n2 Overhead Squats @43/30 kg\n2 Handstand Push-Ups\nContinue pattern until:\n10 Overhead Squats @43/30 kg\n10 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Patrick Lyons",
+    "description":"5 Rounds for Time\n5 Deadlifts @61/43 kg\n5 Hang Cleans @61/43 kg\n5 Push Presses @61/43 kg\nFront Squats @61/43 kg\n5 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Patrick O'Keefe",
+    "description":"5 Rounds for Time\n10 Thrusters @61/43 kg\n400 meter Run\n25 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Patrick Waters",
+    "description":"AMRAP10\n5 Clean-and-Jerks @61/47,5 kg\n200 meter Sprint",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Patton",
+    "description":"For Time\n25 Deadlifts @70/47,5 kg\n400 meter Run\n10 Strict Pull-Ups\n10 Clean-and-Jerks @70/47,5 kg\n800 meter Run\n10 Strict Pull-Ups\n10 Clean-and-Jerks @70/47,5 kg\n10 Strict Pull-Ups\n800 meter Run\n10 Clean-and-Jerks @70/47,5 kg\n10 Strict Pull-Ups\n400 meter Run\n25 Deadlifts @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul",
+    "description":"5 Rounds for Time\n50 Double-Unders\n35 Knees-to-Elbows\n20 yard Overhead Walk @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul (Pena)",
+    "description":"7 Rounds For Time\n100 meter Sprint\n19 Kettlebell Swings @32/24 kg\n10 Burpee Box Jumps @24/20 in\n3 minutes Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul 4179",
+    "description":"9 Rounds for Time\n4 Strict Pull-Ups\n1 Deadlift @125/84 kg\n7 Burpees\n9 Double Unders\n100 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Beyer",
+    "description":"6 Rounds for Time\n5 Power Cleans @61/43 kg\n10 Push Presses @61/43 kg\n15 Hand Release Push-Ups\n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Gill",
+    "description":"For Time\n54 Deadlifts @43/30 kg\n54 Double-Unders\n54 Cleans @43/30 kg\n54 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Keating",
+    "description":"AMRAP10\n5 Thrusters @61/43 kg\n7 Kettlebell Swings @32/24 kg\n10 Toes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Martini",
+    "description":"For Time\n20 Burpees\n5 Deadlifts @143/102 kg\n20 Toes-to-Bars\n5 Deadlifts @143/102 kg\n20 Wall Ball Shots @9/6 kg\n5 Deadlifts @143/102 kg\n20 Hand Release Push-Ups\n5 Deadlifts @143/102 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Mitchell",
+    "description":"10-9-8-7-6-5-4-3-2-1 Reps for Time\nOverhead Squats @61/43 kg\nStrict Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Pansini",
+    "description":"For Time\n1000 meter Row\n30 Bar Over Burpees\n20 Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Ruback",
+    "description":"For Time\n25 Back Squats (80% of 1 RM)\n\nIn a single set",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Paul Tegtmeier",
+    "description":"4 Rounds for Time\n21 Burpees\n15 Pull-Ups\n9 Back Squats @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Pedro 66",
+    "description":"3 Rounds for Time\n22 calorie Row\n22 Shoulder-to-Overheads @43/30 kg\n22 Pull-Ups\n22 Back Squats @43/30 kg\n22 Sit-Ups\n\nCash-Out: 5 Push-Ups\n\nDo not use a weight rack. Take the barbell from the ground",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Bielfield",
+    "description":"4 Rounds for Time\n15 Overhead Squats @43/30 kg\n400 meter Run\n15 Handstand Push-Ups\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Brennan",
+    "description":"4 Rounds for Time\n400 meter Run\n10 Overhead Squats @43/30 kg\n10 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Carroll",
+    "description":"AMRAP8\n5 Snatches @52/38,5 kg\n10 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Freund",
+    "description":"EMOM11\n5 Clean-and-Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Ganci Jr.",
+    "description":"3 Rounds for Time\n5 Handstand Push-Ups\n10 Push Presses @43/30 kg\n15 Snatches @43/30 kg\n20 Kettlebell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Herrera",
+    "description":"AMRAP35\n400 meter Run\n9-8-7-6-5-4-3-2-1 Deadlifts (bodyweight)\n200 ft Walking Lunges\n8 Burpees over the Bar",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Langone",
+    "description":"For Time\n30 Burpees\n30 Snatches @34/25 kg\n30 Hand Release Push-Ups\n30 Snatches @61/43 kg\n20 Handstand Push-Ups\n30 Snatches @75/52 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Martin",
+    "description":"2 Rounds For Time\n20 Clean-and-Jerks @61/43 kg\n20 Chest-to-Bar Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Nelson",
+    "description":"4 Rounds for Time\n10 Overhead Squats @43/30 kg\n10 Box Jumps @30/24 in\n10 Shoulder-to-Overheads @43/30 kg\n10 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Peter Vega",
+    "description":"For Time\n75 Thrusters @34/20 kg\n10 Double-Unders\n\nPerform the double-unders at the beginning of every minute after a full minute of thrusters",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Pheezy",
+    "description":"3 Rounds for Time\n5 Front Squats @75/52 kg\n18 Pull-Ups\n5 Deadlifts @102/70 kg\n18 Toes-to-Bars\n5 Push Jerks @75/52 kg\n18 Hand-Release Push-Ups\n\nUse two barbells. Front Squats and Push Jerks start from the ground.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Philip Hayes",
+    "description":"For Time\n10-9-8-7-6-5-4-3-2-1 reps of:\nDeadlifts @143/102 kg\n\n1-2-3-4-5-6-7-8-9-10 reps of:\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Philip Petti",
+    "description":"For Time\n20 Thrusters @61/43 kg\n20 Burpees\n20 Cleans @61/43 kg\n20 Sit-Ups\n20 Shoulder-to-Overheads @61/43 kg\n20 Push-Ups\n20 Overhead Squats @61/43 kg\n20 Handstand Push-Ups\n20 Front Squats @61/43 kg\n20 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Pidgeon",
+    "description":"7 Rounds For Time\n7 Sumo Deadlift High-Pulls @43/30 kg\n16 Box Jumps @24/20 in\n45 Double-Unders\n\nCash out:\n2016 meter Row\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Pike",
+    "description":"5 Rounds for Time\n20 Thrusters @34/25 kg\n10 Strict Ring Dips\n20 Push-Ups\n10 Strict Handstand Push-Ups\n50 meter Bear Crawl",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"PK",
+    "description":"5 Rounds for Time\n10 Back Squats @102/70 kg\n10 Deadlifts @125/84 kg\n400 meter Sprint\n2 minutes Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Rahoi",
+    "description":"AMRAP12\n12 Box Jumps @24 in/20 in\n6 Thrusters @43/30 kg\n6 Bar-Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ralph",
+    "description":"4 Rounds for Time\n8 Deadlifts @113/80 kg\n16 Burpees\n3 Rope Climbs\n600 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Randy",
+    "description":"For Time\n75 Power Snatches @34/25 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Rankel",
+    "description":"AMRAP20\n6 Deadlifts @102/70 kg\n7 Burpee Pull-Ups\n10 Kettlebell Swings @32/24 kg\n200 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Raymond Downey",
+    "description":"For Time\n1600 meter Run\n10 Deadlifts @165/115 kg / 85% BW\n1200 meter Run\n20 Back Squats @125/84 kg\n800 meter Run\n30 Front Squats @84/61 kg\n400 meter Run\n40 Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Raymond Meisenheimer",
+    "description":"3 Rounds for Time\n250 meter Row\n15 Squat Cleans @61/43 kg\n25 Burpees\n15 Squat Cleans @61/43 kg\n250 meter Row\nRest in 2 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Red Horse",
+    "description":"AMRAP10 minutes 17 seconds\n9 Thrusters @43/30 kg\n22 Burpees\n13 Kettlebell Swings @24/16 kg\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Rene'",
+    "description":"7 Rounds For Time\n400 meter Run\n21 Walking Lunges\n15 Pull-Ups\n9 Burpees\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ricardo Quinn",
+    "description":"EMOM15\n2 Push Presses @80% of 1 RM\n10 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Rich",
+    "description":"For Time\n13 Squat Snatches @70/47,5 kg\n\nThen, 10 Rounds of:\n10 Pull-Ups\n100 meter Sprint\n\nThen, 13 Squat Cleans @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Richard Allen",
+    "description":"For Time\n30 Back Squats (65% BW)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Richard Kelly Jr.",
+    "description":"For Time\n30 Power Snatches (80% BW)\n\nThen,\n1 rep max Snatch",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Richard Muldowney",
+    "description":"7 Rounds For Time\n10 Burpees\n8 Pull-Ups\n6 Box Jumps @30/24 in\n4 Handstand Push-Ups\n2 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Richard Prunty",
+    "description":"2 Rounds For Time\n2 Power Snatches @61/43 kg\n50 Double-Unders\n4 Power Cleans @61/43 kg\n25 Kettlebell Swings @24/16 kg\n6 Front Squats @61/43 kg\n50 Hand Release Push-Ups\n8 Push Presses @61/43 kg\n25 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Richard Vanhine",
+    "description":"4 Rounds for Time\n25 Shoulder-to-Overheads @61/43 kg\n400 meter Run\n15 Thrusters @61/43 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ricky",
+    "description":"AMRAP20\n10 Pull-Ups\n5 Dumbbell Deadlifts @34/25 kg\n8 Push-Presses @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Riley",
+    "description":"For Time\n1.5 mile Run\n150 Burpees\n1.5 mile Run\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"RJ",
+    "description":"5 Rounds for Time\n800 meter Run\n5 Rope Climbs\n50 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Roaming Diane",
+    "description":"21-15-9 Reps for Time\nDeadlifts @102/70 kg\nHandstand Walk (in meters)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robbie",
+    "description":"AMRAP25\n8 Freestanding Handstand Push-Ups\n1 L-Sit Rope Climb",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robbins",
+    "description":"6 Rounds for Time\n400 meter Run\n30 Burpees\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Cordice",
+    "description":"For Time\n21-15-9 Reps of:\nPower Snatches @34/20 kg\nSit-Ups\n\nThen,\n15-12-9 Reps of:\nPower Snatches @43/30 kg\nKnees-to-Elbows\n\nFinally,\n12-9-6 Reps of:\nPower Snatches @52/38,5 kg\nToes-to-Bars\n\nUse a single barbell. Athlete must change own weights in between rounds",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Crawford",
+    "description":"For Time\n50 Clean-and-Jerks @43/30 kg\n50 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Curatolo",
+    "description":"For Time\n50 Back Squats @61/43 kg\n50 Deadlifts @61/43 kg\n50 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Evans",
+    "description":"21-15-9 Reps for Time\nSquat Cleans @61/43 kg\nHandstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Fotti",
+    "description":"AMRAP7\n1 Squat Clean @84/61 kg\n2 Clean-and-Jerks @84/61 kg\n3 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Hamilton",
+    "description":"For Time\n41 Push-Ups\n41 Ring Dips\n10 Power Snatches @61/43 kg\n41 Air Squats\n41 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert King Jr.",
+    "description":"AMRAP10\n5 Push Presses (60% of 1RM)\n5 Sit-Ups\n5 Handstand Push-Ups\n5 Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Lane",
+    "description":"For Time\n50 Double-Unders\n5 Power Cleans @61/43 kg\n40 Double-Unders\n5 Shoulder-to-Overheads @70/47,5 kg\n30 Double-Unders\n5 Squat Cleans @84/61 kg\n20 Double-Unders\n5 Clean-and Jerks @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Linnane",
+    "description":"For Time\n50 Cleans @61/43 kg\n75 Toes-to-Bars\n100 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert McMahon",
+    "description":"3 Rounds for Time\n5 Thrusters @70/47,5 kg\n10 Pull-Ups\n15 Ring Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert McPadden",
+    "description":"4 Rounds for Time\n7 Snatches @61/43 kg\n14 Burpees\n21 Wall Ball Shots @9/6 kg\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Minara",
+    "description":"For Time\n25 calorie Row\n25 Box Jump Overs @24/20 in\n25 Deadlifts @84/52 kg\n25 Wall Ball Shots @9/6 kg\n25 Ring Dips\n25 Wall Ball Shots @9/6 kg\n25 Deadlifts @84/52 kg\n25 Box Jump Overs @24/20 in\n25 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Nagel",
+    "description":"3 Rounds for Time\n100 foot Overhead Walking Lunges @20/10 kg\n20 Wall Ball Shots @9/6 kg\n20 Box Jumps @24/20 in\n10 Push Presses @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Parro",
+    "description":"8 Rounds for Time\n8 Front Squats @61/43 kg\n8 Box Jumps @30/24 in\n8 Squat Cleans @61/43 kg\n8 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Regan",
+    "description":"For Time\n30 Back Squats @102/70 kg\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Spear Jr.",
+    "description":"15-12-9 Reps for Time\nFront Squats @84/61 kg\nBurpee Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Robert Wallace",
+    "description":"For Time\n50 Power Snatches @43/30 kg\n40 Burpees\n30 Power Cleans @43/30 kg\n20 GHD Sit-Ups\n10 Overhead Squats @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Roberts Ridge",
+    "description":"For Time\n10 Clean & Jerk @84/52 kg\n20 Kettlebell Swings @32/24 kg\n30 Thrusters @43/30 kg\n40 Chest-to-Bar Pull Ups\n50 Over-the-Bar Burpees\n60 Wall Ball Shots @9/6 kg\n70 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Rock",
+    "description":"3 AMRAP5 in 17 Minutes\nAMRAP in 5 minutes\n10 Power Cleans @61/43 kg\n12 Burpees\n14 Box Jumps @24/20 in\n20 Sit-Ups\nMax distance Row\nRest 1 minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Rocket",
+    "description":"AMRAP30\n50 meter Swim\n10 Push-Ups\n15 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ronald Bucca",
+    "description":"For Time\n21 Pull-Ups\n21 Thrusters @43/30 kg\n15 Snatches @43/30 kg\n15 Pull-Ups\n15 Thrusters @43/30 kg\n10 Snatches @43/30 kg\n9 Pull-Ups\n9 Thrusters @43/30 kg\n5 Snatches @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ronald Kerwin",
+    "description":"For Time\n20 Power Snatches @43/30 kg\n5 Burpees\n15 Power Snatches @47,5/34 kg\n10 Burpees\n10 Power Snatches @52/38,5 kg\n15 Burpees\n5 Power Snatches @61/43 kg\n20 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Roney",
+    "description":"4 Rounds for Time\n200 meter Run\n11 Thrusters @61/43 kg\n200 meter Run\n11 Push Presses @61/43 kg\n200 meter Run\n11 Bench Presses @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ronnie Gies",
+    "description":"4 Rounds for Time\n18 Pull-Ups\n18 Sumo Deadlift High-Pulls\n18 Wall Ball Shots @9/6 kg\n18 Ring Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ronnie Henderson",
+    "description":"For Time\n20 Deadlifts @102/61 kg\n500 meter Row\n10 Deadlifts @125/84 kg\n500 meter Row\n5 Deadlifts @143/102 kg\n500 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Row Cindy Row",
+    "description":"AMRAP20\n5 Pull-Ups\n10 Push-Ups\n15 Air Squats\n20 cal Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Roy",
+    "description":"5 Rounds for Time\n15 Deadlifts @102/70 kg\n20 Box Jumps @24/20 in\n25 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ruben Correa",
+    "description":"For Time\n21 Back Squats @102/84 kg\n400 meter Run\n15 Front Squats @84/61 kg\n800 meter Run\n9 Overhead Squats @61/43 kg\n1600 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Running Jackie",
+    "description":"For Time\n800 meter Run\n50 Thrusters @20/15 kg Barbell\n30 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Runyan",
+    "description":"AMRAP24\n21 Bar Over Burpees\n7 Deadlifts (1.5x bodyweight)\n10 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Russ",
+    "description":"3 Rounds for Time\n50 meter Sandbag Walk @32/24 kg\n50 meter Sandbag Sprint @32/24 kg\n10 meter Bear Crawl\n5 Single-Arm Kettlebell Swing, Clean, Squat, Push Press (each arm) @24/16 kg\n10 meter Bear Crawl\n\nWear a 20 lb Weight Vest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ryan",
+    "description":"5 Rounds for Time\n7 Muscle-Ups\n21 Target Burpees (12/8 in)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Salvatore Calabro",
+    "description":"12-9-6-3 Reps for Time\nDeadlifts (60% BW)\nRing Rows",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Saman",
+    "description":"8 Rounds for Time\n13 Deadlifts @84/56,5 kg\n17 Wall Ball Shots @9/6 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Samuel Oitice",
+    "description":"For Time\n60 Wall Ball Shots @9/6 kg\n50 Deadlifts @61/43 kg\n40 Burpees\n30 Snatches @61/43 kg\n20 Pull-Ups\n10 Clean-and-Jerks @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Santiago",
+    "description":"7 Rounds For Time\n18 Dumbbell Hang Squat Cleans @15/10 kg\n18 Pull-Ups\n10 Power Cleans @61/43 kg\n10 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Santora",
+    "description":"3 Rounds for Max Reps in 17 minutes\n1 minute Squat Cleans @70/47,5 kg\n1 minute Shuttle Sprints (20 ft forward, 20 ft backwards)\n1 minute Deadlifts @111/75 kg\n1 minute Burpees\n1 minute Jerks @70/47,5 kg\n\n1 minute Rest between rounds",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Schmalls",
+    "description":"For Time\n800 meter Run\n\nThen 2 Rounds of:\n50 Burpees\n40 Pull-Ups\n30 Pistols\n20 Kettlebell Swings @24/16 kg\n10 Handstand Push-Ups\n\nThen, 800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Scott Davidson",
+    "description":"For Time\n800 meter Run\n10 Deadlifts @102/70 kg\n600 meter Run\n20 Back Squats @102/70 kg\n400 meter Run\n30 Front Squats @61/43 kg\n200 meter Run\n40 Cleans @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Scott Kopytko",
+    "description":"For Time\n30 Back Squats @102/70 kg\n\n1 minute Rest\n\nThen,\n30 Deadlifts @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Scott Larsen",
+    "description":"E2MOM for as long as possible\nPush Press (75% of 1 rep-max)\nHandstand Push-Up\n\nStart with 1 repetition of each, then add 1 repetition to each movement every 2 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Scottie",
+    "description":"10 Rounds for Time\n10 meter Farmers Carry @32/24 kg\n5 Strict Chin-Ups\n10 meter Farmers Carry @32/24 kg\n5 Burpees\n5 Deadlifts @120/84 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sean",
+    "description":"10 Rounds for Time\n11 Chest-to-Bar Pull-Ups\n22 Front Squats @34/25 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sean Hanley",
+    "description":"For Time\n2000 meter Row\n\nPerform 5 Burpee with Lateral Jump Over the Rower each minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sean Tallon",
+    "description":"5 Rounds for Time\n5 Clean-and-Jerks @61/43 kg\n50 meter Sprint\n5 Thrusters @61/43 kg\n50 meter Sprint",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sebena",
+    "description":"For Time\n2012 meter Row\n30 seconds Rest\n12 Burpee Box Jumps @30/24 in\n24 Thrusters @61/43 kg\n12 Burpee Box Jumps @30/24 in\n24 Thrusters @61/43 kg\n30 seconds Rest\n2012 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sergio Villanueva",
+    "description":"For Time\n50 Double-Unders\n5 Power Snatches @61/43 kg\n40 Double-Unders\n10 Power Cleans @61/43 kg\n30 Double-Unders\n15 Overhead Squats @61/43 kg\n20 Double-Unders\n20 Back Squats @61/43 kg\n10 Double-Unders\n25 Deadlifts @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Servais",
+    "description":"For Time\n1.5 mile Run\n\nThen 8 rounds of:\n19 Pull-Ups\n19 Push-Ups\n19 Burpees\n\nThen,\n400 meter Sandbag Carry (heavy)\n1-mile Farmers Carry @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Severin",
+    "description":"For Time\n50 Strict Pull-Ups\n100 Hand-Release Push-Ups\n5k Run\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sgt. Barros",
+    "description":"AMRAP12\n12 Wall Ball Shots @10/6 kg\n12 Kettlebell Swings @20/16 kg\n12 Kettlebell Snatches @20/16 kg\n100 meter Sprint",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sgt. Michael Smith",
+    "description":"For Time\n1960 meter Row\n\nThen, 10 Rounds of:\n8 Wall Ball Shots @9/6 kg\n27 Double-Unders\n7 Push-Ups\n7 Pull-Ups\n\nThen, 2016 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sgt. Wyt",
+    "description":"For Time\n8 Rounds of:\n36 Double-Unders\n3 Burpee Chest-to-Bar Pull-Ups\n\nThen immediately, one round of:\n13 Bear Complexes @52/34 kg\n20 Bar Over Burpees\n19 Bear Complexes @52/34 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sham",
+    "description":"7 Rounds For Time\n11 Deadlifts (bodyweight)\n100 meter Sprint",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Shawn",
+    "description":"For Time\n5 mile Run\n\nAfter each 5 minute run interval:\n50 Air Squats\n50 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Shawn Powell",
+    "description":"AMRAP11\n1 minute Power Cleans @61/43 kg\n1 minute Front Squats @61/43 kg\n1 minute Deadlifts @61/43 kg\n1 minute Push Presses @61/43 kg\n1 minute Back Squats @61/43 kg\n\n1 minute Rest\n\n1 minute Push Jerks @61/43 kg\n1 minute Overhead Squats @61/43 kg\n1 minute Pendlay Rows @61/43 kg\n1 minute Strict Press @61/43 kg\n1 minute Power Snatches @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sher",
+    "description":"For Time\n10-9-8-7-6-5-4-3-2-1 Reps of:\nSquat Cleans (75% BW)\n\n20-18-16-14-12-10-8-6-4-2 Reps of:\nBurpee Strict Pull-Ups\n\n30-27-24-21-18-15-12-9-6-3 Reps of:\nDouble-Unders\n\nTime Cap: 60 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Ship",
+    "description":"9 Rounds for Time\n7 Squat Cleans @84/61\n8 Burpee Box Jumps @36/30 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sisson",
+    "description":"AMRAP20\n1 Rope Climb\n5 Burpees\n200 meter Run\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Slob",
+    "description":"For Time\n2,000 meter Run\n50 Pull-Ups\n50 Thrusters @40/30 kg\n2,000 meter Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Small",
+    "description":"3 Rounds for Time\n1000 meter Row\n50 Burpees\n50 Box Jumps @24/20 in\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Smudge",
+    "description":"3 Rounds for Time\n5 Muscle-Ups\n10 Squat Cleans @60/40 kg\n20 GHD Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Smykowski",
+    "description":"For Time\n6 km Run\n60 Burpee Pull-Ups\n\nWear a weight vest @13,5/9 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Snipes",
+    "description":"AMRAP40\n9 Clean-and-Jerks @61/43 kg\n1 Rope Climb\n8 Burpees\n12 Push-Ups\n40 second Plank Hold\n800 foot Sandbag Carry @36/22,5 kg\n20 Double-Unders\n17 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Special Mary",
+    "description":"For Time\n5 Strict Handstand Push-Ups\n10 Pistols\n15 Strict Pull-Ups\n10 Strict Handstand Push-Ups\n20 Pistols\n30 Strict Pull-Ups\n15 Strict Handstand Push-Ups\n30 Pistols\n45 Strict Pull-Ups\n10 Strict Handstand Push-Ups\n20 Pistols\n30 Strict Pull-Ups\n5 Strict Handstand Push-Ups\n10 Pistols\n15 Strict Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Spehar",
+    "description":"For Time\n100 Thrusters @61/43 kg\n100 Chest-to-Bar Pull-Ups\n6 mile Run\n\npartition the thrusters, pull-ups and run as needed",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Sphinx",
+    "description":"For Time\nFrom 0:00-10:00:\n1 rep max Front Squat\n\nThen, at 10:00:\n5 Rounds For Time\n2 Rope Climbs\n9 Chest-to-Bar Pull-Ups\n4 Front Squats (80% of 1 rep max)\n5 Strict Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"SSG Atkins",
+    "description":"For Time\nCash-In:\n800 meter Kettlebell Run @20/15 kg\n\n50 Box Jumps @24/20 in\n50 Wall Ball Shots @9/6 kg\n1 minute Hang Hold\n50 Kettlebell Swings @20/15 kg\n50 Ball Slams 9/6 kg\n200 meter Farmer's Carry @2x20/15 kg\n1 minute Hang Hold\n50 Push Presses @43/30 kg\n50 Hand Release Push-Ups\n50 Jumping Pull-Ups\n50 Tire Flips @104/72,5 kg\n200 meter Farmer's Carry @2x20/15 kg\n1 minute Hang Hold\n50 Burpees\n\nCash-Out:\n800 meter Kettlebell Run @20/15 kg\n75 second Hang Hold*\n\n*Penalty for breaking during the 75-second hang hold: perform 75 burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Stanley Smagala Jr.",
+    "description":"5 Rounds for Time\n50 Double-Unders\n25 Wall Ball Shots @9/6 kg\n15 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Stephen",
+    "description":"30-25-20-15-10-5 Reps for Time\nGHD Sit-Ups\nBack Extensions\nKnees-to-Elbows\nRomanian Deadlifts @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Stephen Belson",
+    "description":"For Time\n20 Box Jumps @30/24 in\n5 Squat Cleans @70/47,5 kg\n30 Box Jumps @30/24 in\n5 Squat Cleans @70/47,5 kg\n40 Box Jumps @20 in\n5 Squat Cleans @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Stephen Harrell",
+    "description":"7 Rounds For Time\n5 Overhead Squats @61/43 kg\nMax Thrusters @61/43 kg\n2 minute Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Stephen Russell",
+    "description":"For Time\n100 Dumbbell Squat Cleans @15/10 kg\n3 Burpees at the top of each minute",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Stephen Siller",
+    "description":"For Time\n50 Burpees\n20 Front Squats (80% of 1 RM)\n50 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Steve Mercado",
+    "description":"For Time\n40 Pull-Ups\n40 Power Snatches @47,5/34 kg\n40 Knees-to-Elbows\n40 Power Cleans @47,5/34 kg\n40 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Steve Skipton Sr.",
+    "description":"For Time\n400 meter Run\n25 Kettlebell Swings @24/16 kg\n25 Burpees\n25 Air Squats\n25 Kettlebell Push Press @24/16 kg\n1 mile Run\n25 Kettlebell Swings @24/16 kg\n25 Burpees\n25 Air Squats\n25 Kettlebell Push Press @24/16 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Steven Bates",
+    "description":"2 Rounds For Time\n35 Knees-to-Elbows\n35 Thrusters @20/15 kg\n35 Air Squats\n35 Overhead Squats @20/15 kg\n35 Hand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Steven Coakley",
+    "description":"2 Rounds For Time\n17 Deadlifts @84/61 kg\n17 Box Jumps @24/20 in\n17 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Steven Olson",
+    "description":"For Time\n150 Wall Ball Shots @9/6 kg\n\nEvery 2 minutes on the minute, perform:\n3 Deadlifts @143/102 kg\n3 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Strange",
+    "description":"8 Rounds for Time\n600 meter Run\n11 Weighted Pull-Ups @24/16 kg\n11 Walking Lunges @24/16 kg\n11 Thrusters @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Striking the Four Fives",
+    "description":"4 Rounds for Time\n15 calorie Row\n5 Power Cleans @61/43 kg\n5 Bar Facing Burpees\n5 Front Squats @61/43 kg\n5 Chest-to-Bar Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Swasey",
+    "description":"For Time\n32 Chest-to-Bar Pull-Ups\n32 Wall Balls @9/6 kg\n32 Cleans @61/38,5 kg\n3.2 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Swink",
+    "description":"For Time\n1 mile Run\n27 Bench Presses (70%)\n27 Handstand Push-Ups\n27 Dumbbell Thrusters @2x22,5/15 kg\n27 Knees-to-Elbows\n27 Deadlift @70/47,5 kg\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"T",
+    "description":"5 Rounds for Time\n100-meter sprint\n10 Squat Clean Thrusters @52/34 kg\n15 Kettlebell Swings @32/24 kg\n100 meter Sprint\n2 minutes Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"T.J.",
+    "description":"For Time\n10 Bench Presses @84/61 kg\n10 Strict Pull-Ups\nMax Thrusters @61/43 kg\n\nRepeat until you have completed 100 Thrusters",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"T.U.P.",
+    "description":"15-12-9-6-3 Reps for Time\nPower Cleans @61/43 kg\nPull-Ups\nFront Squats @61/43 kg\nPull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tama",
+    "description":"For Time\n800 meter Single-Arm Barbell Farmers Carry @20/15 kg\n31 Toes-to-Bars\n31 Push-Ups\n31 Front Squats @43/30 kg\n400 meter Single-Arm Barbell Farmers Carry @43/30 kg\n31 Toes-to-Bars\n31 Push-Ups\n31 Hang Power Cleans @61/43 kg\n200 meter Single-Arm Barbell Farmers Carry @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tarel Coleman",
+    "description":"2 Rounds For Time\n50 Overhead Squats @20/15 kg\n20 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Taylor",
+    "description":"4 Rounds for Time\n400 meter Run\n5 Burpee Muscle-Ups\n\nWear a weight vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Terence Hatton",
+    "description":"For Time\n1600 meter Run\n25 Push Presses @70/47,5 kg\n50 Box Jumps\n25 Deadlifts @70/47,5 kg\n50 Sit-Ups\n25 Cleans @70/47,5 kg\n50 Pull-Ups\n1600 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Terence McShane",
+    "description":"EMOM20\nFor odd minutes, perform:\n5 Front Squats @93/52 kg\n\nFor even minutes, perform:\n5 Burpee Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Terrence Farrell",
+    "description":"For Time\n10 Deadlifts @143/102 kg\n20 Back Squats @102/70 kg\n30 Cleans @61/43 kg\n40 Push Presses @43/30 kg\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Terry",
+    "description":"For Time\n1 mile Run\n100 Push-Ups\n100 meter Bear Crawl\n1 mile Run\n100 meter Bear Crawl\n100 Push-Ups\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thacker",
+    "description":"For Time\nBuy-In:\n400 meter Run\n50 Double-Unders\n\nThen, 6 Rounds of:\n26 Burpees\n8 Power Cleans @75/55 kg\n4 Shoulder-to-Overheads @75/55 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Batman",
+    "description":"For Time\nBuy-In:\n100 Air Squats\n\n50-40-30-20-10 Reps\nBox Jumps @30/24 in\nWall Ball Shots @9/6 kg\nKettlebell Swings @24/16 kg\n200 meter Run\n\nAll of the above with a weight vest @9/6 kg\n\nBuy-Out:\n4 Rounds of 5 Deadlifts (80% max)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Chief",
+    "description":"Five AMRAP3 in 19 mintues\nAMRAP in 3 minutes\n3 Power Cleans @61/43 kg\n6 Push-Ups\n9 Air Squats\n\nThen Rest 1 minute\n\nRepeat 5 times",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Don",
+    "description":"For Time\n66 Deadlifts @50/34 kg\n66 Box Jump @24/20 in\n66 Kettlebell swings @24/16 kg\n66 Knees-to-Elbows\n66 Sit-Ups\n66 Pull-Ups\n66 Thrusters @25/15 kg\n66 Wall Ball Shots @9/6 kg\n66 Burpees\n66 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Fuhrmannator",
+    "description":"6 Rounds for Time\n100 meter Run\n5 Burpees\n10 Kettlebell Swings @24/16 kg\n15 Deadlifts @43/30 kg\n20 Back Squats @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Hammy",
+    "description":"For Time\n1,000 meter Row\n7 Squat Clean-and-Jerks @61/43 kg\n50 Push-Ups\n7 Squat Clean-and-Jerks @61/43 kg\n50 Sit-Ups\n7 Squat Clean-and-Jerks @61/43 kg\n50 Box Jumps @24/20 in\n7 Squat Clean-and-Jerks @61/43 kg\n50 Pull-Ups\n7 Squat Clean-and-Jerks @61/43 kg\n1,000 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Legend",
+    "description":"For Time\n4 Pistols\n25 Kettlebell Swings @24/16 kg\n50 Push-Ups\n75 Pull-Ups\n50 Push-Ups\n25 Kettlebell Swings @24/16 kg\n4 Pistols",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Lyon",
+    "description":"5 Rounds for Time\n7 Squat Cleans @75/52 kg\n7 Shoulder-to-Overheads @75/52 kg\n7 Burpee Chest-to-Bar Pull-Ups\n\n2 minutes Rest between rounds",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"The Seven",
+    "description":"7 Rounds For Time\n7 Handstand Push-Ups\n7 Thrusters @61/43 kg\n7 Knees-to-Elbows\n7 Deadlifts @111/75 kg\n7 Burpees\n7 Kettlebell Swings @32/24 kg\n7 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Butler",
+    "description":"15-12-9-6-3 Reps for Time\nHang Cleans @61/43 kg\nWall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Casoria",
+    "description":"3 Rounds for Time\n10 Deadlifts (55% BW)\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Cullen III",
+    "description":"4 Rounds for Time\n5 Overhead Squats @61/43 kg\n10 Handstand Push-Ups\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Deangelis",
+    "description":"8 Rounds for Time\n3 Thrusters @84/61 kg\n5 Box Jumps @30/24 in\n3 Cleans @84/61 kg\n5 Burpee Ring Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Farino",
+    "description":"For Time\n200 Double-Unders\n150 Air Squats\n100 Sit-Ups\n50 Box Jumps @24/20 in\n25 Clean-and-Jerks @70/47,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Foley",
+    "description":"For Time\n150 Wall Ball Shots @9/6 kg\n100 Push-Ups\n50 Air Squats\n25 Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Gambino",
+    "description":"E3MOM18\n7 Bear Complexes @61/43 kg\n14 Burpees\n21 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Gardner",
+    "description":"For Time\n30 Back Squats @84/61 kg\n100 Wall Ball Shots @9/6 kg\n30 Shoulder-to-Overheads @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Hannafin",
+    "description":"9-15-21 Reps for Time\nPower Snatches @52/34 kg\nToes-to-Bars\nHandstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Haskell Jr.",
+    "description":"For Time\n50 Back Squats @61/43 kg\n10 Box Jumps @30/24 in\n40 Back Squats @61/43 kg\n20 Toes-to-Bars\n30 Back Squats @61/43 kg\n30 Burpees\n20 Back Squats @61/43 kg\n40 AbMat Sit-Ups\n10 Back Squats @61/43 kg\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Hetzel",
+    "description":"EMOM for as long as possible\nDeath by...\n\nFirst minute:\n1 Thruster @61/43 kg\n1 Burpee\n\nSecond minute:\n2 Thrusters @61/43 kg\n2 Burpees\n\netc...",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Holohan",
+    "description":"3 Rounds for Time\n5 Overhead Squats (75% BW)\n10 V-Ups\n15 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Kelly",
+    "description":"For Time\n10-9-8-7-6-5-4-3-2-1 reps of:\nOverhead Squats @61/43 kg\n\n1-2-3-4-5-6-7-8-9-10 reps of:\nBar Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Kennedy",
+    "description":"For Time\n20 Deadlifts @84/61 kg\n25 Double-Unders\n15 Push Presses @84/61 kg\n50 Double-Unders\n10 Squat Cleans @84/61 kg\n100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Kuveikis",
+    "description":"EMOM12\n2 Clean-and-Jerks @70/47,5 kg\n3 Bar Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas McCann",
+    "description":"For Time\n50 Ground-to-Overheads @70/47,5 kg\n10 Air Squats\n\nBegin each minute on the minute with 10 air squats. ",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Mignione",
+    "description":"4 Rounds for Time\n5 Squat Clean Thrusters @61/43 kg\n10 Burpees\n20 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Moody",
+    "description":"5 Rounds for Time\n7 Bear Complexes @61/43 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas O'Hagan",
+    "description":"For Time\n100 Double-Unders\n40 Burpees\n25 Power Cleans @52/34 kg\n400 meter Run\n25 Power Cleans @52/34 kg\n40 Burpees\n100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas Sabella",
+    "description":"For Time\n20 Front Squats @84/52 kg\n400 meter Run\n20 Back Squats @84/52 kg\n400 meter Run\n20 Deadlifts @84/52 kg\n400 meter Run\n5 minute Squat Hold",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thomas W. Kelly",
+    "description":"15-12-9 Reps for Time\nThrusters @70/47,5 kg\nWeighted Strict Pull-Ups @20/10 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Thompson",
+    "description":"10 Rounds for Time\n1 Rope Climb (from seated)\n29 Back Squats @43/30 kg\n10 meter Barbell Farmer Carry @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Three Wise Man",
+    "description":"Three AMRAP4 in 16 minutes\nAMRAP in 4 minutes\n5 Hang Squat Snatches @61/43 kg\n10 Bar-Facing Burpees\n\nRest 2 minutes\nThen, AMRAP in 4 minutes\n10 Power Cleans @61/43 kg\n20 Pull-Ups\n\nRest 2 minutes\nThen, AMRAP in 4 minutes\n15 Box Jump-Overs @24/20 in\n30 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tiff",
+    "description":"For Time\n1.5 mile Run\n\nThen AMRAP in remaining time:\n11 Chest-to-Bar Pull-Ups\n7 Hang Squat Cleans (155/105 lb)\n7 Push Presses (155/105 lb)\n\nTime Cap: 25 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tillman",
+    "description":"7 Rounds For Time\n7 Deadlifts @143/93 kg\n200 meter Sprint\n15 Pull-Ups\n45 seconds Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Time Priority Diane",
+    "description":"AMRAP in 4:30 Minutes\n60 seconds of Deadlifts @102/70 kg\n60 seconds of Handstand Push-Ups\n45 seconds of Deadlifts @102/70 kg\n45 seconds of Handstand Push-Ups\n30 seconds of Deadlifts @102/70 kg\n30 seconds of Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Timothy Haskell",
+    "description":"4 Rounds for Time\n18 Overhead Squats @52/38,5 kg\n18 Toes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Timothy Higgins",
+    "description":"6 Rounds for Time\n5 Deadlifts (70% bodyweight of 1 RM)\n5 Toes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Timothy McSweeney",
+    "description":"7 Rounds For Time\n21 Double-Unders\n14 Burpees\n7 Deadlifts (BW)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Timothy Stackpole",
+    "description":"For Time\n50 Clean-and-Jerks @61/43 kg\n50 Burpees\n800 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Timothy Welty",
+    "description":"AMRAP20\n1 Power Clean (90% BW)\n3 Front Squats (90% BW)\n3 Push Presses (90% BW)\n1 Clean-and-Jerk (90% BW)\n1 minute Rest\n\nPerform as a complex",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"TK",
+    "description":"AMRAP20\n8 Strict Pull-Ups\n8 Box Jumps @36/30 in\n12 Kettlebell Swings @32/24 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tom",
+    "description":"AMRAP25\n7 Muscle-Ups\n11 Thrusters @70/47,5 kg\n14 Toes-to-Bar",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tommy Mac",
+    "description":"2 Rounds For Time\n12 Burpees\n12 Thrusters @52/34 kg\n12 Burpees\n12 Power Snatches @52/34 kg\n12 Burpees\n12 Push Jerks @52/34 kg\n12 Burpees\n12 Hang Squat Cleans @52/34 kg\n12 Burpees\n12 Overhead Squats @52/34 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tommy V",
+    "description":"For Time\n21 Thrusters @52/34 kg\n12 Rope Climbs\n15 Thrusters @52/34 kg\n9 Rope Climbs\n9 Thrusters @52/34 kg\n6 Rope Climbs",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tripp",
+    "description":"For Time\n37 Burpees\n\nThen, 2 Rounds of:\n10 Shoulder-to-Overheads @61/43 kg\n24 Medicine Ball Sit-Ups @9/6 kg\n80 Double-Unders\n\nThen, 37 Burpees\n\nThen, 2 Rounds of:\n3 Wall Walks\n15 Bar Muscle-Ups\n19 Thrusters @61/43 kg\n\nFinally, 37 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tully",
+    "description":"4 Rounds for Time\n200 meter Swim\n23 Dumbell Squat Cleans @2 x 18/12,5 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tumilson",
+    "description":"8 Rounds for Time\n200 meter Run\n11 Dumbbell Burpee Deadlifts @27/18 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Turns",
+    "description":"5 Rounds for Time\n15 Push Presses @50/35 kg\n21 Front Squats @50/35 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Tyler",
+    "description":"5 Rounds for Time\n7 Muscle-Ups\n21 Sumo-Deadlift High-Pulls @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"UK Armed Forces Day",
+    "description":"7 Rounds For Time\n29 Wall Ball Shots @9/7 kg\n6 Clean-and-Jerks @60/40 kg\n13 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Upside-Down Angie",
+    "description":"For Time\n100 Air Squats\n100 Sit-ups\n100 Push-ups\n100 Pull-ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vernon Cherry",
+    "description":"For Time\n50 Burpee Dumbbell Deadlifts @32/20 kg\n50 Pull-Ups\n18 Dumbbell Snatches @32/20 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vernon Richard",
+    "description":"AMRAP10\n5 Push Jerks @70/47,5 kg\n12 Mountain Climbers",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vijay",
+    "description":"50-40-30-20-10 Reps for Time\nBurpee Pull-Ups\nSit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vincent Brunton",
+    "description":"5 Rounds for Time\n5 Handstand Push-Ups\n10 Squat Cleans @61/43 kg\n20 Box Jumps @24/20 in\n40 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vincent Giammona",
+    "description":"5 Rounds for Time\n5 Front Squats @115/70 kg\n15 Toes-to-Bars\n25 Air Squats\n50 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vincent Halloran",
+    "description":"For Time\n50 Wall Ball Shots @9/6 kg\n40 Pull-Ups\n30 Deadlifts @102/66 kg\n20 Box Jumps @24/20 in\n10 Overhead Squats @61/43 kg\n20 Box Jumps @24/20 in\n30 Deadlifts @102/66 kg\n40 Pull-Ups\n50 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vincent Kane",
+    "description":"For Time and Reps\nTabata Air Squats\n20 Snatches @61/43 kg\nTabata Push-Ups\n20 Thrusters @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vincent Morello",
+    "description":"3 Rounds for Time\n5 Dumbbell Snatches @2x25/15 kg\n10 Burpees\n5 Snatches @70/47,5 kg\n10 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Vincent Princiotta",
+    "description":"For Time\n30 Squat Clean to Shoulder-to-Overheads @84/61 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Viola 1",
+    "description":"AMRAP25\n3,6,9,12,15,18 Reps and so on\nThrusters @43/30 kg\nPull-Ups\nOver-the-Bar Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Viola 2",
+    "description":"AMRAP20\n400 meter Run\n11 Power Snatches @43/30 kg\n17 Pull-Ups\n13 Power Cleans @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Wade",
+    "description":"For Time\nRun 1,200 meters\n\nThen, 4 rounds of:\n12 Strict Pull-Ups\n9 Strict Dips\n6 Strict Handstand Push-Ups\n\nThen, run 1,200 meters\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Walsh",
+    "description":"4 Rounds for Time\n22 Burpee Pull-Ups\n22 Back Squats @84/61 kg\n200 meter Run @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Walter Hynes",
+    "description":"10-9-8-7-6-5-4-3-2-1 Reps for Time\nCleans (50% of 1 Rep Max)\nHandstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"War Frank",
+    "description":"3 Rounds for Time\n25 Muscle-Ups\n100 Air Squats\n35 GHD Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Watson",
+    "description":"For Time\n59 Pull-Ups\n23 Push-Ups\n400 meter Run\n59 Ground-to-Overheads @20/10 kg\n23 Toes-to-Bars\n400 meter Run\n59 Wall Ball Shots @9/6 kg\n23 Burpees\n200 meter Run\n200 Double Unders\n200 meter Run\n23 Burpees\n59 Wall Ball Shots @9/6 kg\n400 meter Run\n23 Toes-to-Bars\n59 Ground-to-Overheads @20/10 kg\n400 meter Run\n23 Push-Ups\n59 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Weaver",
+    "description":"4 Rounds for Time\n10 L-Pull-Ups\n15 Push-Ups\n15 Chest-to-Bar Pull-Ups\n15 Push-Ups\n20 Pull-Ups\n15 Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Webster",
+    "description":"6 Rounds for Time\n28 Wall Ball Shots @9/6 kg\n400 meter Run\n2 Clean-and-Jerks @102/70 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Weijdt",
+    "description":"5 Rounds for Time\n19 Chest-to-Bar Pull-Ups\n12 Box Jumps @30/24 in\n8 Squat Cleans @75/45 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"WES",
+    "description":"For Time\n800 meter Run with a @10/5 kg plate\n\nThen:\n14 Rounds of:\n5 Strict Pull-Ups\n4 Burpee Box Jumps @24/20 in\n3 Cleans @84/61 kg\n\nThen:\n800 meter Run with a @10/5 kg plate",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Weston",
+    "description":"5 Rounds for Time\n1000 meter Row\n200 meter Farmer Carry @20 kg dumbbells\n50 meter Waiter Walk, Right Arm @20 kg dumbbell\n50 meter Waiter Walk, Left Arm @20 kg dumbbell",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Westy's 10.000",
+    "description":"For Time\n100 Double Dumbbell Ground-to-Overhead @2x22,5/15 kg\n\nWear a Weight Vest (70/50 lb)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Wheeler",
+    "description":"For Time\n21 Flutter Kicks (4-count)\n2100 meter Run\n\nThen, 4 rounds of:\n10 Pull-Ups\n22 Sit-Ups\n15 Push-Ups\n11 Burpees\n20 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"White",
+    "description":"5 Rounds for Time\n3 Rope Climbs \n10 Toes-to-Bars\n21 Overhead Walking Lunges @20/15 kg\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Whitten",
+    "description":"5 Rounds for Time\n22 Kettlebell Swings @32/24 kg\n22 Box Jumps @24/20 in\n400 meter Run\n22 Burpees\n22 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Will",
+    "description":"6 Rounds for Time\n14 Back Squats @61/43 kg\n19 Deadlifts @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Will Lindsay",
+    "description":"10 Rounds for Time\n3 Devil Presses @2x25/15 kg\n22 Alternating Dumbbell Lunges @2x25/15 kg\n19 Air Squats\n\nWear a Weight Vest @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Burke Jr.",
+    "description":"For Time\n21 Thrusters @43/30 kg\n9 Burpee Pull-Ups\n15 Thrusters @43/30 kg\n15 Burpee Box Jumps @20/14 in\n9 Thrusters @43/30 kg\n21 Bar Over Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Feehan",
+    "description":"For Time\n25 Front Squats @43/30 kg\n25 Burpees\n25 Overhead Squats @43/30 kg\n25 Toes-to-Bars\n25 Power Cleans @43/30 kg\n25 Pull-Ups\n25 Push Presses @43/30 kg\n25 Push-Ups\n25 Power Snatches @43/30 kg\n25 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Henry Jr.",
+    "description":"For Time\n50 Clean-and-Jerks @61/43 kg\n50 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Johnston",
+    "description":"EMOM5\n5 Push Presses @84/61 kg\n5 Strict Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Krukowski",
+    "description":"AMRAP10\n5 Back Squats @102/70 kg\n10 Box Jumps @24/20 in\n15 Broomstick Overhead Squats\n20 Walking Lunges (2-count)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Lake",
+    "description":"EMOM10\n2 Overhead Squats @61/43 kg\n2 Push Presses @61/43 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Mahoney",
+    "description":"3 Rounds for Time\n5 Thrusters @70/47,5 kg\n10 Burpees\n15 Box Jumps @24/20 in\n20 Kettlebell Swings @24/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William McGinn",
+    "description":"For Time\n40 Rings Dips\n10 Snatches @70/47,5 kg\n2,000 meter Row\n10 Cleans @70/47,5 kg\n100 foot Dumbbell Walking Lunges @2x25/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William McGovern",
+    "description":"5 Rounds for Time\n7 Deadlifts @102/70 kg\n14 Pull-Ups\n21 Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William O'Keefe",
+    "description":"For Time\n25 Back Squats @93/61 kg\n2000 meter Row\n1 mile Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"William Wren",
+    "description":"21-15-9 Reps for Time\nBench Presses (65% of 1 RM)\nRing Dips\nHand Release Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Willy",
+    "description":"3 Rounds for Time\n800 meter Run\n5 Front Squats @102/70 kg\n200 meter Run\n11 Chest-to-Bar Pull-Ups\n400 meter Run\n12 Kettlebell Swings @32/24 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Wilmot",
+    "description":"6 Rounds for Time\n50 Air Squats\n25 Ring Dips",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Wittman",
+    "description":"7 Rounds For Time\n15 Kettlebell Swings @24/16 kg\n15 Power Cleans @43/30 kg\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Woehlke",
+    "description":"3 Rounds, each for Time\n4 Jerks @84/61 kg\n5 Front Squats @84/61 kg\n6 Power Cleans @84/61 kg\n40 Pull-Ups\n50 Push-Ups\n60 Sit-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Wood",
+    "description":"5 Rounds for Time\n400 meter Run\n10 Burpee Box Jumps @24/20 in\n10 Sumo-Deadlift High-Pulls @43/30 kg\n10 Thrusters @43/30 kg\n1 minute Rest",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Worsley",
+    "description":"5 Rounds for Time\n9 Handstand Push-Ups\n15 Ring Dips\n21 Thrusters @42.5/30 kg\n200 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Wyk",
+    "description":"5 Rounds for Time\n5 Front Squats @102/70 kg\n5 Rope Climbs\n400 meter Run @20/15 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Yeti",
+    "description":"For Time\n25 Pull-Ups\n10 Muscle-Ups\n1.5 mile Run\n10 Muscle-Ups\n25 Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Zach (Clouser)",
+    "description":"For Time\n1,800 meter Run\nThen, 7 Rounds of:\n7 Clean-and-Jerks @70/50 kg\n19 Wall Ball Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Zachary Tellier",
+    "description":"For Time\n10 Burpees\n\n10 Burpees\n25 Push-Ups\n\n10 Burpees\n25 Push-Ups\n50 Lunges\n\n10 Burpees\n25 Push-Ups\n50 Lunges\n100 Sit-Ups\n\n10 Burpees\n25 Push-Ups\n50 Lunges\n100 Sit-Ups\n150 Air Squats",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Zembiec",
+    "description":"5 Rounds for Time\n11 Back Squats @84/61 kg\n7 Burpee Pull-Ups (Strict)\n400 meter Run",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Zeus",
+    "description":"3 Rounds for Time\n30 Wall Ball Shots@9/6 kg\n30 Sumo Deadlift High-Pull @34/25 kg\n30 Box Jump @20 in\n30 Push Presses @34/25 kg\n30 calorie Row\n30 Push-Ups\n10 Back Squats (Bodyweight)",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Zimmerman",
+    "description":"AMRAP25\n11 Chest-to-Bar Pull-Ups\n2 Deadlifts @143/93 kg\n10 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Zirkle",
+    "description":"12 Rounds for Time\n200 meter Run\n7 Pull-Ups\n8 Dumbbell Cleans @2x22,5/15 kg\n4 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 11.1",
+    "description":"AMRAP10\n30 Double-Unders\n15 Power Snatches @34/25 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 11.2",
+    "description":"AMRAP15\n9 Deadlifts @70/45 kg\n12 Push-Ups\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 11.3",
+    "description":"AMRAP5\nSquat Cleans @75/50 kg\nJerks @75/50 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 11.4",
+    "description":"AMRAP10\n60 Bar Facing Burpees\n30 Overhead Squats @54,5/41 kg\n10 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 11.5",
+    "description":"AMRAP20\n5 Power Cleans @66/47,5 kg\n10 Toes-To-Bars\n15 Wall Balls Shots @9/6 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 11.6",
+    "description":"AMRAP7\n3 Thrusters @45/30 kg\n3 Chest-to-Bar Pull-Ups\n6 Thrusters @45/30 kg\n6 Chest-to-Bar Pull-Ups\n9 Thrusters @45/30 kg\n9 Chest-to-Bar Pull-Ups\n\nIf you complete the round of 9, complete a round of 12, then go on to 15, etc.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 12.1",
+    "description":"AMRAP7\nBurpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 12.2",
+    "description":"AMRAP10\n30 Snatches @34/20 kg\n30 Snatches @61/34 kg\n30 Snatches @75/45 kg\nMax Snatches @95/55 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 12.3",
+    "description":"AMRAP18\n15 Box Jumps @24/20 in\n12 Push Presses @52/34 kg\n9 Toes-to-Bars",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 12.4",
+    "description":"AMRAP12\n150 Wall Ball Shots @9/6 kg\n90 Double-Unders\n30 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 12.5",
+    "description":"AMRAP7\n3 Thrusters @45/30 kg\n3 Chest-to-Bar Pull-Ups\n6 Thrusters @45/30 kg\n6 Chest-to-Bar Pull-Ups\n9 Thrusters @45/30 kg\n9 Chest-to-Bar Pull-Ups\n\nIf you complete the round of 9, complete a round of 12, then go on to 15, etc.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 13.1",
+    "description":"AMRAP17\n40 Burpees\n30 Snatches @34/20 kg\n30 Burpees\n30 Snatches @61/34 kg\n20 Burpees\n30 Snatches @75/45 kg\n10 Burpees\nMax Snatches @95/55 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 13.2",
+    "description":"AMRAP10\n5 Shoulder-to-Overheads @52/34 kg\n10 Deadlifts @52/34 kg\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 13.3",
+    "description":"AMRAP12\n150 Wall Balls @9/6 kg\n90 Double-Unders\n30 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 13.4",
+    "description":"AMRAP7\n3 Clean-and-Jerks @61/43 kg\n3 Toes-to-Bars\n6 Clean-and-Jerks @61/43 kg\n6 Toes-to-Bars\n9 Clean-and-Jerks @61/43 kg\n9 Toes-to-Bars\n12 Clean-and-Jerks @61/43 kg\n12 Toes-to-Bars\n\nIf athlete completes the round of 12, go on to 15. Complete 15, go on the 18, etc.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 13.5",
+    "description":"AMRAP for as long as possible\n15 Thrusters @45/30 kg\n15 Chest-to-Bar Pull-Ups\n\nIf 90 reps (3 rounds) are completed in under 4 minutes, time extends to 8 minutes.\n\nIf 180 reps (6 rounds) are completed in under 8 minutes, time extends to 12 minutes. Etc.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 14.1",
+    "description":"AMRAP10\n30 Double-Unders\n15 Power Snatches @34/25 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 14.2",
+    "description":"For as long as possible\nFrom 0:00-3:00, 2 rounds of:\n10 Overhead Squats @43/30 kg\n10 Chest-to-Bar Pull-Ups\n\nFrom 3:00-6:00, 2 rounds of:\n12 Overhead Squats @43/30 kg\n12 Chest-to-Bar Pull-Ups\n\nFrom 6:00-9:00, 2 rounds of:\n14 Overhead Squats @43/30 kg\n14 Chest-to-Bar Pull-Ups\n\nFollow the pattern until you fail to complete both rounds.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 14.3",
+    "description":"AMRAP8\n10 Deadlifts @61/43 kg\n15 Box Jumps @24/20 in\n15 Deadlifts @84/61 kg\n15 Box Jumps @24/20 in\n20 Deadlifts @102/70 kg\n15 Box Jumps @24/20 in\n25 Deadlifts @125/84 kg\n15 Box Jumps @24/20 in\n30 Deadlifts @143/93 kg\n15 Box Jumps @24/20 in\n35 Deadlifts @165/102 kg\n15 Box Jumps @24/20 in",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 14.4",
+    "description":"AMRAP14\n60 calorie Row\n50 Toes-to-Bars\n40 Wall Ball Shots @9/6 kg\n30 Cleans @61\n20 Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 14.5",
+    "description":"21-18-15-12-9-6-3 Reps for Time\nThrusters @43/30 kg\nBar Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 15.1 & 15.1A",
+    "description":"Two Parts in 15 Minutes\n(15.1) AMRAP in 9 minutes\n15 Toes-to-Bars\n10 Deadlifts @52/34 kg\n5 Snatches @52/34 kg\n\nThen (15.1A), from 9:00-15:00\n1-Rep-Max Clean-and-Jerk",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 15.2",
+    "description":"For as long as possible\nFrom 0:00-3:00, 2 rounds of:\n10 Overhead Squats @43/30 kg\n10 Chest-to-Bar Pull-Ups\n\nFrom 3:00-6:00, 2 rounds of:\n12 Overhead Squats @43/30 kg\n12 Chest-to-Bar Pull-Ups\n\nFrom 6:00-9:00, 2 rounds of:\n14 Overhead Squats @43/30 kg\n14 Chest-to-Bar Pull-Ups\n\nFollow the pattern until you fail to complete both rounds.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 15.3",
+    "description":"AMRAP14\n7 Muscle-Ups\n50 Wall Ball Shots @9/6 kg\n100 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 15.4",
+    "description":"AMRAP8\n3 Handstand Push-Ups\n3 Cleans @84/56,5 kg\n6 Handstand Push-Ups\n3 Cleans @84/56,5 kg\n9 Handstand Push-Ups\n3 Cleans @84/56,5 kg\n12 Handstand Push-Ups\n6 Cleans @84/56,5 kg\n15 Handstand Push-Ups\n6 Cleans @84/56,5 kg\n18 Handstand Push-Ups\n6 Cleans @84/56,5 kg\n21 Handstand Push-Ups\n9 Cleans @84/56,5 kg\n\nEtc., following same pattern until time is up",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 15.5",
+    "description":"27-21-15-9 Reps for Time\nRow (calories)\nThrusters @43/30 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 16.1",
+    "description":"AMRAP20\n25 ft Overhead Walking Lunges @43/30 kg\n8 Bar-Facing Burpees\n25 ft Overhead Walking Lunges @43/30 kg\n8 Chest-to-Bar Pull-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 16.2",
+    "description":"AMRAP20\nContinue until 4 minutes:\n25 Toes-to-Bars\n50 Double-Unders\n15 Squat Cleans @61/38,5 kg\n\nIf completed before 4 minutes, continue until 8 minutes:\n25 Toes-to-Bars\n50 Double-Unders\n13 Squat Cleans @84/52 kg\n\nIf completed before 8 minutes, continue until 12 minutes:\n25 Toes-to-Bars\n50 Double-Unders\n11 Squat Cleans @102/66 kg\n\nIf completed before 12 minutes, continue until 16 minutes:\n25 Toes-to-Bars\n50 Double-Unders\n9 Squat Cleans @125/80 kg\n\nIf completed before 16 minutes, continue until 20 minutes:\n25 Toes-to-Bars\n50 Double-Unders\n7 Squat Cleans @143/93 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 16.3",
+    "description":"AMRAP7\n10 Power Snatches @34/25 kg\n3 Bar Muscle-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 16.4",
+    "description":"AMRAP13\n55 Deadlifts @102/70 kg\n55 Wall Ball Shots @9/6 kg\n55 calorie Row\n55 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 16.5",
+    "description":"21-18-15-12-9-6-3 Reps for Time\nThrusters @43/30 kg\nBar-Facing Burpees",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 17.1",
+    "description":"For Time\n10 Dumbbell Snatches @22,5/15 kg\n15 Burpee Box Jump Overs\n20 Dumbbell Snatches @22,5/15 kg\n15 Burpee Box Jump Overs\n30 Dumbbell Snatches @22,5/15 kg\n15 Burpee Box Jump Overs\n40 Dumbbell Snatches @22,5/15 kg\n15 Burpee Box Jump Overs\n50 Dumbbell Snatches @22,5/15 kg\n15 Burpee Box Jump Overs\n\nTime Cap: 20 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 17.2",
+    "description":"AMRAP12\n2 Rounds of:\n50 ft Dumbbell Walking Lunges @22,5/16 kg\n16 Toe-to-Bars\n8 Dumbbell Power Cleans @22,5/16 kg\nThen, 2 Rounds of:\n50 ft Dumbbell Walking Lunges @22,5/16 kg\n16 Bar Muscle-Ups\n8 Dumbbell Power Cleans @22,5/16 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 17.3",
+    "description":"For Reps\nPrior to 8 minutes, 3 rounds of:\n6 Chest-to-Bar Pull-Ups\n6 Squat Snatches @43/30 kg\n\nThen 3 rounds of:\n7 Chest-to-Bar Pull-Ups\n5 Squat Snatches @61/43 kg\n\n* Prior to 12 minutes, 3 rounds of:\n8 Chest-to-Bar Pull-Ups\n4 Squat Snatches @84/61 kg\n\n* Prior to 16 minutes, 3 rounds of:\n9 Chest-to-Bar Pull-Ups\n3 Squat Snatches @102/70 kg\n\n* Prior to 20 minutes, 3 rounds of:\n10 Chest-to-Bar Pull-Ups\n2 Squat Snatches @111/80 kg\n\n* Prior to 24 minutes, 3 rounds of:\n11 Chest-to-Bar Pull-Ups\n1 Squat Snatch @120/84 kg",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 17.4",
+    "description":"AMRAP13\n55 Deadlifts @102/70 kg\n55 Wall Ball Shots @9/6 kg\n55 calorie Row\n55 Handstand Push-Ups",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 17.5",
+    "description":"10 Rounds for Time\n9 Thrusters @43/30 kg\n35 Double-Unders",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 18.1",
+    "description":"AMRAP20\n8 Toes-to-Bars\n10 Dumbbell Hang Clean-and-Jerks @22,5/15 kg\n14/12 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 18.2 & 18.2A",
+    "description":"For Time\n1-2-3-4-5-6-7-8-9-10 Reps of:\nDumbbell Squats @2x22,5/15 kg\nBar-Facing Burpees\n\nThen, 18.2 A\n1 rep max Clean\n\nTime Cap: 12 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 18.3",
+    "description":"2 Rounds For Time\n100 Double-Unders\n20 Overhead Squats @52/36 kg\n100 Double-Unders\n12 Ring Muscle-Ups\n100 Double-Unders\n20 Dumbbell Snatches @22,5/15 kg\n100 Double-Unders\n12 Bar Muscle-Ups\n\nTime cap: 14 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 18.4",
+    "description":"For Time\n21-15-9 Reps of:\nDeadlift @102/70 kg\nHandstand Push-Ups\n\nThen, 21-15-9 Reps of:\nDeadlift @143/93 kg\n50 ft Handstand Walk\n\nTime Cap: 9 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 18.5",
+    "description":"AMRAP7\n3 Thrusters @45/30 kg\n3 Chest-to-Bar Pull-Ups\n6 Thrusters @45/30 kg\n6 Chest-to-Bar Pull-Ups\n9 Thrusters @45/30 kg\n9 Chest-to-Bar Pull-Ups\n\nIf you complete the round of 9, complete a round of 12, then go on to 15, etc.",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 19.1",
+    "description":"AMRAP15\n19 Wall Ball Shots @9/6 kg\n19 calorie Row",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 19.2",
+    "description":"AMRAP20\nBeginning on an 8-minute clock, complete as many reps as possible of:\n25 Toes-to-Bars\n50 Double-Unders\n15 Squat Cleans @61/38,5 kg\n25 Toes-to-Bars\n50 Double-Unders\n13 squat cleans @84/52 kg\n\nIf completed before 8 minutes, add 4 minutes to the clock and proceed to:\n25 Toes-to-Bars\n50 Double-Unders\n11 Squat Cleans @102/66 kg\n\nIf completed before 12 minutes, add 4 minutes to the clock and proceed to:\n25 Toes-to-Bars\n50 Double-Unders\n9 Squat Cleans @125/80 kg\n\nIf completed before 16 minutes, add 4 minutes to the clock and proceed to:\n25 Toes-to-Bars\n50 Double-Unders\n7 Squat Cleans @143/93 kg\n\nTime Cap: 20 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 19.3",
+    "description":"For Time\n200 foot Dumbbell Overhead Lunges @22,5/15 kg\n50 Dumbbell Box Step-Ups @24/20 in\n50 Strict Handstand Push-Ups\n200 foot Handstand Walk\n\nTime Cap: 10 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 19.4",
+    "description":"For Time\n3 Rounds of:\n10 Snatches @43/30 kg\n12 Bar-Facing Burpees\n\n3 minutes Rest\n\nThen, 3 rounds of:\n10 Bar Muscle-Ups\n12 Bar-Facing Burpees\n\nTime cap: 12 minutes",
+    "datetime":"0"
+    },
+    {
+    "user_id":"0",
+    "name":"Open 19.5",
+    "description":"For Time\n33-27-21-15-9 reps of:\nThrusters @43/30 kg\nChest-to-Bar Pull-Ups\n\nTime Cap: 20 minutes",
+    "datetime":"0"
+    }
+    ]
+}

@@ -4,14 +4,14 @@ const bcrypt = require('bcryptjs');
 // Importing objects
 const User = require('../obj/User');
 const database = require("./sqlite.model.js");
-const config = require("../config.json");
+const cmdline = require("../cmdline");
 
 function validate(token) {
     return new Promise((resolve, reject) => {
         if (!token) {
             reject(new Error("No token provided"));
         } else {
-            jwt.verify(token, config.secret, function(error, decoded) {
+            jwt.verify(token, cmdline.config.secret, function(error, decoded) {
                 if (error) {
                     console.log("DEBUG: user.model.js :: validate() ::", error.message);
                     reject(new Error("Failed to authenticate token"));
@@ -34,7 +34,7 @@ function sign(object, hash, password) {
             } else {
                 // create a token
                 let user = new User(object.id, object.name);
-                let token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, config.secret, {
+                let token = jwt.sign({ id: user._id, sub: user.sub, name: user.name }, cmdline.config.secret, {
                     expiresIn: 86400 // expires in 24 hours
                 });
                 resolve(token);

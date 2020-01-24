@@ -15,7 +15,7 @@ open();
  * Initialize database
  */
 if (cmdline.initDatabase) {
-    init();
+    init(cmdline.data);
 }
 
 function open() {
@@ -30,7 +30,7 @@ function open() {
     });
 }
 
-function init() {
+function init(data) {
     console.log("INFO: sqlite :: init() :: Initialize database " + cmdline.dbFile);
     db.serialize(function() {
         // **** REMOVING IT LATER
@@ -54,74 +54,49 @@ function init() {
         /**
          * Users
          */
-
-        // Remove this!
-        // These data are for development only
-        // admin must be added first (userId 1), then the other user
-        var users = [
-            ['admin', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe'],
-            ['user', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe'],
-            ['user1', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe'],
-            ['user2', '$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe']
-        ];
-
-        for (var row in users) {
-            set = users[row];
-            let sql = "INSERT INTO table_users (name, password) VALUES (?, ?)";
-            db.run(sql, set, function(err) {
-                if (err) {
-                    return console.error(err.message);
+        for (let user of data.users) {
+            db.run("INSERT INTO table_users(name, password) VALUES (?, ?)", [user.name, user.hash], function(error) {
+                if (error) {
+                    return console.error(error.message);
                 }
-                console.log("sqlite :: init() :: User inserted.");
+                console.log("INFO: sqlite :: init() :: Inserted users " + user.name);
             });
         }
 
         /**
          * Equipment
          */
-
-        var equipment = [
-            ['None'],
-            ['Box'],
-            ['Wallball'],
-            ['Dumbell']
-        ];
-
-        for (var row in equipment) {
-            set = equipment[row];
-            let sql = "INSERT INTO table_equipment (equipment) VALUES (?)";
-            db.run(sql, set, function(err) {
-                if (err) {
-                    return console.error(err.message);
+        for (let equipment of data.equipment) {
+            db.run("INSERT INTO table_equipment(equipment) VALUES (?)", [equipment.name], function(error) {
+                if (error) {
+                    return console.error(error.message);
                 }
-                console.log("sqlite :: init() :: Equipment inserted.");
+                console.log("INFO: sqlite :: init() :: Inserted equipment " + equipment.name);
             });
         }
 
         /**
          * Movements
          */
-
-        var movements = [
-            ['Box jumps', '2'],
-            ['Burpee box jumps', '2'],
-            ['Box steps', '2'],
-            ['Box steps over', '2'],
-            ['Burpee', '1'],
-            ['Burpee box jumps', '2'],
-            ['Burpee box jumps over', '2'],
-            ['Wallball shots', '3'],
-            ['Dumbell snatch', '4']
-        ];
-
-        for (var row in movements) {
-            set = movements[row];
-            let sql = "INSERT INTO table_movements (movement, equipmentIds) VALUES (?, ?)";
-            db.run(sql, set, function(err) {
-                if (err) {
-                    return console.error(err.message);
+        for (let movement of data.movements) {
+            db.run("INSERT INTO table_movements(movement, equipmentIds) VALUES (?, ?)", [movement.name, movement.equipmentIds], function(error) {
+                if (error) {
+                    return console.error(error.message);
                 }
-                console.log("sqlite :: init() :: Movement inserted.");
+                console.log("INFO: sqlite :: init() :: Inserted movement " + movement.name);
+            });
+        }
+
+        /**
+         * Workouts
+         */
+        for (let workout of data.workouts) {
+            // The default userId of default workouts is 1 (admin: visible from everyone; editable only by admin)
+            db.run("INSERT INTO table_workout(userId, name, description, datetime) VALUES (?, ?, ?, ?)", [1, workout.name, workout.description, workout.datetime], function(error) {
+                if (error) {
+                    return console.error(error.message);
+                }
+                console.log("INFO: sqlite :: init() :: Inserted workout " + workout.name);
             });
         }
     })
