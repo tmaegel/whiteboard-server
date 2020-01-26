@@ -3,11 +3,11 @@ const app = express();
 const bodyParser = require("body-parser");
 
 // Importing objects
-const authenticationRoutes = require("./api/routes/authentication");
-const equipmentRoutes = require("./api/routes/equipment");
-const movementRoutes = require("./api/routes/movement");
-const workoutRoutes = require("./api/routes/workout");
-const scoreRoutes = require("./api/routes/score");
+const authenticationRoute = require("./api/routes/authentication.route.js");
+const equipmentRoute = require("./api/routes/equipment.route.js");
+const movementRoute = require("./api/routes/movement.route.js");
+const workoutRoute = require("./api/routes/workout.route.js");
+const scoreRoute = require("./api/routes/score.route.js");
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -25,20 +25,20 @@ app.use((req, res, next) => {
     next();
 });
 
-// Requests are forwarded to authentication.js
-app.use("/authentication", authenticationRoutes);
+// Requests are forwarded to authentication.route.js
+app.use("/authentication", authenticationRoute);
 
-// Requests are forwarded to score.js
-app.use("/equipment", equipmentRoutes);
+// Requests are forwarded to score.route.js
+app.use("/equipment", equipmentRoute);
 
-// Requests are forwarded to score.js
-app.use("/movement", movementRoutes);
+// Requests are forwarded to score.route.js
+app.use("/movement", movementRoute);
 
-// Requests are forwarded to workouts.js
-app.use("/workout", workoutRoutes);
+// Requests are forwarded to workouts.route.js
+app.use("/workout", workoutRoute);
 
-// Requests are forwarded to score.js
-app.use("/score", scoreRoutes);
+// Requests are forwarded to score.route.js
+app.use("/score", scoreRoute);
 
 // Error handling for not supported requests
 app.use((req, res, next) => {
