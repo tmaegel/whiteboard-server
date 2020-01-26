@@ -1,0 +1,114 @@
+{
+    "users":
+    [
+        {
+            "name": "admin",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe",
+            "workouts":
+            [
+                {
+                    "name":"Admin Workout 1",
+                    "description":"AMRAP21\n400 meter run\n21 Push-Ups\n21 Box Jumps @24/20 in\n15 Burpees\n9 Pull-Ups",
+                    "datetime":"0"
+                },
+                {
+                    "name":"Admin Workout 2",
+                    "description":"For Time\n100 Deadlifts @61/43 kg\n100 Power Cleans @43/30 kg\n100 Ground-to-Overhead @30/20 kg\n43 Burpees",
+                    "datetime":"0"
+                },
+                {
+                    "name":"Admin Workout 3",
+                    "description":"For Time\n2001 meter Run\n11 Box Jumps @30/24 in\n11 Thrusters @56,5/38,5 kg\n11 Chest-to-Bar Pull-Ups\n11 Power Cleans @80/52 kg\n11 Handstand Push-Ups\n11 Kettlebell Swings @32/24 kg\n11 Toes-To-Bar\n11 Deadlifts @77/52 kg\n11 Push Jerks @50/34 kg\n2001 meter Row\n\nRow and Run can be switched ",
+                    "datetime":"0"
+                }
+            ]
+        },
+        {
+            "name": "user",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe",
+            "workouts":
+            [
+                {
+                    "name":"User Workout 1",
+                    "description":"AMRAP21\n400 meter run\n21 Push-Ups\n21 Box Jumps @24/20 in\n15 Burpees\n9 Pull-Ups",
+                    "datetime":"0"
+                },
+                {
+                    "name":"User Workout 2",
+                    "description":"For Time\n100 Deadlifts @61/43 kg\n100 Power Cleans @43/30 kg\n100 Ground-to-Overhead @30/20 kg\n43 Burpees",
+                    "datetime":"0"
+                },
+                {
+                    "name":"User Workout 3",
+                    "description":"For Time\n2001 meter Run\n11 Box Jumps @30/24 in\n11 Thrusters @56,5/38,5 kg\n11 Chest-to-Bar Pull-Ups\n11 Power Cleans @80/52 kg\n11 Handstand Push-Ups\n11 Kettlebell Swings @32/24 kg\n11 Toes-To-Bar\n11 Deadlifts @77/52 kg\n11 Push Jerks @50/34 kg\n2001 meter Row\n\nRow and Run can be switched ",
+                    "datetime":"0"
+                }
+            ]
+        },
+        {
+            "name": "user1",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe"
+        },
+        {
+            "name": "user2",
+            "hash": "$2a$10$Q0X4lrRRIvWoLFoiX3CvAO/8fesQsnMR.tQxyBYjzuoSSm4W9IFKe"
+        }
+    ],
+    "equipment":
+    [
+        {
+            "name": "None"
+        },
+        {
+            "name": "Box"
+        },
+        {
+            "name": "Wallball"
+        },
+        {
+            "name": "Rope"
+        },
+        {
+            "name": "Kettlebell"
+        }
+    ],
+    "movements":
+    [
+        {
+            "name": "Box jumps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Burpee box jumps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Box steps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Box steps over",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Burpee",
+            "equipmentIds": "1"
+        },
+        {
+            "name": "Burpee box jumps",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Burpee box jumps over",
+            "equipmentIds": "2"
+        },
+        {
+            "name": "Wallball shots",
+            "equipmentIds": "3"
+        },
+        {
+            "name": "Dumbell snatch",
+            "equipmentIds": "4"
+        }
+    ]
+}

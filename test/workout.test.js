@@ -40,8 +40,8 @@ describe('workout.js', () => {
                 .get('/workout')
                 .set('Authorization', token)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes[0]).to.have.property('id');
                     expect(parsedRes[0]).to.have.property('userId');
                     expect(parsedRes[0]).to.have.property('name');
@@ -97,8 +97,8 @@ describe('workout.js', () => {
                 .get('/workout/1')
                 .set('Authorization', token)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id').eql(1);
                     expect(parsedRes).to.have.property('userId');
                     expect(parsedRes).to.have.property('name');
@@ -168,8 +168,8 @@ describe('workout.js', () => {
                 .get('/workout/score/1')
                 .set('Authorization', token)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes[0]).to.have.property('id');
                     expect(parsedRes[0]).to.have.property('workoutId').eql(1);
                     expect(parsedRes[0]).to.have.property('score');
@@ -240,8 +240,8 @@ describe('workout.js', () => {
                 .set('Authorization', token)
                 .send(workout)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(201);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id');
                     expect(parsedRes).to.have.property('userId');
                     expect(parsedRes).to.have.property('name').eql('Name A');
@@ -466,8 +466,30 @@ describe('workout.js', () => {
                 .set('Authorization', token)
                 .send(updateWorkout)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
+                    expect(parsedRes).to.have.property('id').eql(workoutId);
+                    expect(parsedRes).to.have.property('userId').eql(userId);
+                    expect(parsedRes).to.have.property('name').eql('Name XYZ');
+                    expect(parsedRes).to.have.property('description').eql('Description XYZ');
+                    expect(parsedRes).to.have.property('datetime').eql(1234567890);
+                    done();
+                });
+            });
+            it('it should ignore the userId and update the workout', function(done) {
+                let updateWorkout = {
+                    userId: 99,
+                    name: "Name XYZ",
+                    description: "Description XYZ",
+                    datetime: "1234567890"
+                };
+                chai.request(server)
+                .post('/workout/' + workoutId) // update the inserted workout
+                .set('Authorization', token)
+                .send(updateWorkout)
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id').eql(workoutId);
                     expect(parsedRes).to.have.property('userId').eql(userId);
                     expect(parsedRes).to.have.property('name').eql('Name XYZ');

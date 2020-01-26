@@ -38,8 +38,8 @@ describe('score.js', () => {
                 .get('/score')
                 .set('Authorization', token)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes[0]).to.have.property('id');
                     expect(parsedRes[0]).to.have.property('userId');
                     expect(parsedRes[0]).to.have.property('workoutId');
@@ -94,20 +94,41 @@ describe('score.js', () => {
          * Positive tests #GET /score/:scoreId
          */
         describe('#GET /score/:scoreId (positive tests)', function() {
-            it('it should return the score with id', function(done) {
+            let scoreId, userId;
+            before(function(done) { // runs before all tests in this block
+                // Inserted real score before updating
+                let score = {
+                    workoutId: 1,
+                    score: "123",
+                    rx: 0,
+                    note: "testing GET /score/:scoreId (positive tests)",
+                    datetime: "1234567890"
+                };
                 chai.request(server)
-                .get('/score/1')
+                .post('/score')
                 .set('Authorization', token)
+                .send(score)
                 .end(function(err, res) {
                     let parsedRes = JSON.parse(res.text);
+                    scoreId = parseInt(JSON.parse(res.text).id);
+                    userId = parseInt(JSON.parse(res.text).userId);
+                    done();
+                });
+            });
+            it('it should return the score with id', function(done) {
+                chai.request(server)
+                .get('/score/' +  scoreId)
+                .set('Authorization', token)
+                .end(function(err, res) {
                     expect(res).to.have.status(200);
-                    expect(parsedRes).to.have.property('id');
-                    expect(parsedRes).to.have.property('userId');
-                    expect(parsedRes).to.have.property('workoutId');
-                    expect(parsedRes).to.have.property('score');
-                    expect(parsedRes).to.have.property('rx');
-                    expect(parsedRes).to.have.property('datetime');
-                    expect(parsedRes).to.have.property('note');
+                    let parsedRes = JSON.parse(res.text);
+                    expect(parsedRes).to.have.property('id').eql(scoreId);
+                    expect(parsedRes).to.have.property('userId').eql(userId);
+                    expect(parsedRes).to.have.property('workoutId').eql(1);
+                    expect(parsedRes).to.have.property('score').eql('123');
+                    expect(parsedRes).to.have.property('rx').eql(0);
+                    expect(parsedRes).to.have.property('datetime').eql(1234567890);
+                    expect(parsedRes).to.have.property('note').eql('testing GET /score/:scoreId (positive tests)');
                     done();
                 });
             });
@@ -173,7 +194,7 @@ describe('score.js', () => {
                     workoutId: 1,
                     score: "100",
                     rx: 1,
-                    note: "Note ABC",
+                    note: "testing POST /score (positive tests)",
                     datetime: "1234567890"
                 };
                 chai.request(server)
@@ -181,15 +202,15 @@ describe('score.js', () => {
                 .set('Authorization', token)
                 .send(score)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(201);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id');
                     expect(parsedRes).to.have.property('userId');
                     expect(parsedRes).to.have.property('workoutId').eql(1);
                     expect(parsedRes).to.have.property('score').eql('100');
                     expect(parsedRes).to.have.property('rx').eql(1);
                     expect(parsedRes).to.have.property('datetime').eql(1234567890);
-                    expect(parsedRes).to.have.property('note').eql('Note ABC');
+                    expect(parsedRes).to.have.property('note').eql('testing POST /score (positive tests)');
                     done();
                 });
             });
@@ -206,8 +227,8 @@ describe('score.js', () => {
                 .set('Authorization', token)
                 .send(score)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(201);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id');
                     expect(parsedRes).to.have.property('workoutId').eql(1);
                     expect(parsedRes).to.have.property('score').eql('100');
@@ -222,7 +243,7 @@ describe('score.js', () => {
                     workoutId: 1,
                     score: "00:09:10",
                     rx: 1,
-                    note: "Note ABC",
+                    note: "testing POST /score with valid timestamp format (positive tests)",
                     datetime: "1234567890"
                 };
                 chai.request(server)
@@ -230,14 +251,14 @@ describe('score.js', () => {
                 .set('Authorization', token)
                 .send(score)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(201);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id');
                     expect(parsedRes).to.have.property('workoutId').eql(1);
                     expect(parsedRes).to.have.property('score').eql('00:09:10');
                     expect(parsedRes).to.have.property('rx').eql(1);
                     expect(parsedRes).to.have.property('datetime').eql(1234567890);
-                    expect(parsedRes).to.have.property('note').eql('Note ABC');
+                    expect(parsedRes).to.have.property('note').eql('testing POST /score with valid timestamp format (positive tests)');
                     done();
                 });
             });
@@ -565,7 +586,7 @@ describe('score.js', () => {
                     workoutId: 2,
                     score: "999",
                     rx: 0,
-                    note: "Note XYZ",
+                    note: "testing POST /score/:scoreId (positive tests)",
                     datetime: "9876543210"
                 };
                 chai.request(server)
@@ -584,7 +605,7 @@ describe('score.js', () => {
                     workoutId: 3,
                     score: "100",
                     rx: 1,
-                    note: "Note ABC",
+                    note: "testing POST /score/:scoreId (positive tests) :: after update",
                     datetime: "1234567890"
                 };
                 chai.request(server)
@@ -592,15 +613,15 @@ describe('score.js', () => {
                 .set('Authorization', token)
                 .send(score)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id').eql(scoreId);
                     expect(parsedRes).to.have.property('userId').eql(userId);
                     expect(parsedRes).to.have.property('workoutId').eql(3);
                     expect(parsedRes).to.have.property('score').eql('100');
                     expect(parsedRes).to.have.property('rx').eql(1);
                     expect(parsedRes).to.have.property('datetime').eql(1234567890);
-                    expect(parsedRes).to.have.property('note').eql('Note ABC');
+                    expect(parsedRes).to.have.property('note').eql('testing POST /score/:scoreId (positive tests) :: after update');
                     done();
                 });
             });
@@ -617,8 +638,8 @@ describe('score.js', () => {
                 .set('Authorization', token)
                 .send(score)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id');
                     expect(parsedRes).to.have.property('userId').eql(userId);
                     expect(parsedRes).to.have.property('workoutId').eql(1);
@@ -634,7 +655,7 @@ describe('score.js', () => {
                     workoutId: 1,
                     score: "00:09:10",
                     rx: 1,
-                    note: "Note ABC",
+                    note: "testing POST /score/:scoreId with valid timestamp format (positive tests) :: after update",
                     datetime: "1234567890"
                 };
                 chai.request(server)
@@ -642,15 +663,15 @@ describe('score.js', () => {
                 .set('Authorization', token)
                 .send(score)
                 .end(function(err, res) {
-                    let parsedRes = JSON.parse(res.text);
                     expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
                     expect(parsedRes).to.have.property('id');
                     expect(parsedRes).to.have.property('userId').eql(userId);
                     expect(parsedRes).to.have.property('workoutId').eql(1);
                     expect(parsedRes).to.have.property('score').eql('00:09:10');
                     expect(parsedRes).to.have.property('rx').eql(1);
                     expect(parsedRes).to.have.property('datetime').eql(1234567890);
-                    expect(parsedRes).to.have.property('note').eql('Note ABC');
+                    expect(parsedRes).to.have.property('note').eql('testing POST /score/:scoreId with valid timestamp format (positive tests) :: after update');
                     done();
                 });
             });
