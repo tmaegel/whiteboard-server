@@ -53,6 +53,7 @@ function init(data) {
 
         /**
          * Users
+         * @todo: Uses user.model / workout.model for access to the database
          */
         for (let user of data.users) {
             db.run("INSERT INTO table_users(name, password) VALUES (?, ?)", [user.name, user.hash], function(error) {
@@ -60,6 +61,23 @@ function init(data) {
                     return console.error(error.message);
                 }
                 console.log("INFO: sqlite :: init() :: Inserted users " + user.name);
+                if(user.workouts !== null && user.workouts !== undefined) {
+                    console.log("INFO: sqlite :: init() :: Found workouts of user " + user.name);
+                    db.get("SELECT id, name, password FROM table_users WHERE name = ? LIMIT 1", [user.name], function(error, result) {
+                        if (error) {
+                            console.log("ERROR: sqlite :: init() :: Couldn't get user " + user.name);
+                        } else {
+                            for (let workout of user.workouts) {
+                                db.run("INSERT INTO table_workout(userId, name, description, datetime) VALUES (?, ?, ?, ?)", [result.id, workout.name, workout.description, workout.datetime], function(error) {
+                                    if (error) {
+                                        return console.error(error.message);
+                                    }
+                                    console.log("INFO: sqlite :: init() :: Inserted workout " + workout.name + " (" + user.name + ")");
+                                });
+                            }
+                        }
+                    });
+                }
             });
         }
 
@@ -86,21 +104,7 @@ function init(data) {
                 console.log("INFO: sqlite :: init() :: Inserted movement " + movement.name);
             });
         }
-
-        /**
-         * Workouts
-         */
-        for (let workout of data.workouts) {
-            // The default userId of default workouts is 1 (admin: visible from everyone; editable only by admin)
-            db.run("INSERT INTO table_workout(userId, name, description, datetime) VALUES (?, ?, ?, ?)", [1, workout.name, workout.description, workout.datetime], function(error) {
-                if (error) {
-                    return console.error(error.message);
-                }
-                console.log("INFO: sqlite :: init() :: Inserted workout " + workout.name);
-            });
-        }
     })
-    console.log("INFO: sqlite :: init() :: Initializiation finished.");
 }
 
 function close() {
