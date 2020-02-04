@@ -1,0 +1,28 @@
+{
+  "name": "whiteboard-server",
+  "version": "1.0.0",
+  "description": "whiteboard REST webservice",
+  "main": "server.js",
+  "author": "Toni Mägel <tmaegel@posteo.de>",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^6.2.2",
+    "should": "^13.2.3"
+  },
+  "scripts": {
+    "build": "docker build -t whiteboard-server .",
+    "start": "docker run -u node -e 'NODE_ENV=dev' -p 3000:3000 -d whiteboard-server",
+    "test": "mocha"
+  }
+}
