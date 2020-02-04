@@ -1,6 +1,7 @@
 cert/
+db/
+config/*
+!config.example.json
+!data.example.json
 node_modules/
 package-lock.json
-config.json
-*.db
-*.sqlite
