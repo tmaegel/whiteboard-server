@@ -17,4 +17,5 @@ RUN chown -R node:node .
 
 EXPOSE 3000
 
-CMD [ "node", "src/server.js", "--config", "config.example.json", "--database", "db/database.sqlite", "--port", "3000", "--cert", "cert/example.crt", "--key", "cert/example.key" ]
+ENTRYPOINT [ "node", "src/server.js" ]
+CMD [ "--help" ]

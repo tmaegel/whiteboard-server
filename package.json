@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "docker build -t whiteboard-server .",
-    "start": "docker run -u node -e 'NODE_ENV=dev' -p 3000:3000 -d whiteboard-server",
+    "start": "docker run -u node -e NODE_ENV=dev -p 3000:3000 -d whiteboard-server --config config.example.json --database db/database.sqlite --port 3000 --cert cert/example.crt --key cert/example.key",
     "test": "mocha"
   }
 }
