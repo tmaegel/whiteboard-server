@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "sqlite3": "^4.1.0"
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -21,8 +21,10 @@
     "should": "^13.2.3"
   },
   "scripts": {
-    "build": "docker build -t whiteboard-server .",
-    "start": "docker run -u node -e NODE_ENV=dev -v ${PWD}/db:/usr/src/app/db -p 3000:3000 -d whiteboard-server --config config/config.example.json --database db/database.sqlite --port 3000 --cert cert/example.crt --key cert/example.key",
+    "build": "docker build --build-arg BUILDTYPE=production -t whiteboard-server:prod .",
+    "buildDev": "docker build --build-arg BUILDTYPE=dev -t whiteboard-server:dev .",
+    "startDev": "docker run -u node --name whiteboard-server-dev -e NODE_ENV=dev -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -e WHITEBOARD_CERT=crt/example.crt -e WHITEBOARD_KEY=crt/example.key -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:dev",
+    "start": "docker run -u node --name whiteboard-server-prod -e NODE_ENV=production -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -e WHITEBOARD_CERT=crt/example.crt -e WHITEBOARD_KEY=crt/example.key -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:prod",
     "test": "mocha"
   }
 }

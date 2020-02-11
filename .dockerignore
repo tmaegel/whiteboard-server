@@ -3,5 +3,7 @@ npm-debug.log
 test/
 util/
 db/
+config/config.example.json
+config/data.example.json
 Dockerfile
 README.md

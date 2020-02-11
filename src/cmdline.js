@@ -39,18 +39,21 @@ if(process.argv.indexOf('--help') > -1) {
     print_help();
 }
 
-// Also checks for --config and if we have a value
-const configIndex = process.argv.indexOf('--config');
-if(configIndex > -1) {
-    // Grabs the value after --databae
-    configFile = process.argv[configIndex + 1];
-    if(!configFile) {
-        console.log("ERROR: Missing argument '--config'");
+configFile = process.env.WHITEBOARD_CONFIG;
+if(!configFile) {
+    // Also checks for --config and if we have a value
+    const configIndex = process.argv.indexOf('--config');
+    if(configIndex > -1) {
+        // Grabs the value after --databae
+        configFile = process.argv[configIndex + 1];
+        if(!configFile) {
+            console.log("ERROR: Missing argument '--config'");
+            process.exit(1);
+        }
+    } else {
+        console.log("ERROR: Missing option '--config'");
         process.exit(1);
     }
-} else {
-    console.log("ERROR: Missing option '--config'");
-    process.exit(1);
 }
 try {
     config = JSON.parse(fs.readFileSync(configFile));
@@ -62,7 +65,7 @@ try {
 // Checks to see if the --init argument is present
 const initIndex = process.argv.indexOf('--init');
 if(initIndex > -1) {
-    // Grabs the value after --databae
+    // Grabs the value after --init
     dataFile = process.argv[initIndex + 1];
     if(!dataFile) {
         console.log("ERROR: Missing argument '--init'");
@@ -80,18 +83,21 @@ if(initIndex > -1) {
     initDatabase = false;
 }
 
-// Also checks for --database and if we have a value
-const databaseIndex = process.argv.indexOf('--database');
-if(databaseIndex > -1) {
-    // Grabs the value after --database
-    dbFile = process.argv[databaseIndex + 1];
-    if(!dbFile) {
-        console.log("ERROR: Missing argument '--database'");
+dbFile = process.env.WHITEBOARD_DB;
+if(!dbFile) {
+    // Also checks for --database and if we have a value
+    const databaseIndex = process.argv.indexOf('--database');
+    if(databaseIndex > -1) {
+        // Grabs the value after --database
+        dbFile = process.argv[databaseIndex + 1];
+        if(!dbFile) {
+            console.log("ERROR: Missing argument '--database'");
+            process.exit(1);
+        }
+    } else {
+        console.log("ERROR: Missing option '--database'");
         process.exit(1);
     }
-} else {
-    console.log("ERROR: Missing option '--database'");
-    process.exit(1);
 }
 // Check existance of database file when initDatabase = false only
 if(!initDatabase) {
@@ -103,46 +109,55 @@ if(!initDatabase) {
     }
 }
 
-// Also checks for --port and if we have a value
-const portIndex = process.argv.indexOf('--port');
-if(portIndex > -1) {
-    // Grabs the value after --port
-    port = process.argv[portIndex + 1];
-    if(!port) {
-        console.log("ERROR: Missing argument '--port'");
+port = process.env.WHITEBOARD_PORT;
+if(!port) {
+    // Also checks for --port and if we have a value
+    const portIndex = process.argv.indexOf('--port');
+    if(portIndex > -1) {
+        // Grabs the value after --port
+        port = process.argv[portIndex + 1];
+        if(!port) {
+            console.log("ERROR: Missing argument '--port'");
+            process.exit(1);
+        }
+    } else {
+        console.log("ERROR: Missing option '--port'");
         process.exit(1);
     }
-} else {
-    console.log("ERROR: Missing option '--port'");
-    process.exit(1);
 }
 
-// Also checks for --cert and if we have a value
-const certIndex = process.argv.indexOf('--cert');
-if(certIndex > -1) {
-    // Grabs the value after --cert
-    certFile = process.argv[certIndex + 1];
-    if(!certFile) {
-        console.log("ERROR: Missing argument '--cert'");
+certFile = process.env.WHITEBOARD_CERT;
+if(!certFile) {
+    // Also checks for --cert and if we have a value
+    const certIndex = process.argv.indexOf('--cert');
+    if(certIndex > -1) {
+        // Grabs the value after --cert
+        certFile = process.argv[certIndex + 1];
+        if(!certFile) {
+            console.log("ERROR: Missing argument '--cert'");
+            process.exit(1);
+        }
+    } else {
+        console.log("ERROR: Missing option '--cert'");
         process.exit(1);
     }
-} else {
-    console.log("ERROR: Missing option '--cert'");
-    process.exit(1);
 }
 
-// Also checks for --key and if we have a value
-const keyIndex = process.argv.indexOf('--key');
-if(keyIndex > -1) {
-    // Grabs the value after --key
-    keyFile = process.argv[keyIndex + 1];
-    if(!keyFile) {
-        console.log("ERROR: Missing argument '--key'");
+keyFile = process.env.WHITEBOARD_KEY;
+if(!keyFile) {
+    // Also checks for --key and if we have a value
+    const keyIndex = process.argv.indexOf('--key');
+    if(keyIndex > -1) {
+        // Grabs the value after --key
+        keyFile = process.argv[keyIndex + 1];
+        if(!keyFile) {
+            console.log("ERROR: Missing argument '--key'");
+            process.exit(1);
+        }
+    } else {
+        console.log("ERROR: Missing option '--key'");
         process.exit(1);
     }
-} else {
-    console.log("ERROR: Missing option '--key'");
-    process.exit(1);
 }
 
 try {

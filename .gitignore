@@ -1,7 +1,8 @@
-cert/
+crt/
 db/
 config/*
+config.json
+data.json
 !config.example.json
 !data.example.json
 node_modules/
-package-lock.json
