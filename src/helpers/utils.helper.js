@@ -62,6 +62,20 @@ function numRegex(value) {
 }
 
 /**
+ * Floating number regex check
+ * e.g. 123.45
+ */
+function floatRegex(value) {
+    if(value === undefined) {
+        return false;
+    }
+
+    let regExp = /^[0-9]+[.]?[0-9]+$/gm;
+
+    return regExp.test(value);
+}
+
+/**
  * Word regex check
  * [a-zA-Z_0-9]
  */
@@ -133,6 +147,7 @@ function stripString(value) {
 
 exports.empty = empty;
 exports.numRegex = numRegex;
+exports.floatRegex = floatRegex;
 exports.wordRegex = wordRegex;
 exports.simpleRegex = simpleRegex;
 exports.extendedRegex = extendedRegex;

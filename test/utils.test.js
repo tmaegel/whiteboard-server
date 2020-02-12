@@ -79,6 +79,32 @@ describe('regex.js', function() {
             assert.equal(utils.numRegex(), undefined);
         });
     });
+    describe('#floatRegex()', function() {
+        it('should return true when value contains valid floating number (1)', function() {
+            assert.equal(utils.floatRegex("123"), true);
+        });
+        it('should return true when value contains valid floating number (2)', function() {
+            assert.equal(utils.floatRegex("123.45"), true);
+        });
+        it('should return false when value contains valid floating number (1) (negative)', function() {
+            assert.equal(utils.floatRegex("-123"), false);
+        });
+        it('should return false when value contains valid floating number (2) (negative)', function() {
+            assert.equal(utils.floatRegex("-123.45"), false);
+        });
+        it('should return false when value contains invalid floating number (1)', function() {
+            assert.equal(utils.floatRegex(".123"), false);
+        });
+        it('should return false when value contains invalid floating number (2)', function() {
+            assert.equal(utils.floatRegex("213.45.7"), false);
+        });
+        it('should return false when value contains illegally chararcters', function() {
+            assert.equal(utils.floatRegex("abc"), false);
+        });
+        it('should return false when value is undefined', function() {
+            assert.equal(utils.floatRegex(), false);
+        });
+    });
     describe('#wordRegex()', function() {
         it('should return true when value contains numbers', function() {
             assert.equal(utils.wordRegex("123"), true);

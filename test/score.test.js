@@ -262,6 +262,30 @@ describe('score.js', () => {
                     done();
                 });
             });
+            it('it should save the score if the score is a floating number', function(done) {
+                let score = {
+                    workoutId: 1,
+                    score: "125.50",
+                    rx: 1,
+                    note: "testing POST /score with floating number (positive tests)",
+                    datetime: "1234567890"
+                };
+                chai.request(server)
+                .post('/score')
+                .set('Authorization', token)
+                .send(score)
+                .end(function(err, res) {
+                    expect(res).to.have.status(201);
+                    let parsedRes = JSON.parse(res.text);
+                    expect(parsedRes).to.have.property('id');
+                    expect(parsedRes).to.have.property('workoutId').eql(1);
+                    expect(parsedRes).to.have.property('score').eql('125.50');
+                    expect(parsedRes).to.have.property('rx').eql(1);
+                    expect(parsedRes).to.have.property('datetime').eql(1234567890);
+                    expect(parsedRes).to.have.property('note').eql('testing POST /score with floating number (positive tests)');
+                    done();
+                });
+            });
         });
         /**
          * Negative tests #POST /score
@@ -672,6 +696,31 @@ describe('score.js', () => {
                     expect(parsedRes).to.have.property('rx').eql(1);
                     expect(parsedRes).to.have.property('datetime').eql(1234567890);
                     expect(parsedRes).to.have.property('note').eql('testing POST /score/:scoreId with valid timestamp format (positive tests) :: after update');
+                    done();
+                });
+            });
+            it('it should update the score if the score is a floating number', function(done) {
+                let score = {
+                    workoutId: 1,
+                    score: "125.50",
+                    rx: 1,
+                    note: "testing POST /score/:scoreId with floating number (positive tests) :: after update",
+                    datetime: "1234567890"
+                };
+                chai.request(server)
+                .post('/score/' + scoreId)
+                .set('Authorization', token)
+                .send(score)
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
+                    expect(parsedRes).to.have.property('id');
+                    expect(parsedRes).to.have.property('userId').eql(userId);
+                    expect(parsedRes).to.have.property('workoutId').eql(1);
+                    expect(parsedRes).to.have.property('score').eql('125.50');
+                    expect(parsedRes).to.have.property('rx').eql(1);
+                    expect(parsedRes).to.have.property('datetime').eql(1234567890);
+                    expect(parsedRes).to.have.property('note').eql('testing POST /score/:scoreId with floating number (positive tests) :: after update');
                     done();
                 });
             });

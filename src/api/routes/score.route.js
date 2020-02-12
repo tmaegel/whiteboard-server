@@ -130,7 +130,7 @@ router.post("/", (req, res, next) => {
                         note === null || note === undefined || !utils.simpleRegex(note) ||
                         rx === null || rx === undefined || (rx != 1 && rx != 0) || !utils.numRegex(rx) ||
                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
-                        scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
+                        scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.floatRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
             if(valid) {
                 console.log("ERROR: POST /score :: workoutId, score, note, rx or datetime are invalid");
                 res.status(400).json({
@@ -217,7 +217,7 @@ router.post("/:scoreId", (req, res, next) => {
                         note === null || note === undefined || !utils.simpleRegex(note) ||
                         rx === null || rx === undefined || (rx != 1 && rx != 0) || !utils.numRegex(rx) ||
                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
-                        scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
+                        scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.floatRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
             if(valid) {
                 console.log("ERROR: POST /score/:scoreId :: scoreId, workoutId, score, note, rx or datetime are invalid");
                 res.status(400).json({
