@@ -1,3 +1,4 @@
+const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
@@ -9,16 +10,27 @@ const cmdline = require("./cmdline");
 /**
  * Starting server
  */
-const options = {
-    cert: fs.readFileSync(cmdline.certFile),
-    key: fs.readFileSync(cmdline.keyFile)
-};
+let server;
+if(cmdline.useHttps) {
+    console.log("INFO: Using secure https mode.");
+    const options = {
+        cert: fs.readFileSync(cmdline.certFile),
+        key: fs.readFileSync(cmdline.keyFile)
+    };
 
-const server = https.createServer(options, app);
-server.on('error', function(e) {
-    console.log("ERROR: Something went wrong while listening to port " + cmdline.port + ".");
-    process.exit(1);
-});
+    server = https.createServer(options, app);
+    server.on('error', function(e) {
+        console.log("ERROR: Something went wrong while listening to port " + cmdline.port + ".");
+        process.exit(1);
+    });
+} else {
+    console.log("INFO: Using insecure http mode.");
+    server = http.createServer(app);
+    server.on('error', function(e) {
+        console.log("ERROR: Something went wrong while listening to port " + cmdline.port + ".");
+        process.exit(1);
+    });
+}
 server.listen(cmdline.port, () => {
   console.log("Listening to port " + cmdline.port);
 });;
