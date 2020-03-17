@@ -28,8 +28,8 @@
   "scripts": {
     "build": "docker build --pull --build-arg BUILDTYPE=production -t whiteboard-server:prod .",
     "buildDev": "docker build --pull --build-arg BUILDTYPE=dev -t whiteboard-server:dev .",
-    "startDev": "docker run --name whiteboard-server-dev -e NODE_ENV=dev -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -e WHITEBOARD_CERT=crt/example.crt -e WHITEBOARD_KEY=crt/example.key -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:dev node server.js --init config/data.json",
-    "start": "docker run --name whiteboard-server-prod -e NODE_ENV=production -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -e WHITEBOARD_CERT=crt/example.crt -e WHITEBOARD_KEY=crt/example.key -v ${PWD}/db:/usr/src/app/db -p 3000:3000 -d whiteboard-server:prod",
+    "startDev": "docker run --name whiteboard-server-dev -e NODE_ENV=dev -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:dev node server.js --init config/data.json",
+    "start": "docker run --name whiteboard-server-prod -e NODE_ENV=production -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:prod",
     "test": "mocha"
   }
 }
