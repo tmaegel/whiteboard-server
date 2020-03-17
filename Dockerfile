@@ -19,9 +19,8 @@ RUN npm install --production
 # RUN npm ci --only=production
 
 # Bundle app source
-RUN mkdir config crt
+RUN mkdir config
 COPY --chown=1000:1000 src/ .
-COPY --chown=1000:1000 crt/ ./crt
 COPY --chown=1000:1000 config/ ./config
 
 EXPOSE 3000
