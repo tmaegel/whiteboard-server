@@ -24,7 +24,7 @@ router.get("/", (req, res, next) => {
             equipment.getAll().then(
                 results => {
                     console.log("OK: GET /equipment");
-                    res.status(200).end(JSON.stringify(results));
+                    res.status(200).json(results);
                 },
                 error => {
                     console.log("ERROR: GET /equipment ::", error.message);

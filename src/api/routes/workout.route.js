@@ -29,7 +29,7 @@ router.get("/", (req, res, next) => {
             workout.getWorkouts(decoded.sub).then(
                 results => {
                     console.log("OK: GET /workout");
-                    res.status(200).end(JSON.stringify(results));
+                    res.status(200).json(results);
                 },
                 error => {
                     console.log("ERROR: GET /workout ::", error.message);
@@ -76,7 +76,7 @@ router.get("/:workoutId", (req, res, next) => {
                     result => {
                         if(result != null) {
                             console.log("OK: GET /workout/:workoutId");
-                            res.status(200).end(JSON.stringify(result));
+                            res.status(200).json(result);
                         } else {
                             console.log("OK: GET /workout/:workoutId :: No workout found with the id " + workoutId);
                             res.sendStatus(204);
@@ -126,7 +126,7 @@ router.get("/score/:workoutId", (req, res, next) => {
                 workout.getWorkoutScoresById(decoded.sub, workoutId).then(
                     results => {
                         console.log("OK: GET /workout/score/:workoutId");
-                        res.status(200).end(JSON.stringify(results));
+                        res.status(200).json(results);
                     },
                     error => {
                         console.log("ERROR: GET /workout/score/:workoutId ::", error.message);
@@ -189,7 +189,7 @@ router.post("/", (req, res, next) => {
                             result => {
                                 if(result != null) {
                                     console.log("OK: POST /workout :: Inserted workout with id " + insertedId);
-                                    res.status(201).end(JSON.stringify(result));
+                                    res.status(201).json(result);
                                 } else {
                                     console.log("ERROR: POST /workout :: No inserted workout found with the id " + insertedId);
                                     res.status(500).json({

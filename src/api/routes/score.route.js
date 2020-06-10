@@ -25,7 +25,7 @@ router.get("/", (req, res, next) => {
             score.getScores(decoded.sub).then(
                 results => {
                     console.log("OK: GET /score");
-                    res.status(200).end(JSON.stringify(results));
+                    res.status(200).json(results);
                 },
                 error => {
                     console.log("ERROR: GET /score ::", error.message);
@@ -73,7 +73,7 @@ router.get("/:scoreId", (req, res, next) => {
                     result => {
                         if(result != null) {
                             console.log("OK: GET /score/:scoreId");
-                            res.status(200).end(JSON.stringify(result));
+                            res.status(200).json(result);
                         } else {
                             console.log("OK: GET /score/:scoreId :: No score found with the id " + scoreId);
                             res.sendStatus(204);
@@ -145,7 +145,7 @@ router.post("/", (req, res, next) => {
                             result => {
                                 if(result != null) {
                                     console.log("OK: POST /score :: Inserted score with id " + insertedId);
-                                    res.status(201).end(JSON.stringify(result));
+                                    res.status(201).json(result);
                                 } else {
                                     console.log("ERROR: POST /score :: No inserted score found with the id " + insertedId);
                                     res.status(500).json({
