@@ -65,13 +65,13 @@ router.get("/:workoutId", (req, res, next) => {
     user.validate(token).then(
         decoded => {
             if(workoutId === undefined || workoutId === null || !utils.numRegex(workoutId)) {
-                console.log("ERROR: GET /workout/:workoutId :: workoutId is invalid");
+                console.log("ERROR: GET /workout/:workoutId :: workout id is invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "workoutId is invalid"
+                    message: "workout id is invalid"
                 });
             } else {
-                console.log("INFO: GET /workout/:workoutId :: workoutId is " + workoutId);
+                console.log("INFO: GET /workout/:workoutId :: workout id is " + workoutId);
                 workout.getWorkoutById(decoded.sub, workoutId).then(
                     result => {
                         if(result != null) {
@@ -116,13 +116,13 @@ router.get("/score/:workoutId", (req, res, next) => {
     user.validate(token).then(
         decoded => {
             if(workoutId === undefined || workoutId === null || !utils.numRegex(workoutId)) {
-                console.log("ERROR: GET /workout/score/:workoutId :: workoutId is invalid");
+                console.log("ERROR: GET /workout/score/:workoutId :: workout id is invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "workoutId is invalid"
+                    message: "workout id is invalid"
                 });
             } else {
-                console.log("INFO: GET /workout/score/:workoutId :: workoutId is " + workoutId);
+                console.log("INFO: GET /workout/score/:workoutId :: workout id is " + workoutId);
                 workout.getWorkoutScoresById(decoded.sub, workoutId).then(
                     results => {
                         console.log("OK: GET /workout/score/:workoutId");
@@ -174,12 +174,12 @@ router.post("/", (req, res, next) => {
              */
             let valid = (name === null || name === undefined || utils.empty(name) || !utils.simpleRegex(name) ||
                         description === null || description === undefined || utils.empty(description) || !utils.extendedRegex(description) ||
-                        datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime))
+                        datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime));
             if(valid) {
-                console.log("ERROR: POST /workout :: name, description or datetime are invalid");
+                console.log("ERROR: POST /workout :: workout name, description or datetime are invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "name, description or datetime are invalid"
+                    message: "workout name, description or datetime are invalid"
                 });
             } else {
                 console.log("INFO: POST /workout :: Inserting workout");
@@ -256,12 +256,12 @@ router.post("/:workoutId", (req, res, next) => {
              let valid = (workoutId === null || workoutId === undefined || !utils.numRegex(workoutId) ||
                          name === null || name === undefined || utils.empty(name) || !utils.simpleRegex(name) ||
                          description === null || description === undefined || utils.empty(description) || !utils.extendedRegex(description) ||
-                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime))
+                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime));
             if(valid) {
-                console.log("ERROR: POST /workout/:workoutId :: id, name, description or datetime are invalid");
+                console.log("ERROR: POST /workout/:workoutId :: workout id, name, description or datetime are invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "id, name, description or datetime are invalid"
+                    message: "workout id, name, description or datetime are invalid"
                 });
             } else {
                 console.log("INFO: POST /workout/:workoutId :: Updating workout");

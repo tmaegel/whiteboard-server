@@ -62,13 +62,13 @@ router.get("/:scoreId", (req, res, next) => {
     user.validate(token).then(
         decoded => {
             if(scoreId === undefined || scoreId === null || !utils.numRegex(scoreId)) {
-                console.log("ERROR: GET /score/:scoreId :: scoreId is invalid");
+                console.log("ERROR: GET /score/:scoreId :: score id is invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "scoreId is invalid"
+                    message: "score id is invalid"
                 });
             } else {
-                console.log("INFO: GET /score/:scoreId :: scoreId is " + scoreId);
+                console.log("INFO: GET /score/:scoreId :: score id is " + scoreId);
                 score.getScoreById(decoded.sub, scoreId).then(
                     result => {
                         if(result != null) {
@@ -132,10 +132,10 @@ router.post("/", (req, res, next) => {
                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
                         scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.floatRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
             if(valid) {
-                console.log("ERROR: POST /score :: workoutId, score, note, rx or datetime are invalid");
+                console.log("ERROR: POST /score :: workout id, score, note, rx or datetime are invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "workoutId, score, note, rx or datetime are invalid"
+                    message: "workout id, score, note, rx or datetime are invalid"
                 });
             } else {
                 console.log("INFO: POST /score :: Inserting score");
@@ -219,10 +219,10 @@ router.post("/:scoreId", (req, res, next) => {
                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
                         scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.floatRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
             if(valid) {
-                console.log("ERROR: POST /score/:scoreId :: scoreId, workoutId, score, note, rx or datetime are invalid");
+                console.log("ERROR: POST /score/:scoreId :: score id, workout id, score, note, rx or datetime are invalid");
                 res.status(400).json({
                     type: "ERROR",
-                    message: "scoreId, workoutId, score, note, rx or datetime are invalid"
+                    message: "score id, workout id, score, note, rx or datetime are invalid"
                 });
             } else {
                 console.log("INFO: POST /score/:scoreId :: Updating score");

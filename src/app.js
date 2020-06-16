@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 
 // Importing objects
 const authenticationRoute = require("./api/routes/authentication.route.js");
+const tagRoute = require("./api/routes/tag.route.js");
 const equipmentRoute = require("./api/routes/equipment.route.js");
 const movementRoute = require("./api/routes/movement.route.js");
 const workoutRoute = require("./api/routes/workout.route.js");
@@ -28,13 +29,16 @@ app.use((req, res, next) => {
 // Requests are forwarded to authentication.route.js
 app.use("/authentication", authenticationRoute);
 
-// Requests are forwarded to score.route.js
+// Requests are forwarded to tag.route.js
+app.use("/tag", tagRoute);
+
+// Requests are forwarded to equipment.route.js
 app.use("/equipment", equipmentRoute);
 
-// Requests are forwarded to score.route.js
+// Requests are forwarded to movement.route.js
 app.use("/movement", movementRoute);
 
-// Requests are forwarded to workouts.route.js
+// Requests are forwarded to workout.route.js
 app.use("/workout", workoutRoute);
 
 // Requests are forwarded to score.route.js

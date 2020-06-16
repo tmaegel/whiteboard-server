@@ -48,7 +48,7 @@ router.post("/login", (req, res, next) => {
     const password = req.body.password;
 
     let valid = (username === undefined || username === null || utils.empty(username) ||
-                password === undefined || password === null || utils.empty(password))
+                password === undefined || password === null || utils.empty(password));
     if(valid) {
         console.log("ERROR: POST /authentication/login :: username or password are invalid");
         res.status(400).json({

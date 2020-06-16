@@ -28,7 +28,7 @@ function simpleRegex(value) {
         return undefined;
     }
 
-    let regExp = /^[\wÄÜÖäüöß .,:&'"\-()/]*$/gm;
+    let regExp = /^[\w\sÄÜÖäüöß.,:&'"\-()/]*$/gm;
 
     return regExp.test(value);
 }
@@ -77,14 +77,14 @@ function floatRegex(value) {
 
 /**
  * Word regex check
- * [a-zA-Z_0-9]
+ * [a-zA-Z_0-9 ] (whitespaces included)
  */
 function wordRegex(value) {
     if(value === undefined || value === null) {
         return undefined;
     }
 
-    let regExp = /^[\w]*$/gm;
+    let regExp = /^[\w\s]*$/gm;
 
     return regExp.test(value)
 }

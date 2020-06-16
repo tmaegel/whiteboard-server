@@ -1,3 +1,9 @@
+/**
+ * sqlite/database module
+ * @module models/sqlite.model
+ * @see module:models/sqlite.model
+ */
+
 // Database
 const sqlite3 = require("sqlite3").verbose();
 
@@ -35,13 +41,17 @@ function init(data) {
     db.serialize(function() {
         // **** REMOVING IT LATER
         db.run("DROP TABLE IF EXISTS table_users");
+        db.run("DROP TABLE IF EXISTS table_tags");
         db.run("DROP TABLE IF EXISTS table_equipment");
         db.run("DROP TABLE IF EXISTS table_movements");
         db.run("DROP TABLE IF EXISTS table_workout");
         db.run("DROP TABLE IF EXISTS table_workout_score");
+        db.run("DROP TABLE IF EXISTS table_workout_tags");
 
-        // id, equipment
+        // id, name, password (hash)
         db.run("CREATE TABLE IF NOT EXISTS table_users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, password TEXT)"); // @todo: Nur für erste Tests im Klartext
+        // id, tag
+        db.run("CREATE TABLE IF NOT EXISTS table_tags (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, tag TEXT)");
         // id, equipment
         db.run("CREATE TABLE IF NOT EXISTS table_equipment (id INTEGER PRIMARY KEY AUTOINCREMENT, equipment TEXT)");
         // id, movement, equipmentIds
@@ -50,6 +60,8 @@ function init(data) {
         db.run("CREATE TABLE IF NOT EXISTS table_workout (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, name TEXT, description TEXT, datetime INTEGER)");
         // id, score, datetime (the number of seconds since 1970-01-01 00:00:00 UTC)
         db.run("CREATE TABLE IF NOT EXISTS table_workout_score (id INTEGER PRIMARY KEY AUTOINCREMENT, userId INTEGER, workoutId INTEGER, score TEXT, rx BOOL, datetime INTEGER, note TEXT)");
+        // id, workoutId, tagId
+        db.run("CREATE TABLE IF NOT EXISTS table_workout_tags (id INTEGER PRIMARY KEY AUTOINCREMENT, workoutId INTEGER, tagId INTEGER)");
 
         /**
          * Users
@@ -102,6 +114,19 @@ function init(data) {
                     return console.error(error.message);
                 }
                 console.log("INFO: sqlite :: init() :: Inserted movement " + movement.name);
+            });
+        }
+
+        /**
+         * Tags
+         */
+        for (let tag of data.tags) {
+            // Inserting tag with userId 1
+            db.run("INSERT INTO table_tags(userId, tag) VALUES (?, ?)", [1, tag.name], function(error) {
+                if (error) {
+                    return console.error(error.message);
+                }
+                console.log("INFO: sqlite :: init() :: Inserted tag " + tag.name);
             });
         }
     })

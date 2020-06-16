@@ -12,7 +12,7 @@ const movement = require("../../models/movement.model.js");
 
 /**
  * GET requests
- * Get all workouts scores
+ * Get all movements
  * @return 200 OK
  * @return 401 Unauthorized
  * @return 500 Internal Server Error

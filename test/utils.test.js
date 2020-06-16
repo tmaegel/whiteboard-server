@@ -26,40 +26,40 @@ describe('regex.js', function() {
         });
     });
     describe('#simpleRegex()', function() {
+        it('should return true when value contains simple characters (including whitespaces)', function() {
+            assert.equal(utils.simpleRegex("abc 123"), true);
+        });
         it('should return true when value contains umlaute', function() {
             assert.equal(utils.simpleRegex("ÄÜÖäüö"), true);
         });
         it('should return true when value contains "ß', function() {
             assert.equal(utils.simpleRegex("ß"), true);
         });
-        it('should return true when value contains simple chararcters', function() {
-            assert.equal(utils.simpleRegex("abc123"), true);
-        });
         it('should return true when value contains special chararcters', function() {
             assert.equal(utils.simpleRegex(".,:&'\"\-()/"), true);
         });
-        it('should return false when value contains illegally chararcters', function() {
-            assert.equal(utils.simpleRegex("@%"), false);
+        it('should return false when value contains illegally characters', function() {
+            assert.equal(utils.simpleRegex("@%+"), false);
         });
         it('should return false when value is undefined', function() {
             assert.equal(utils.simpleRegex(), undefined);
         });
     });
     describe('#extendedRegex()', function() {
+        it('should return true when value contains simple characters (including whitespaces)', function() {
+            assert.equal(utils.extendedRegex("abc 123"), true);
+        });
         it('should return true when value contains umlaute', function() {
             assert.equal(utils.extendedRegex("ÄÜÖäüö"), true);
         });
         it('should return true when value contains "ß', function() {
             assert.equal(utils.extendedRegex("ß"), true);
         });
-        it('should return true when value contains simple chararcters', function() {
-            assert.equal(utils.extendedRegex("abc123"), true);
-        });
         it('should return true when value contains special chararcters', function() {
-            assert.equal(utils.extendedRegex(".,:&'\"\-()/@%_-"), true);
+            assert.equal(utils.extendedRegex(",:;\"'!?&@_-()%/*+"), true);
         });
         it('should return false when value contains illegally chararcters', function() {
-            assert.equal(utils.extendedRegex("$§"), false);
+            assert.equal(utils.extendedRegex("$§€"), false);
         });
         it('should return false when value is undefined', function() {
             assert.equal(utils.extendedRegex(), undefined);
@@ -110,7 +110,10 @@ describe('regex.js', function() {
             assert.equal(utils.wordRegex("123"), true);
         });
         it('should return true when value contains letters', function() {
-            assert.equal(utils.wordRegex("123"), true);
+            assert.equal(utils.wordRegex("abc"), true);
+        });
+        it('should return true when value contains letters, numbers and whitespaces', function() {
+            assert.equal(utils.wordRegex("abc 123"), true);
         });
         it('should return false when value contains special chararcters', function() {
             assert.equal(utils.wordRegex("%/-"), false);

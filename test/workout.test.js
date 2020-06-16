@@ -8,9 +8,9 @@ let expect = chai.expect;
 chai.use(chaiHttp);
 
 // to prevent DEPTH_ZERO_SELF_SIGNED_CERT"
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+//process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-let server = "https://localhost:3000";
+let server = "http://localhost:3000";
 let user = {
     name: "user",
     password: "2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b"
@@ -127,7 +127,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId is invalid');
+                    res.body.should.have.property('message').eql('workout id is invalid');
                     done();
                 });
             });
@@ -193,7 +193,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('workoutId is invalid');
+                    res.body.should.have.property('message').eql('workout id is invalid');
                     done();
                 });
             });
@@ -267,7 +267,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -283,7 +283,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -299,7 +299,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -316,7 +316,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -333,7 +333,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -350,7 +350,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -367,7 +367,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -384,7 +384,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -401,7 +401,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout name, description or datetime are invalid');
                     done();
                 });
             });
@@ -515,7 +515,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -531,7 +531,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -547,7 +547,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -564,7 +564,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -581,7 +581,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -598,7 +598,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -615,7 +615,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -649,7 +649,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -666,7 +666,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
@@ -683,7 +683,7 @@ describe('workout.js', () => {
                 .end(function(err, res) {
                     expect(res).to.have.status(400);
                     res.body.should.have.property('type').eql('ERROR');
-                    res.body.should.have.property('message').eql('id, name, description or datetime are invalid');
+                    res.body.should.have.property('message').eql('workout id, name, description or datetime are invalid');
                     done();
                 });
             });
