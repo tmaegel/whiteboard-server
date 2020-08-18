@@ -150,6 +150,52 @@ router.get("/score/:workoutId", (req, res, next) => {
 });
 
 /**
+ * GET requests
+ * Get workout tags with workout ID
+ * @return 200 OK
+ * @return 400 Bad Request
+ * @return 401 Unauthorized
+ */
+router.get("/tag/:workoutId", (req, res, next) => {
+    const token = req.headers.authorization;
+    const workoutId = req.params.workoutId;
+    user.validate(token).then(
+        decoded => {
+            if(workoutId === undefined || workoutId === null || !utils.numRegex(workoutId)) {
+                console.log("ERROR: GET /workout/tag/:workoutId :: workout id is invalid");
+                res.status(400).json({
+                    type: "ERROR",
+                    message: "workout id is invalid"
+                });
+            } else {
+                console.log("INFO: GET /workout/tag/:workoutId :: workout id is " + workoutId);
+                workout.getWorkoutTagsById(decoded.sub, workoutId).then(
+                    results => {
+                        console.log("OK: GET /workout/tag/:workoutId");
+                        res.status(200).json(results);
+                    },
+                    error => {
+                        console.log("ERROR: GET /workout/tag/:workoutId ::", error.message);
+                        res.status(500).json({
+                            type: "ERROR",
+                            message: "Internal Server Error"
+                        });
+                    },
+                );
+            }
+        },
+        error => {
+            // No token provided
+            // Failed to authenticate token
+            console.log("ERROR: GET /workout/tag/:workoutId ::", error.message);
+            res.status(401).json({type: "ERROR", message: error.message});
+        },
+    ).catch((error) => {
+        console.log("ERROR: GET /workout/tag/:workoutId :: An unexpected error has occurred ::", error.message);
+    });
+});
+
+/**
  * POST requests
  * SAVE workout
  * @return 201 Created

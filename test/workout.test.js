@@ -222,6 +222,70 @@ describe('workout.js', () => {
         });
     });
     /**
+     * Testing #GET /workout/tag/:workoutId
+     */
+    describe('#GET /workout/tag/:workoutId', function() {
+        /**
+         * Positive tests #GET /workout/score/:workoutId
+         */
+        describe('#GET /workout/tag/:workoutId (positive tests)', function() {
+            it('it should return the tags of workout with id', function(done) {
+                chai.request(server)
+                .get('/workout/tag/30') // has more than one tag
+                .set('Authorization', token)
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let parsedRes = JSON.parse(res.text);
+                    expect(parsedRes[0]).to.have.property('tagId');
+                    expect(parsedRes[0]).to.have.property('workoutId').eql(30);
+                    expect(parsedRes[0]).to.have.property('userId');
+                    expect(parsedRes[1]).to.have.property('tagId');
+                    expect(parsedRes[1]).to.have.property('workoutId').eql(30);
+                    expect(parsedRes[1]).to.have.property('userId');
+                    done();
+                });
+            });
+        });
+        /**
+         * Negative tests #GET /workout/score/:workoutId
+         */
+        describe('#GET /workout/tags/:workoutId (negative tests)', function() {
+            it('it should return an error (400 Bad Request) if the id is invalid', function(done) {
+                chai.request(server)
+                .get('/workout/tag/a')
+                .set('Authorization', token)
+                .end(function(err, res) {
+                    expect(res).to.have.status(400);
+                    res.body.should.have.property('type').eql('ERROR');
+                    res.body.should.have.property('message').eql('workout id is invalid');
+                    done();
+                });
+            });
+            it('it should return an error (401 Unauthorized) if the token is null/undefined', function(done) {
+                chai.request(server)
+                .get('/workout/tag/1')
+                .end(function(err, res) {
+                    expect(res).to.have.status(401);
+                    res.body.should.have.property('type').eql('ERROR');
+                    res.body.should.have.property('message').eql('No token provided');
+                    done();
+                });
+            });
+            it('it should return an error (401 Unauthorized) if the token is invalid', function(done) {
+                let invalidToken = "2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25X";
+                chai.request(server)
+                .get('/workout/tag/1')
+                .set('Authorization', invalidToken)
+                .end(function(err, res) {
+                    expect(res).to.have.status(401);
+                    res.body.should.have.property('type').eql('ERROR');
+                    res.body.should.have.property('message').eql('Failed to authenticate token');
+                    done();
+                });
+            });
+        });
+    });
+    /**
      * Testing #POST /workout
      */
     describe('#POST /workout', function() {

@@ -26,18 +26,18 @@ if (cmdline.initDatabase) {
 
 function open() {
     // open database
-    console.log("INFO: sqlite :: open() :: Connecting database '" + cmdline.dbFile + "'");
+    console.log("INFO: sqlite.model.js :: open() :: Connecting database '" + cmdline.dbFile + "'");
     db = new sqlite3.Database(cmdline.dbFile, (err) => {
         if (err) {
             console.log("ERROR: sqlite :: open() :: Connecting database.");
             return console.error(err.message);
         }
-        console.log("INFO: sqlite :: open() :: Opened database " + cmdline.dbFile);
+        console.log("INFO: sqlite.model.js :: open() :: Opened database " + cmdline.dbFile);
     });
 }
 
 function init(data) {
-    console.log("INFO: sqlite :: init() :: Initialize database " + cmdline.dbFile);
+    console.log("INFO: sqlite.model.js :: init() :: Initialize database " + cmdline.dbFile);
     db.serialize(function() {
         // **** REMOVING IT LATER
         db.run("DROP TABLE IF EXISTS table_users");
@@ -72,19 +72,29 @@ function init(data) {
                 if (error) {
                     return console.error(error.message);
                 }
-                console.log("INFO: sqlite :: init() :: Inserted users " + user.name);
+                console.log("DEBUG: sqlite :: init() :: Inserted users " + user.name + " with id " + this.lastID);
                 if(user.workouts !== null && user.workouts !== undefined) {
-                    console.log("INFO: sqlite :: init() :: Found workouts of user " + user.name);
+                    console.log("DEBUG: sqlite.model.js :: init() :: Found workouts of user " + user.name);
                     db.get("SELECT id, name, password FROM table_users WHERE name = ? LIMIT 1", [user.name], function(error, result) {
                         if (error) {
-                            console.log("ERROR: sqlite :: init() :: Couldn't get user " + user.name);
+                            console.log("ERROR: sqlite.model.js :: init() :: Couldn't get user " + user.name);
                         } else {
                             for (let workout of user.workouts) {
                                 db.run("INSERT INTO table_workout(userId, name, description, datetime) VALUES (?, ?, ?, ?)", [result.id, workout.name, workout.description, workout.datetime], function(error) {
                                     if (error) {
                                         return console.error(error.message);
+                                    } else {
+                                        console.log("DEBUG: sqlite.model.js :: init() :: Inserted workout " + workout.name + " (" + user.name + ") with id " + this.lastID);
+                                        for (let tag of workout.tag) {
+                                            db.run("INSERT INTO table_workout_tags(workoutId, tagId) VALUES (?, ?)", [this.lastID, tag], function(error) {
+                                                if (error) {
+                                                    return console.error(error.message);
+                                                } else {
+                                                    console.log("DEBUG: sqlite.model.js :: init() :: Inserted tag id " + tag + " (" + user.name + ") with workout id " + this.lastID + " with id " + this.lastID);
+                                                }
+                                            });
+                                        }
                                     }
-                                    console.log("INFO: sqlite :: init() :: Inserted workout " + workout.name + " (" + user.name + ")");
                                 });
                             }
                         }
@@ -101,7 +111,7 @@ function init(data) {
                 if (error) {
                     return console.error(error.message);
                 }
-                console.log("INFO: sqlite :: init() :: Inserted equipment " + equipment.name);
+                console.log("DEBUG: sqlite.model.js :: init() :: Inserted equipment " + equipment.name + " with id " + this.lastID);
             });
         }
 
@@ -113,7 +123,7 @@ function init(data) {
                 if (error) {
                     return console.error(error.message);
                 }
-                console.log("INFO: sqlite :: init() :: Inserted movement " + movement.name);
+                console.log("DEBUG: sqlite.model.js :: init() :: Inserted movement " + movement.name + " with id " + this.lastID);
             });
         }
 
@@ -126,7 +136,7 @@ function init(data) {
                 if (error) {
                     return console.error(error.message);
                 }
-                console.log("INFO: sqlite :: init() :: Inserted tag " + tag.name);
+                console.log("DEBUG: sqlite.model.js :: init() :: Inserted tag " + tag.name + " with id " + this.lastID);
             });
         }
     })
@@ -136,10 +146,10 @@ function close() {
     // close the database connection
     db.close((err) => {
         if (err) {
-            console.log("ERROR: sqlite :: close() :: Closing database.");
+            console.log("ERROR: sqlite.model.js :: close() :: Closing database.");
             return console.error(err.message);
         }
-        console.log("INFO: sqlite :: close() :: Closed database " + cmdline.dbFile);
+        console.log("INFO: sqlite.model.js :: close() :: Closed database " + cmdline.dbFile);
     });
 }
 

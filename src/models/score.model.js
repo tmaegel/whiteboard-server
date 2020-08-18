@@ -61,7 +61,8 @@ function insertScore(score) {
                 console.log("DEBUG: score.model.js :: insertScore() ::", error.message);
                 reject(error);
             } else {
-                database.db.get("SELECT last_insert_rowid() from table_workout_score WHERE userId = ? LIMIT 1", [score.userId], (error, result) => {
+                // @todo: its not atomic?
+                database.db.get("SELECT last_insert_rowid() FROM table_workout_score WHERE userId = ? LIMIT 1", [score.userId], (error, result) => {
                     if (error) {
                         console.log("DEBUG: score.model.js :: insertScore() ::", error.message);
                         reject(error);
@@ -92,7 +93,7 @@ function insertScore(score) {
  */
 function updateScore(score) {
     return new Promise((resolve, reject) => {
-        database.db.run("UPDATE table_workout_score SET workoutId = ?, score = ?, rx = ?, datetime = ?, note = ? WHERE id = ? and userId = ?", [score.workoutId, score.score, score.rx, score.datetime, score.note, score.id, score.userId], function(error) {
+        database.db.run("UPDATE table_workout_score SET workoutId = ?, score = ?, rx = ?, datetime = ?, note = ? WHERE id = ? AND userId = ?", [score.workoutId, score.score, score.rx, score.datetime, score.note, score.id, score.userId], function(error) {
             if (error) {
                 console.log("DEBUG: score.model.js :: updateScore() ::", error.message);
                 reject(error);

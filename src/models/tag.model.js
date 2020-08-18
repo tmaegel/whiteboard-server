@@ -56,6 +56,7 @@ function insertTag(tag) {
                 console.log("DEBUG: tag.model.js :: insertTag() ::", error.message);
                 reject(error);
             } else {
+                // @todo: its not atomic?
                 database.db.get("SELECT last_insert_rowid() from table_tags WHERE userId = ? LIMIT 1", [tag.userId], (error, result) => {
                     if (error) {
                         console.log("DEBUG: tag.model.js :: insertTag() ::", error.message);

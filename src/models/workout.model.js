@@ -51,9 +51,28 @@ function getWorkoutById(userId, workoutId) {
  */
 function getWorkoutScoresById(userId, workoutId) {
     return new Promise((resolve, reject) => {
-        database.db.all("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE workoutId = ? and userId = ? ORDER BY id", [workoutId, userId], function(error, results) {
+        database.db.all("SELECT id, workoutId, score, rx, datetime, note FROM table_workout_score WHERE workoutId = ? AND userId = ? ORDER BY id", [workoutId, userId], function(error, results) {
             if (error) {
                 console.log("DEBUG: workout.model.js :: getWorkoutScoresById() ::", error.message);
+                reject(error);
+            } else {
+                resolve(results);
+            }
+        });
+    });
+}
+
+/**
+ * Get the workout tags of the workout with id and userId.
+ * @param {integer} userId - The user id of the workouts.
+ * @param {integer} workoutId - The id of the workout.
+ * @returns {Promise} Promise object represents the workout tag object.
+ */
+function getWorkoutTagsById(userId, workoutId) {
+    return new Promise((resolve, reject) => {
+        database.db.all("SELECT tagId, tag, workoutId, userId FROM table_tags INNER JOIN table_workout_tags ON table_workout_tags.tagId = table_tags.id WHERE workoutId = ? AND (userId = 1 OR userId = ?);", [workoutId, userId], function(error, results) {
+            if (error) {
+                console.log("DEBUG: workout.model.js :: getWorkoutTagsById() ::", error.message);
                 reject(error);
             } else {
                 resolve(results);
@@ -78,7 +97,8 @@ function insertWorkout(workout) {
                 console.log("DEBUG: workout.model.js :: insertWorkout() ::", error.message);
                 reject(error);
             } else {
-                database.db.get("SELECT last_insert_rowid() from table_workout WHERE userId = ? LIMIT 1", [workout.userId], (error, result) => {
+                // @todo: its not atomic?
+                database.db.get("SELECT last_insert_rowid() FROM table_workout WHERE userId = ? LIMIT 1", [workout.userId], (error, result) => {
                     if (error) {
                         console.log("DEBUG: workout.model.js :: insertWorkout() ::", error.message);
                         reject(error);
@@ -126,6 +146,7 @@ module.exports = {
     getWorkouts,
     getWorkoutById,
     getWorkoutScoresById,
+    getWorkoutTagsById,
     insertWorkout,
     updateWorkout,
 };
