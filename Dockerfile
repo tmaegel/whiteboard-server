@@ -1,8 +1,5 @@
-FROM node:13-alpine
+FROM node:12-alpine
 LABEL maintainer="Toni Mägel <tmaegel@posteo.de>"
-
-ARG BUILDTYPE
-ENV NODE_ENV $BUILDTYPE
 
 # Create app directory
 WORKDIR /usr/src/app

@@ -16,20 +16,26 @@
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.2.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "expect.js": "^0.3.1",
-    "mocha": "^6.2.2",
+    "mocha": "^7.2.0",
     "should": "^13.2.3"
   },
   "scripts": {
-    "build": "docker build --pull --build-arg BUILDTYPE=production -t whiteboard-server:prod .",
-    "buildDev": "docker build --pull --build-arg BUILDTYPE=dev -t whiteboard-server:dev .",
-    "startDev": "docker run --name whiteboard-server-dev -e NODE_ENV=dev -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:dev node server.js --init config/data.json",
-    "start": "docker run --name whiteboard-server-prod -e NODE_ENV=production -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-server:prod",
-    "test": "mocha"
+    "test": "mocha",
+    "build:dev": "docker build --pull -t whiteboard-backend:dev .",
+    "build:prod": "docker build --pull -t whiteboard-backend:prod .",
+    "full-start:dev": "docker-compose -f docker-compose_dev.yml down ; docker-compose -f docker-compose_dev.yml build ; docker-compose -f docker-compose_dev.yml up -d",
+    "full-start:prod": "docker-compose -f docker-compose_prod.yml down ; docker-compose -f docker-compose_prod.yml build ; docker-compose -f docker-compose_prod.yml up -d",
+    "full-stop:dev": "docker-compose -f docker-compose_dev.yml down",
+    "full-stop:prod": "docker-compose -f docker-compose_prod.yml down",
+    "start:dev": "docker rm whiteboard-backend-dev ; docker run --name whiteboard-backend-dev -e NODE_ENV=dev -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-backend:dev node server.js --init config/data.dev.json",
+    "start:prod": "docker rm whiteboard-backend-prod ; docker run --name whiteboard-backend-prod -e NODE_ENV=production -e WHITEBOARD_CONFIG=config/config.json -e WHITEBOARD_DB=db/database.sqlite -e WHITEBOARD_PORT=3000 -v ${PWD}/db:/usr/src/app/db -p 127.0.0.1:3000:3000 -d whiteboard-backend:prod",
+    "stop:dev": "docker stop whiteboard-backend-dev",
+    "stop:prod": "docker stop whiteboard-backend-prod"
   }
 }
