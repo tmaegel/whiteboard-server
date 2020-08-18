@@ -21,28 +21,28 @@ function empty(value) {
 
 /**
  * Simple regex check
- * [a-zA-Z_0-9ÄÜÖäüöß .,:&'-()/]
+ * [a-zA-Z_0-9ÄÜÖäüöß .,:&'"-()/]
  */
 function simpleRegex(value) {
     if(value === undefined || value === null) {
         return undefined;
     }
 
-    let regExp = /^[\w\sÄÜÖäüöß.,:&'"\-()/]*$/gm;
+    let regExp = /^[\wÄÜÖäüöß .,:&'"\-()/]*$/gm;
 
     return regExp.test(value);
 }
 
 /**
  * Extended regex check
- * [a-zA-Z_0-9ÄÜÖäüöß .,:;"#!?&@_-()%/*+]
+ * [a-zA-Z_0-9ÄÜÖäüöß .,:;"'#!?&@_-()%/*+]
  */
 function extendedRegex(value) {
     if(value === undefined || value === null) {
         return undefined;
     }
 
-    let regExp = /^[\w\sÄÜÖäüöß.,:;"'!?&@_\-()%/*+]*$/g;
+    let regExp = /^[\w\sÄÜÖäüöß.,:;"'#!?&@_\-()%/*+]*$/g;
 
     return regExp.test(value);
 }

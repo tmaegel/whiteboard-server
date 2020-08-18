@@ -127,7 +127,7 @@ router.post("/", (req, res, next) => {
              *       Remove alle multiple new lines and spaces from description
              */
             let valid = (workoutId === null || workoutId === undefined || !utils.numRegex(workoutId) ||
-                        note === null || note === undefined || !utils.simpleRegex(note) ||
+                        note === null || note === undefined || !utils.extendedRegex(note) ||
                         rx === null || rx === undefined || (rx != 1 && rx != 0) || !utils.numRegex(rx) ||
                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
                         scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.floatRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
@@ -214,7 +214,7 @@ router.post("/:scoreId", (req, res, next) => {
              */
             let valid = (scoreId === null || scoreId === undefined || !utils.numRegex(scoreId) ||
                         workoutId === null || workoutId === undefined || !utils.numRegex(workoutId) ||
-                        note === null || note === undefined || !utils.simpleRegex(note) ||
+                        note === null || note === undefined || !utils.extendedRegex(note) ||
                         rx === null || rx === undefined || (rx != 1 && rx != 0) || !utils.numRegex(rx) ||
                         datetime === null || datetime === undefined || utils.empty(datetime) || !utils.numRegex(datetime) ||
                         scoreValue === null || scoreValue === undefined || utils.empty(scoreValue) || (!utils.numRegex(scoreValue) && !utils.floatRegex(scoreValue) && !utils.timestampRegex(scoreValue)));
